@@ -62,8 +62,15 @@ namespace ff_ocr {
             }
 
             OcrResult result = await ocr.RecognizeAsync(bitmap);
-            foreach (OcrLine line in result.Lines) {
-                richTextBox1.AppendText(String.Join("", line.Text.Split(filters, StringSplitOptions.RemoveEmptyEntries)) + "\r\n");
+            foreach (OcrLine l in result.Lines) {
+                string name = String.Join("", l.Text.Trim().Split(filters, StringSplitOptions.RemoveEmptyEntries));
+                if(name.Length > 0) {
+                    richTextBox1.AppendText(name + "\r\n");
+                    Enemy enemy = Enemies.Find(x => x.MatchStrings.Contains(name));
+                    if (enemy != null) {
+                        listBox1.SelectedItem = enemy;
+                    }
+                }
             }
 
             s.Stop();

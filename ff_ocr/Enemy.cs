@@ -32,6 +32,14 @@ namespace ff_ocr {
         public Enemy(XElement e) {
             XElement eFirstRow = e.Element("tr");
             Name = eFirstRow.Element("td").Element("b").Value;
+            MatchStrings.Add(Name);
+
+            XElement eStrings = eFirstRow.Element("strings");
+            if (eStrings != null) {
+                foreach (XElement s in eStrings.Elements("string")) {
+                    MatchStrings.Add(s.Value);
+                }
+            }
 
             //
 
@@ -99,7 +107,7 @@ namespace ff_ocr {
             else {
                 Weaknesses = "(none)";
             }
-            
+
 
             XElement eAbsorbs = eWeaknesses.ElementsAfterSelf().First();
             sb = new StringBuilder();
@@ -130,6 +138,13 @@ namespace ff_ocr {
 
         public override string ToString() {
             return Name;
+        }
+
+        public override bool Equals(object obj) {
+            if (obj == DBNull.Value) { return false; }
+            Enemy compare = (Enemy)obj;
+
+            return MatchStrings.Contains(compare.Name);
         }
     }
 }
