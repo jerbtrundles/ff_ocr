@@ -29,17 +29,41 @@ namespace ff_ocr {
         public string Steal { get; set; }
         public string Drop { get; set; }
 
-        public Enemy(XElement e) {
-            XElement eFirstRow = e.Element("tr");
-            Name = eFirstRow.Element("td").Element("b").Value;
-            MatchStrings.Add(Name);
+        public string FullString {
+            get {
+                StringBuilder sb = new StringBuilder();
+                sb.AppendLine("Name: " + Name);
+                sb.AppendLine("Level: " + Level);
+                sb.AppendLine("HP: " + HP);
+                sb.AppendLine("Attack: " + Attack);
+                sb.AppendLine("Hit Percentage: " + HitPercentage);
+                sb.AppendLine("Magic Attack: " + MagicAttack);
+                sb.AppendLine("Speed: " + Speed);
+                sb.AppendLine("Defense: " + Defense);
+                sb.AppendLine("Evasion: " + Evasion);
+                sb.AppendLine("Magic Defense: " + MagicDefense);
+                sb.AppendLine("Magic Evasion: " + MagicEvasion);
+                sb.AppendLine("GP: " + GP);
+                sb.AppendLine("Experience: " + Experience);
+                sb.AppendLine("Weaknesses: " + Weaknesses);
+                sb.AppendLine("Absorbs: " + Absorbs);
+                sb.AppendLine("Resists: " + Resists);
+                return sb.ToString();
+            }
+        }
 
-            XElement eStrings = eFirstRow.Element("strings");
+        public Enemy(XElement e) {
+            XElement eStrings = e.Element("strings");
             if (eStrings != null) {
                 foreach (XElement s in eStrings.Elements("string")) {
-                    MatchStrings.Add(s.Value);
+                    MatchStrings.Add(s.Value.ToLower());
                 }
             }
+
+            XElement eFirstRow = e.Element("tr");
+            Name = eFirstRow.Element("td").Element("b").Value;
+            MatchStrings.Add(Name.ToLower());
+            MatchStrings.Add(Name.ToLower().Replace(" ", ""));
 
             //
 
@@ -140,11 +164,15 @@ namespace ff_ocr {
             return Name;
         }
 
+        public override int GetHashCode() {
+            return Name.GetHashCode();
+        }
+
         public override bool Equals(object obj) {
             if (obj == DBNull.Value) { return false; }
             Enemy compare = (Enemy)obj;
 
-            return MatchStrings.Contains(compare.Name);
+            return MatchStrings.Contains(compare.Name.ToLower());
         }
     }
 }

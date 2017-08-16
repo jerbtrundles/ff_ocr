@@ -22,11 +22,17 @@ namespace ff_ocr {
         bool bReady = true;
         List<Enemy> Enemies = new List<Enemy>();
 
+        Enemy enemy1;
+        Enemy enemy2;
+        Enemy enemy3;
+
         int width = 389;
         int height = 292;
         int x = 433;
         int y = 719;
         char[] filters = { ' ', '1', '2', '3', '4', '5', '6', '7', '8', '9' };
+
+        int noBattleCount = 0;
 
         public Form1() {
             InitializeComponent();
@@ -36,18 +42,16 @@ namespace ff_ocr {
             ocr = OcrEngine.TryCreateFromUserProfileLanguages();
             bmp = new Bitmap(width, height);
 
-            XDocument doc = XDocument.Load(@"c:\users\joshbax\desktop\tables.xml");
+            XDocument doc = XDocument.Load(@"ffiv_enemies.xml");
             foreach (XElement eTable in doc.Root.Elements("table")) {
                 Enemy enemy = new Enemy(eTable);
                 Enemies.Add(enemy);
-                listBox1.Items.Add(enemy);
             }
         }
 
         private async Task Recognize() {
-            string path = @"c:\users\joshbax\desktop\temp.bmp";
+            string path = @"c:\users\baxte\desktop\temp.bmp";
             Stopwatch s = Stopwatch.StartNew();
-            richTextBox1.Clear();
 
             using (Graphics g = Graphics.FromImage(bmp)) {
                 g.CopyFromScreen(Screen.PrimaryScreen.Bounds.X + x, Screen.PrimaryScreen.Bounds.Y + y, 0, 0, bmp.Size, CopyPixelOperation.SourceCopy);
@@ -62,15 +66,43 @@ namespace ff_ocr {
             }
 
             OcrResult result = await ocr.RecognizeAsync(bitmap);
-            foreach (OcrLine l in result.Lines) {
-                string name = String.Join("", l.Text.Trim().Split(filters, StringSplitOptions.RemoveEmptyEntries));
-                if(name.Length > 0) {
-                    richTextBox1.AppendText(name + "\r\n");
-                    Enemy enemy = Enemies.Find(x => x.MatchStrings.Contains(name));
-                    if (enemy != null) {
-                        listBox1.SelectedItem = enemy;
+            if (result.Lines.Count == 0) {
+                richTextBox1.Clear();
+
+                if (++noBattleCount == 5) {
+                    ClearEnemyData();
+                }
+            }
+            else {
+                StringBuilder sb = new StringBuilder();
+                noBattleCount = 0;
+                foreach (OcrLine l in result.Lines) {
+                    sb.AppendLine(l.Text);
+                    string name = String.Join("", l.Text.ToLower().Trim().Split(filters, StringSplitOptions.RemoveEmptyEntries));
+                    if (name.Length > 0) {
+                        richTextBox1.AppendText(name + "\r\n");
+                        Enemy enemy = Enemies.Find(x => x.MatchStrings.Contains(name));
+                        if (enemy != null) {
+                            if (enemy == enemy1) { continue; }
+                            if (enemy == enemy2) { continue; }
+                            if (enemy == enemy3) { continue; }
+
+                            if (pbEnemy1.Image == null) {
+                                enemy1 = enemy;
+                                SetEnemy(enemy, pbEnemy1, txtEnemy1);
+                            }
+                            else if (pbEnemy2.Image == null) {
+                                enemy2 = enemy;
+                                SetEnemy(enemy, pbEnemy2, txtEnemy2);
+                            }
+                            else if (pbEnemy3.Image == null) {
+                                enemy3 = enemy;
+                                SetEnemy(enemy, pbEnemy3, txtEnemy3);
+                            }
+                        }
                     }
                 }
+                richTextBox1.Text = sb.ToString() + Environment.NewLine;
             }
 
             s.Stop();
@@ -85,28 +117,22 @@ namespace ff_ocr {
             bReady = true;
         }
 
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e) {
-            if (listBox1.SelectedIndex == -1) { return; }
+        private void ClearEnemyData() {
+            pbEnemy1.Image = null;
+            txtEnemy1.Clear();
+            pbEnemy2.Image = null;
+            txtEnemy2.Clear();
+            pbEnemy3.Image = null;
+            txtEnemy3.Clear();
 
-            Enemy enemy = (Enemy)listBox1.SelectedItem;
-            txtName.Text = enemy.Name;
-            txtLevel.Text = enemy.Level;
-            txtHP.Text = enemy.HP;
-            txtAttack.Text = enemy.Attack;
-            txtHitPercentage.Text = enemy.HitPercentage;
-            txtMagicAttack.Text = enemy.MagicAttack;
-            txtSpeed.Text = enemy.Speed;
-            txtDefense.Text = enemy.Defense;
-            txtEvasion.Text = enemy.Evasion;
-            txtMagicDefense.Text = enemy.MagicDefense;
-            txtMagicEvasion.Text = enemy.MagicEvasion;
-            txtGP.Text = enemy.GP;
-            txtExperience.Text = enemy.Experience;
-            txtWeaknesses.Text = enemy.Weaknesses;
-            txtAbsorbs.Text = enemy.Absorbs;
-            txtResists.Text = enemy.Resists;
+            enemy1 = null;
+            enemy2 = null;
+            enemy3 = null;
+        }
 
-            pictureBox1.Load(enemy.ImageURL);
+        private void SetEnemy(Enemy enemy, PictureBox pb, RichTextBox rtb) {
+            pb.Load(enemy.ImageURL);
+            rtb.Text = enemy.FullString;
         }
     }
 }

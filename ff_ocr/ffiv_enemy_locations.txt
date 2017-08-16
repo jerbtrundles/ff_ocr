@@ -1,0 +1,948 @@
+Watery Pass Floor B1F/B2F -017
+-------------------------
+01: 012(00C): EvilShel x3  WaterBug x1
+02: 013(00D): Pike     x3
+03: 014(00E): CaveToad x3
+04: 015(00F): Pike     x2, EvilShel x2
+05: 012(00C): EvilShel x3, WaterBug x1
+06: 013(00D): Pike     x3
+07: 016(010): Zombie   x4
+08: 016(010): Zombie   x4
+
+Watery Pass  B3F -018 
+----------------
+01: 013(00D): Pike     x3
+02: 014(00E): CaveToad x3
+03: 015(00F): Pike     x2, EvilShel x2
+04: 016(010): Zombie   x4
+05: 017(011): Pike     x2, EvilShel x2, WaterBug x2
+06: 018(012): Jelly    x4
+07: 019(013): TinyMage x2, WaterHag x4
+08: 019(013): TinyMage x2, WaterHag x4
+
+Watery Pass North -019 
+-----------------
+01: 016(010): Zombie   x4
+02: 017(011): Pike     x2, EvilShel x2, WaterBug x2
+03: 018(012): Jelly    x4
+04: 020(014): CaveToad x4
+05: 021(015): CaveToad x2, Mad Toad x2
+06: 022(016): Aligator x1, Pike x2
+07: 019(013): TinyMage x2, WaterHag x4
+08: 019(013): TinyMage x2, WaterHag x4
+
+Watery Pass Waterfalls -020
+----------------------
+01: 018(012): Jelly    x4
+02: 022(016): Aligator x1, Pike     x2
+03: 019(013): TinyMage x2, WaterHag x4
+04: 024(018): Zombie   x6
+05: 023(017): Aligator x2
+06: 025(019): Aligator x1, WaterBug x2
+07: 026(01A): Mad Toad x4
+08: 027(01B): TinyMage x4
+
+Damcyan Landscape -002 
+-----------------
+01: 029(01D): SandWorm x1
+02: 028(01C): Imp      x8
+03: 029(01D): SwordRat x2, Imp      x2, TinyMage x2
+04: 030(01E): SandWorm x1, Sandpede x1
+05: 029(01D): SandWorm x1
+06: 029(01D): SwordRat x2, Imp      x2, TinyMage x2
+07: 028(01C): Imp      x8
+08: 031(01F): SandWorm x2
+
+Antlion's Nest B1F -021
+--------------
+01: 000(000): Imp      x3
+02: 032(020): Imp      x3, Imp Cap. x1
+03: 033(021): Turtle   x1, Imp      x2
+04: 034(022): Cream    x4
+05: 035(023): Basilisk x1, Imp      x3
+06: 036(024): Turtle   x2
+07: 037(025): Weeper   x1, Turtle   x1, Basilisk x1
+08: 037(025): Weeper   x1, Turtle   x1, Basilisk x1
+
+Antlion's Nest B2F/Nest -022
+---------------
+01: 034(022): Cream    x4
+02: 035(023): Basilisk x1, Imp      x3
+03: 036(024): Turtle   x2
+04: 037(025): Weeper   x1, Turtle   x1, Basilisk x1
+05: 038(026): Basilisk x1, Turtle   x1
+06: 039(027): Weeper   x2
+07: 031(01F): SandWorm x2
+08: 030(01E): SandWorm x1, Sandpede x1
+
+Mt. Hobs West -023
+-------------
+01: 040(028): Skelton  x4
+02: 041(029): Spirit   x2
+03: 042(02A): Gargoyle x1, Cocktric x2
+04: 043(02B): Bomb     x3
+05: 044(02C): Cocktric x3
+06: 045(02D): Gargoyle x2
+07: 046(02E): GrayBomb x2, Bomb     x2
+08: 046(02E): GrayBomb x2, Bomb     x2
+
+Mt. Hobs Summit -024
+---------------
+01: 042(02A): Gargoyle x1, Cocktric x2
+02: 041(029): Spirit   x2
+03: 046(02E): GrayBomb x2, Bomb     x2
+04: 040(028): Skelton  x4
+05: 044(02C): Cocktric x3
+06: 047(02F): Spirit   x2, Skelton  x2
+07: 045(02D): Gargoyle x2
+08: 051(033): Spirit   x3, Skelton  x2, Red Bone x1
+
+Mt. Hobs East -025
+-------------
+01: 047(02F): Spirit   x2, Skelton x2
+02: 045(02D): Gargoyle x2
+03: 046(02E): GrayBomb x2, Bomb x2
+04: 042(02A): Gargoyle x1, Cocktric x1
+05: 049(031): Red Bone x1, Skelton x3
+06: 036(024): Turtle   x2
+07: 045(02D): Gargoyle x2
+08: 050(032): GrayBomb x2, Bomb x4
+
+Fabul Landscape -003
+---------------
+01: 052(034): Imp Cap. x3, Needler  x1
+02: 053(035): Imp Cap. x3, Needler  x3
+03: 044(02C): Imp Cap. x4, Imp      x2
+04: 044(02C): Cocktric x3
+05: 042(02A): Gargoyle x1, Cocktric x2
+06: 046(02E): GrayBomb x2, Bomb     x2
+07: 055(037): SwordRat x3, Needler  x3
+08: 055(037): SwordRat x3, Needler  x3
+
+Mysidia Landscape -004 
+-----------------
+01: 056(038): Raven    x1
+02: 029(01D): SwordRat x2, Imp      x2, TinyMage x2
+03: 052(034): Imp Cap. x3, Needler  x1
+04: 054(036): Imp Cap. x4, Imp      x2
+05: 056(038): Raven    x1
+06: 058(03A): Needler  x2, SwordRat x2
+07: 088(058): Raven    x1, Cocktric x3
+08: 088(058): Raven    x1, Cocktric x3
+
+Mt. Ordeals -026
+-----------
+01: 047(02F): Spirit   x2, Skelton  x2
+02: 049(031): Red Bone x1, Skelton  x3
+03: 051(033): Spirit   x3, Skelton  x2, Red Bone x1
+04: 060(03C): Spirit   x3, Soul     x1
+05: 061(03D): Soul     x2, Red Bone x2
+06: 062(03E): Skelton  x3, Red Bone x2
+07: 063(03F): Lilith   x1, Red Bone x2
+08: 063(03F): Lilith   x1, Red Bone x2
+
+Mt. Ordeals 3rd Station -027
+-----------------------
+01: 064(040): Ghoul    x1, Red Bone x2, Skelton  x2
+02: 065(041): Spirit   x2, Soul     x2, Red Bone x2
+03: 066(042): Zombie   x2, Ghoul    x2
+04: 067(043): Ghoul    x2, Soul     x2
+05: 068(044): Revenant x1, Ghoul    x3
+06: 069(045): Zombie   x3, Ghoul    x2, Revenant x2
+07: 063(03F): Lilith   x1, Red Bone x2
+08: 063(03F): Lilith   x1, Red Bone x2
+
+Mt. Ordeals 7th Station/Summit -028
+------------------------------
+01: 067(043): Ghoul    x2, Soul     x2
+02: 068(044): Revenant x1, Ghoul    x3
+03: 069(045): Zombie   x3, Ghoul    x2, Revenant x2
+04: 071(047): Soul     x2, Ghoul    x2, Revenant x2
+05: 063(03F): Lilith   x1, Red Bone x2
+06: 070(046): Lilith   x1
+07: 072(048): Soul     x3, Ghoul    x1, Revenant x1
+08: 073(049): Lilith   x2
+
+Old Water-way(Baron) -030
+--------------------
+01: 074(04A): Piranha  x2, FangShel x1, EvilShel x1
+02: 075(04B): Pike     x3, Piranha  x3
+03: 076(04C): Crocdile x1, Piranha  x2
+04: 077(04D): FangShel x3, Aligator x1, Crocdile x1
+05: 078(04E): Piranha  x2, ElecFish x2
+06: 079(04F): Crocdile x1, ElecFish x3
+07: 077(04D): AquaWorm x1, Piranha  x3
+08: 077(04D): AquaWorm x1, Piranha  x3
+
+Old Water-way(Baron) B3F -031
+------------------------
+01: 081(051): Hydra    x2
+02: 077(04D): FangShel x3, Aligator x1, Crocdile x1
+03: 079(04F): Crocdile x1, ElecFish x3
+04: 082(052): Crocdile x2
+05: 080(050): AquaWorm x1, Piranha  x3
+06: 083(053): AquaWorm x1, ElecFish x3
+07: 084(054): AquaWorm x1, Hydra    x1, Crocdile x1
+08: 084(054): AquaWorm x1, Hydra    x1, Crocdile x1
+
+Old Water-way(Baron) B2F -032
+---------------------
+01: 085(055): Guard    x2
+02: 086(056): Guard    x1, Hydra x2
+03: 081(051): Hydra    x2
+04: 086(056): Guard    x1, Hydra x2
+05: 084(054): AquaWorm x1, Hydra x1, Crocdile x1
+06: 084(054): AquaWorm x1, Hydra x1, Crocdile x1
+07: 087(057): AquaWorm x2
+08: 087(057): AquaWorm x2
+
+Troian Landscape -005
+----------------
+01: 088(058): StingRat x3, Treant   x2
+02: 089(059): Panther  x1, StingRat x3
+03: 090(05A): Cannibal x1, Treant   x2
+04: 091(05B): Python   x1, StingRat x2
+05: 088(058): StingRat x3, Treant   x2
+06: 089(059): Panther  x1, StingRat x3
+07: 090(05A): Cannibal x1, Treant   x2
+08: 091(05B): Python   x1, StingRat x2
+
+Cave Magnes -033
+-----------
+01: 089(059): Panther  x1, StingRat x3
+02: 091(05B): Python   x1, StingRat x2
+03: 092(05C): Ogre     x1, Panther  x2
+04: 093(05D): Ogre     x2
+05: 094(05E): Cave Bat x3
+06: 095(05F): Panther  x2
+07: 096(060): Mage     x2
+08: 096(060): Mage     x2
+
+Cave Magnes B2F -034
+------------
+01: 092(05C): Ogre     x1, Panther x2
+02: 097(061): CaveNaga x1, Ogre    x1
+03: 098(062): CaveNaga x1, Python  x2
+04: 099(063): Ogre     x3
+05: 094(05E): Cave Bat x3
+06: 095(05F): Panther  x2
+07: 096(060): Mage     x2
+08: 096(060): Mage     x2
+
+Cave Magnes B3F -035
+------------
+01: 098(062): CaveNaga x1, Python   x2
+02: 099(063): Ogre     x3
+03: 095(05F): Panther  x2
+04: 096(060): Mage     x2
+05: 094(05E): Cave Bat x3
+06: 100(064): VampGirl x1, Cave Bat x3
+07: 101(065): Mage     x1, Panther  x1, Ogre x1
+08: 101(065): Mage     x1, Panther  x1, Ogre x1
+
+Cave Magnes B4F -036
+------------
+01: 102(066): Panther  x2, Ogre     x2
+02: 100(064): VampGirl x1, Cave Bat x3
+03: 103(067): CaveNaga x2, Python   x2
+04: 104(068): VampGirl x2, Cave Bat x3
+05: 105(069): Panther  x2, Ogre     x1, CaveNaga x1
+06: 106(06A): VampGirl x1, Cave Bat x6
+07: 101(065): Mage     x1, Panther  x1, Ogre     x1
+08: 101(065): Mage     x1, Panther  x1, Ogre     x1
+
+Tower of Zot Floor 1 -037
+--------------------
+01: 107(06B): Marion   x1, (Summon Puppet x1), Puppet   x2
+02: 109(06D): Centaur  x1,  IceBeast      x2
+03: 113(071): Slime    x4
+04: 111(06F): Centaur  x3 
+05: 116(074): Gremlin  x2,  Ice Liz       x2
+06: 117(075): Carapace x2,  Ice Liz       x2
+07: 112(070): Centaur  x1,  Gremlin       x2
+08: 115(073): Jelly    x1,  Slime         x2,  Cream    x1
+
+Tower of Zot Floor 2 -038
+--------------------
+01: 107(06B): Marion   x1, (Summon Puppet x1), Puppet   x2
+02: 109(06D): Centaur  x1, IceBeast x2
+03: 111(06F): Centaur  x3
+04: 117(075): Carapace x2, Ice Liz  x2
+05: 114(072): Ice Liz  x1, Slime    x3
+06: 112(070): Centaur  x1, Gremlin  x2
+07: 108(06C): Marion   x1, (Summon Puppet x1), Puppet   x3
+08: 115(073): Jelly    x1, Slime    x2, Cream x1
+
+Tower of Zot Floor 3 -039
+--------------------
+01: 107(06B): Marion   x1, (Summon Puppet x1), Puppet   x3
+02: 110(06E): Centaur  x2,  IceBeast      x2
+03: 114(072): Ice Liz  x1,  Slime         x3
+04: 118(076): SwordMan x2
+05: 108(06C): Marion   x1, (Summon Puppet x1), Puppet   x3
+06: 119(077): SwordMan x1,  Ice Liz       x2
+07: 115(073): Jelly    x1,  Slime         x2,  Cream    x1
+08: 127(07F): Witch    x1,  IceBeast      x2,  EpeeGirl x1
+
+Tower of Zot Floor 4 -040
+--------------------
+01: 108(06C): Marion   x1, (Summon Puppet x1), Puppet   x3
+02: 122(07A): EpeeGirl x2,  SwordMan      x2
+03: 110(06E): Centaur  x2,  IceBeast      x2
+04: 113(071): Slime    x4
+05: 123(07B): EpeeGirl x3
+06: 116(074): Gremlin  x2,  Ice Liz       x2
+07: 121(079): SwordMan x1,  IceBeast      x2
+08: 127(07F): Witch    x1,  IceBeast      x2,  EpeeGirl x1
+
+Tower of Zot Floor 5 -041
+--------------------
+01: 108(06C): Marion   x1,(Summon Puppet x1), Puppet   x3
+02: 129(081): Witch    x1, EpeeGirl      x2
+03: 128(080): Witch    x1, SwordMan      x2,  EpeeGirl x1
+04: 125(07D): EpeeGirl x1, Ice Liz       x1,  IceBeast x1
+05: 109(06D): Centaur  x1, IceBeast      x2
+06: 121(079): SwordMan x1, IceBeast      x2
+07: 115(073): Jelly    x1, Slime         x2,  Cream    x1
+08: 127(07F): Witch    x1, IceBeast      x2,  EpeeGirl x1
+
+
+
+Agart Island -006
+------------
+01: 136(088): Roc      x1, Roc Baby x2
+02: 139(08B): HugeCell x3
+03: 210(0D2): FlameDog x2, BlackLiz x2
+04: 145(091): Ironback x2, BlackLiz x2
+05: 137(089): Roc      x1, Roc Baby x3
+06: 138(08A): HugeCell x4
+07: 210(0D2): FlameDog x2, BlackLiz x2
+08: 145(091): Ironback x2, BlackLiz x2
+
+Underground -007
+-----------
+01: 257(101): Armadillo x2
+02: 258(102): Dark Imp  x3, Armadillo x1, BlackLiz  x1
+03: 259(103): Armadillo x1, Tortise   x2
+04: 260(104): Dark Imp  x4
+05: 261(105): Tortise   x1, Dark Imp  x2
+06: 262(106): Tortise   x2, Armadillo x1, Black Liz x1
+07: 263(107): BlackLiz  x3
+08: 263(107): BlackLiz  x3
+
+Underground2 -008
+------------
+01: 314(13A): TrapRose x2
+02: 315(13B): RocLarva x4
+03: 316(13C): RockMoth x2
+04: 317(13D): RockMoth x2, RocLarva x2
+05: 318(13E): TrapRose x1, RockMoth x2
+06: 319(13F): TrapRose x1, RockMoth x2, RocLarva x2
+07: 313(139): TrapRose x1, Centpede x2
+08: 312(138): Centpede x1
+
+Moon's Surface -009
+--------------
+01: 368(170): MoonCell x2, Pudding  x2
+02: 372(174): Procyote x1, Pudding  x2
+03: 446(1BE): Slime    x1, Tofu     x1, Pudding x1
+04: 445(1BD): Balloon  x2, Grenade  x2
+05: 371(173): Procyote x1, Juclyote x2
+06: 370(172): Juclyote x2, MoonCell x2, Grenade x1
+07: 373(175): Juclyote x1, Procyote x2
+08: 375(177): Red Worm x2
+
+3-Step Peninsula -010 
+----------------
+01: 472(1D8): TrapRose     x1, GlomWing x2, Crawler  x2
+02: 473(1D9): Medusa       x1, Gorgon   x1, Stoneman x1
+03: 474(1DA): Talantla     x1, BlackCat x2
+04: 475(1DB): Egg(BlackLiz x1)
+05: 476(1DC): Egg(Lamia    x1)
+06: 477(1DD): Egg(HugeNaga x1)
+07: 478(1DE): Egg(Green D. x1)
+08: 479(1DF): Egg(Yellow D x1)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Eblan Cave Entrance -042
+-------------------
+01: 140(08C): GiantBat x3
+02: 143(08F): Ironback x2
+03: 146(092): Skull    x3
+04: 145(091): Ironback x2, BlackLiz x2
+05: 147(093): Skull    x4
+06: 142(08E): GiantBat x3, Cave Bat x3
+07: 150(096): Staleman x1, Skull    x2
+08: 149(095): Staleman x1
+
+Pass to Bab-il -043
+--------------
+01: 141(08D): GiantBat x4
+02: 144(090): Ironback x1, Armadilo x1, BlackLiz x1
+03: 147(093): Skull    x4
+04: 145(091): Ironback x2, BlackLiz x2
+05: 146(092): Skull    x3
+06: 142(08E): GiantBat x3, Cave Bat x3
+07: 150(096): Staleman x1, Skull    x2
+08: 149(095): Staleman x1
+
+Pass to Bab-il2 -029
+-----------------
+01: 141(08D): GiantBat     x4
+02: 144(090): Ironback     x1, Armadilo x1, BlackLiz x1
+03: 148(094): Red Bone     x3, Skull    x2
+04: 160(0A0): Egg(Lamia    x1)
+05: 142(08E): GiantBat     x3, Cave Bat x3
+06: 145(091): Ironback     x2, BlackLiz x2
+07: 151(097): Staleman     x1, Skull    x2, Red Bone x2
+08: 149(095): Staleman     x1
+
+Tower of Bab-il Floor 1 -044
+-----------------------
+01: 269(10D): Marion   x1, (Summon EvilDoll x1), EvilDoll x2
+02: 265(109): Marion   x1, (Summon EvilDoll x1), EvilDoll x3
+03: 261(105): Tortoise x1,  Dark Imp        x2
+04: 260(104): Dark Imp x4
+05: 266(10A): FlameDog x2
+06: 267(10B): FlameDog x3
+07: 263(107): BlackLiz x3
+08: 263(107): BlackLiz x3
+
+Tower of Bab-il Floor 2 -045
+-----------------------
+01: 269(10D): Marion   x1, (Summon EvilDoll x1), EvilDoll x2
+02: 268(10C): FlameDog x4
+03: 269(10D): FlameMan x1,  FlameDog        x2
+04: 270(10E): FlameMan x2,  FlameDog        x2
+05: 271(10F): BlackLiz x2
+06: 272(110): BlackLiz x3
+07: 263(107): BlackLiz x3
+08: 263(107): BlackLiz x3
+
+Tower of Bab-il Floor 3 -046
+-----------------------
+01: 269(10D): FlameMan     x1, FlameDog x2
+02: 271(10F): BlackLiz     x2
+03: 272(110): BlackLiz     x3
+04: 273(111): Egg(BlackLiz x1)
+05: 274(112): Tortoise     x2, BlackLiz x1
+06: 275(113): Tortoise     x2, BlackLiz x2
+07: 263(107): BlackLiz     x3
+08: 277(115): Tofu         x6
+
+Tower of Bab-il Floor 4 -047
+-----------------------
+01: 273(111): Egg(BlackLiz x1)
+02: 274(112): Tortoise     x2, BlackLiz x1
+03: 275(113): Tortoise     x2, BlackLiz x2
+04: 278(116): Chimera      x1, Tofu     x3
+05: 279(117): Chimera      x1
+06: 280(118): Chimera      x2
+07: 263(107): BlackLiz     x3
+08: 277(115): Tofu         x6
+
+Tower of Bab-il Floor 5 -048
+-----------------------
+01: 278(116): Chimera  x1, Tofu     x3
+02: 279(117): Chimera  x1
+03: 280(118): Chimera  x2
+04: 281(119): Chimera  x1, FlameMan x1
+05: 282(11A): Chimera  x1, FlameMan x2
+06: 283(11B): Chimera  x1, FlameDog x2
+07: 263(107): BlackLiz x3
+08: 277(115): Tofu     x6
+
+Tower of Bab-il Floor 6 -049
+-----------------------
+01: 289(121): Alert    x1, (Summon Naga     x1)
+02: 290(122): Alert    x1, (Summon FlameDog x1)
+03: 280(118): Chimera  x2
+04: 284(11C): Stoneman x1,  Medusa          x1
+05: 283(11B): Chimera  x1,  FlameDog        x2
+06: 285(11D): Medusa   x2
+07: 263(107): BlackLiz x3
+08: 277(115): Tofu     x6
+
+Tower of Bab-il Floor 7 -050
+-----------------------
+01: 284(11C): Stoneman x1,  Medusa          x1
+02: 285(11D): Medusa   x2
+03: 289(121): Alert    x1, (Summon Naga     x1)
+04: 290(122): Alert    x1, (Summon FlameDog x1)
+05: 286(11E): Stoneman x2
+06: 287(11F): Alert    x1, (Summon Chimera  x1)
+07: 277(115): Tofu     x6
+08: 277(115): Tofu     x6
+
+Tower of Bab-il Floor 8 -051
+-----------------------
+01: 289(121): Alert    x1, (Summon Naga     x1)
+02: 283(11B): Chimera  x1,  FlameDog        x2
+03: 280(118): Chimera  x2
+04: 286(11E): Stoneman x2
+05: 288(120): Alert    x1, (Summon Stoneman x1)
+06: 287(11F): Alert    x1, (Summon Chimera  x1)
+07: 276(114): Tofu     x4
+08: 280(118): Chimera  x2
+
+Tower of Bab-il Revisited Floor 1 -052
+---------------------------------
+01: 152(098): Mad Ogre     x2
+02: 179(0B3): Sorcerer     x1, (Summon Mad Ogre x1), BladeMan x2
+03: 160(0A0): Egg(Lamia    x1)
+04: 166(0A6): Balloon      x3
+05: 167(0A7): Balloon      x4
+06: 155(09B): BlackCat     x2
+07: 182(0B6): Sorcerer     x1, (Summon Green D. x1), BladeMan x2
+08: 178(0B2): Egg(Green D. x1)
+
+Tower of Bab-il Revisited Floor 2 -053
+---------------------------------
+01: 180(0B4): Sorcerer     x1, (Summon BlackCat x1), BladeMan x2
+02: 167(0A7): Balloon      x4
+03: 158(09E): Mad Ogre     x1,  BlackCat        x2
+04: 160(0A0): Egg(Lamia    x1)  
+05: 168(0A8): Mad Ogre     x1,  BlackCat        x1,  Balloon  x2
+06: 156(09C): BlackCat     x3
+07: 182(0B6): Sorcerer     x1, (Summon Green D. x1), BladeMan x2
+08: 178(0B2): Egg(Green D. x1)
+
+Tower of Bab-il Revisited Floor 3-1 -054
+-----------------------------------
+01: 181(0B5): Sorcerer     x1, (Summon BladeMan x1), BladeMan x2
+02: 159(09F): Mad Ogre     x2,  BlackCat        x2
+03: 168(0A8): Mad Ogre     x1,  BlackCat        x1,  Balloon  x2
+04: 160(0A0): Egg(Lamia    x1)
+05: 153(099): Mad Ogre     x3
+06: 169(0A9): Grudger      x1,  Mad Ogre        x1,  Balloon  x2
+07: 182(0B6): Sorcerer     x1, (Summon Green D. x1), BladeMan x2
+08: 178(0B2): Egg(Green D. x1)
+
+Tower of Bab-il Revisited Floor 3-2 -055
+-----------------------------------
+01: 179(0B3): Sorcerer     x1, (Summon Mad Ogre x1), BladeMan x2
+02: 164(0A4): BlackCat     x2,  Lamia           x1
+03: 172(0AC): Balloon      x3,  Grudger         x1
+04: 160(0A0): Egg(Lamia    x1)
+05: 157(09D): Lamia        x1,  BlackCat        x1,  Mad Ogre x1
+06: 166(0A6): Balloon      x3
+07: 182(0B6): Sorcerer     x1, (Summon Green D. x1), BladeMan x2
+08: 178(0B2): Egg(Green D. x1)
+
+Tower of Bab-il Revisited Floor 4-1 -056
+-----------------------------------
+01: 180(0B4): Sorcerer     x1, (Summon BlackCat x1), BladeMan x2
+02: 172(0AC): Balloon      x3,  Grudger         x1
+03: 165(0A5): BlackCat     x2,  Lamia           x2
+04: 160(0A0): Egg(Lamia    x1)
+05: 174(0AE): BladeMan     x3
+06: 170(0AA): Grudger      x2
+07: 182(0B6): Sorcerer     x1, (Summon Green D. x1), BladeMan x2
+08: 178(0B2): Egg(Green D. x1)
+
+Tower of Bab-il Revisited Floor 4-2 -057
+-----------------------------------
+01: 181(0B5): Sorceror     x1, (Summon BladeMan x1), BladeMan  x2
+02: 175(0AF): BlackCat     x1,  BladeMan        x1,  Mad Ogre  x1
+03: 163(0A3): Lamia        x1,  Mad Ogre        x1
+04: 160(0A0): Egg(Lamia    x1)
+05: 177(0B1): Mad Ogre     x1,  BladeMan        x1,  BlackCat  x1
+06: 173(0AD): Grudger      x2,  Lamia           x1
+07: 182(0B6): Sorcerer     x1, (Summon Green D. x1), BladeMan  x2
+08: 178(0B2): Egg(Green D. x1)
+
+Tower of Bab-il Revisited Floor 5 -058
+---------------------------------
+01: 179(0B3): Sorcerer     x1, (Summon Mad Ogre x1), BladeMan x2
+02: 172(0AC): Balloon      x3,  Grudger         x1
+03: 177(0B1): Mad Ogre     x1,  BladeMan        x1,  BlackCat x1
+04: 160(0A0): Egg(Lamia    x1)
+05: 171(0AB): Grudger      x3
+06: 165(0A5): BlackCat     x2,  Lamia           x2
+07: 182(0B6): Sorcerer     x1, (Summon Green D. x1), BladeMan x2
+08: 178(0B2): Egg(Green D. x1)
+
+Tower of Bab-il Revisited Floor 6 -059
+---------------------------------
+01: 296(128): Egg(Lamia    x1), Q. Lamia         x1
+02: 308(134): Sorcerer     x1, (Summon Q. Lamia  x1), BlackCat x2
+03: 310(136): Grudger      x1,  BladeMan         x2
+04: 297(129): Egg(Lamia    x3), Q. Lamia         x1
+05: 304(130): BladeMan     x1,  BlackCat         x1, Q. Lamia  x1 
+06: 300(12C): Ironman      x1
+07: 306(132): Sorcerer     x1, (Summon Q. Lamia  x1), BlackCat x2
+08: 303(12F): Green D.     x1
+
+Tower of Bab-il Revisited Floor 7 -060
+---------------------------------
+01: 307(133): Sorcerer x1, (Summon Ironman   x1), BlackCat x2
+02: 309(135): Grudger  x2,  BladeMan         x2
+03: 298(12A): Q. Lamia x1,  Egg(Lamia        x1), BlackCat x1
+04: 299(12B): Q. Lamia x1,  Egg(Lamia        x1), Lamia    x2
+05: 311(137): Grudger  x1,  BlackCat         x2,  BladeMan x1
+06: 302(12E): Ironman  x1,  BladeMan         x2
+07: 306(132): Sorcerer x1, (Summon Q. Lamia  x1), BlackCat x2
+08: 303(12F): Green D. x1
+
+Tower of Bab-il Revisited Floor 8 -061
+---------------------------------
+01: 307(133): Sorcerer x1, (Summon Ironman  x1), BlackCat x2
+02: 298(12A): Q. Lamia x1,  Egg(Lamia       x1), BlackCat x2
+03: 311(137): Grudger  x1,  BlackCat        x2,  BladeMan x1
+04: 309(135): Grudger  x2,  BladeMan        x2
+05: 301(12D): Ironman  x2
+06: 305(131): Ironman  x1,  Blackcat        x2
+07: 306(132): Sorcerer x1, (Summon Q. Lamia x1), BlackCat x2
+08: 303(12F): Green D. x1
+
+Sylvan Cave -062
+-----------
+01: 320(140): ToadLady x1, TinyToad x3
+02: 325(145): Ghost    x3
+03: 328(148): Ghost    x3, DarkTree x2
+04: 322(142): Molbol   x2
+05: 326(146): Ghost    x4
+06: 321(141): ToadLady x1, TinyToad x6
+07: 330(14A): Centpede x1, Molbol   x2
+08: 323(143): Molbol   x3
+
+Sylvan Cave2 -063
+------------
+01: 321(141): ToadLady x1, TinyToad x6
+02: 331(14B): DarkTree x2, Molbol   x2
+03: 328(148): Ghost    x3, DarkTree x2
+04: 329(149): DarkTree x2, Molbol   x1, Ghost    x1
+05: 320(140): ToadLady x1, TinyToad x3
+06: 327(147): Molbol   x1, Ghost    x1, DarkTree x1
+07: 323(143): Molbol   x3
+08: 324(144): Molbol   x1, Ghost    x2
+
+Sealed Cave -064
+-----------
+01: 352(160): Were Bat x4
+02: 354(162): VampLady x1, Were Bat x3
+03: 358(166): Screamer x2
+04: 353(161): Were Bat x3
+05: 355(163): VampLady x1, Were Bat x6
+06: 360(168): HugeNaga x2
+07: 360(168): HugeNaga x2
+08: 360(168): HugeNaga x2
+
+Sealed Cave2 -065
+------------
+01: 353(161): Were Bat x3
+02: 355(163): VampLady x1, Were Bat x6
+03: 359(167): Mantcore x1, Screamer x1
+04: 360(168): HugeNaga x2
+05: 356(164): VampLady x2, Were Bat x3
+06: 361(169): Screamer x1, HugeNaga x1
+07: 352(160): Were Bat x4
+08: 354(162): VampLady x1, Were Bat x3
+
+Sealed Cave3 -066
+------------
+01: 352(160): Were Bat x4
+02: 356(164): VampLady x2, Were Bat x3
+03: 359(167): Mantcore x1, Screamer x1
+04: 362(16A): HugeNaga x1, Screamer x2
+05: 354(162): VampLady x1, Were Bat x3
+06: 361(169): Screamer x1, HugeNaga x1
+07: 356(164): VampLady x2, Were Bat x3
+08: 361(169): Screamer x1, HugeNaga x1
+
+Land of Monsters -067
+----------------
+01: 332(14C): Red Eye  x2
+02: 344(158): Arachne  x1
+03: 337(151): Warrior  x2,  Fiend           x2
+04: 339(153): Conjurer x1, (Summon Imp      x1)
+05: 340(154): Conjurer x1, (Summon RockMoth x1)
+06: 342(156): Conjurer x1, (Summon HugeNaga x1)	
+07: 343(157): Conjurer x1, (Summon Clapper  x1)
+08: 346(15A): Clapper  x1
+
+Land of Monsters2 -068
+-----------------
+01: 335(14F): Hooligan x1
+02: 344(158): Arachne  x1
+03: 337(154): Conjurer x1, (Summon RockMoth x1)
+05: 341(155): Conjurer x1, (Summon Arachne  x1)
+06: 342(156): Conjurer x1, (Summon HugeNaga x1)
+07: 343(157): Conjurer x1, (Summon Clapper  x1)
+08: 346(15A): Clapper  x1
+
+Land of Monsters3 -069
+-----------------
+01: 333(14D): Red Eye  x3
+02: 345(159): Arachne  x2
+03: 338(152): Warrior  x2,  Fiend           x4
+04: 336(150): Hooligan x2
+05: 341(155): Conjurer x1, (Summon Arachne  x1)
+06: 342(156): Conjurer x1, (Summon HugeNaga x1)
+07: 343(157): Conjurer x1, (Summon Clapper  x1)
+08: 347(15B): Clapper  x2
+
+Land of Monsters4 -070
+-----------------
+01: 334(14E): Hooligan x1,  Red Eye         x1
+02: 345(159): Arachne  x2
+03: 338(152): Warrior  x2,  Fiend           x4
+04: 339(153): Conjurer x1, (Summon Imp      x1)
+05: 341(155): Conjurer x1, (Summon Arachne  x1)
+06: 342(156): Conjurer x1, (Summon HugeNaga x1)
+07: 343(157): Conjurer x1, (Summon Clapper  x1)
+08: 347(15B): Clapper  x2
+
+Cave Bahamut -071
+------------
+01: 384(180): Warlock  x1
+02: 384(180): Warlock  x1
+03: 385(181): Warlock  x1, Kary x1
+04: 387(183): RedGiant x1
+05: 385(181): Warlock  x1, Kary x1
+06: 386(182): Warlock  x1, Kary x2
+07: 388(184): Warlock  x1, Kary x1, RedGiant x1
+08: 389(185): RedGiant x2
+
+Cave Bahamut2 -072
+-------------
+01: 391(187): D.Bone   x1
+02: 391(187): D.Bone   x1
+03: 392(188): Ging-Ryu x1
+04: 392(188): Ging-Ryu x1
+05: 393(189): D.Bone   x1, Warlock  x1
+06: 389(185): RedGiant x2
+07: 390(186): Warlock  x2, RedGiant x1
+08: 394(18A): King-Ryu x2
+
+Development Room -073
+----------------
+01: 376(178): H.Ito
+02: 380(17C): K.Yoshii
+03: 378(17A): K.Aoki
+04: 377(179): K.Higuchi
+05: 382(17E): Takahashi
+06: 379(17B): A.Matsui
+07: 381(17D): H.Nakada
+08: 381(17D): H.Nakada
+
+Giant of Bab-il -074
+---------------
+01: 184(0B8): Searcher x1, (Summon Machine  x1)
+02: 185(0B9): Searcher x1, (Summon Machine  x1), Machine  x2
+03: 186(0BA): Machine  x2,  Beamer          x1
+04: 187(0BB): Machine  x2,  Beamer          x2
+05: 188(0BC): Searcher x1, (Summon Horseman x1), Machine  x2
+06: 189(0BD): Horseman x1,  Machine         x2
+07: 190(0BE): MacGiant x1
+08: 191(0BF): MacGiant x1
+
+Giant of Bab-il2 -075
+----------------
+01: 188(0BC): Searcher x1, (Summon Horseman x1), Machine x2
+02: 187(0BB): Machine  x2,  Beamer          x2
+03: 192(0C0): Horseman x1,  Beamer          x2
+04: 193(0C1): Horseman x1,  Beamer          x1,  Machine x1
+05: 194(0C2): Searcher x1, (Summon MacGiant x1)
+06: 190(0BE): MacGiant x1
+07: 191(0BF): MacGiant x1
+08: 195(0C3): MacGiant x1,  Horseman        x1
+
+Giant of Bab-il3 -076
+----------------
+01: 192(0C0): Horseman x1,  Beamer          x2
+02: 193(0C1): Horseman x1,  Beamer          x1,  Machine x1
+03: 196(0C4): Searcher x1, (Summon Horseman x1), Beamer  x2
+04: 197(0C5): Machine  x2,  Beamer          x3
+05: 194(0C2): Searcher x1, (Summon MacGiant x1)
+06: 198(0C6): Horseman x2
+07: 195(0C3): MacGiant x1,  Horseman        x1
+08: 199(0C7): D.Machin x1
+
+Giant of Bab-il4 -077
+----------------
+01: 196(0C4): Searcher x1, (Summon Horseman x1), Beamer x2
+02: 200(0C8): Searcher x1, (Summon D.Machin x1), Beamer x2
+03: 189(0BD): Horseman x1,  Machine         x2
+04: 201(0C9): MacGiant x1,  Machine         x1,  Beamer x1
+05: 191(0BF): MacGiant x1 
+06: 202(0CA): MacGiant x1,  Horseman        x1,  Beamer x1
+07: 199(0C7): D.Machin x1
+08: 206(0CE): MacGiant x2
+
+Giant of Bab-il5 -078
+----------------
+01: 204(0CC): Machine  x3,  Beamer          x2
+02: 205(0CD): Beamer   x1,  Machine         x2,  Horseman x1
+03: 196(0C4): Searcher x1, (Summon Horseman x1), Beamer   x2
+04: 200(0C8): Searcher x1, (Summon D.Machin x1), Beamer   x2
+05: 206(0CE): MacGiant x2
+06: 199(0C7): D.Machin x1
+07: 202(0CA): MacGiant x1,  Horseman        x1,  Beamer   x1
+08: 206(0CE): MacGiant x2
+
+Lunar Subterrane-Bottom -079
+-----------------------
+01: 418(1A2): Mind   x1
+02: 417(1A1): Breath x1
+03: 417(1A1): Breath x1
+04: 418(1A2): Mind   x1
+05: 417(1A1): Breath x1
+06: 418(1A2): Mind   x1
+07: 418(1A2): Mind   x1
+08: 417(1A1): Breath x1
+
+Lunar Subterrane-Top -080
+--------------------
+01: 384(180): Warlock  x1
+02: 384(180): Warlock  x1
+03: 385(181): Warlock  x1, Kary x1
+04: 387(183): RedGiant x1
+05: 385(181): Warlock  x1, Kary x1
+06: 386(182): Warlock  x1, Kary x2
+07: 388(184): Warlock  x1, Kary x1, RedGiant x1
+08: 389(185): RedGiant x2
+
+Lunar Subterrane2 -081
+-----------------
+01: 385(181): Warlock  x1, Kary     x1
+02: 386(182): Warlock  x1, Kary     x2
+03: 387(183): RedGiant x1
+04: 388(184): Warlock  x1, Kary     x1, RedGiant x1
+05: 388(184): Warlock  x1, Kary     x1, RedGiant x1
+06: 389(185): RedGiant x2
+07: 389(185): RedGiant x2
+08: 390(186): Warlock  x2, RedGiant x1
+
+Lunar Subterrane3 -082
+-----------------
+01: 391(187): D.Bone   x1
+02: 391(187): D.Bone   x1
+03: 392(188): Ging-Ryu x1
+04: 392(188): Ging-Ryu x1
+05: 393(189): D.Bone   x1, Warlock  x1
+06: 389(185): RedGiant x2
+07: 390(186): Warlock  x2, RedGiant x1
+08: 394(18A): King-Ryu x2
+
+Lunar Subterrane4 -083
+-----------------
+01: 391(187): D.Bone   x1
+02: 392(188): Ging-Ryu x1
+03: 393(189): D.Bone   x1, Warlock  x1
+04: 393(189): D.Bone   x1, Warlock  x1
+05: 394(18A): King-Ryu x2
+06: 394(18A): King-Ryu x2
+07: 389(185): RedGiant x2
+08: 395(18B): Warlock  x3
+
+Lunar Subterrane5 -084
+-----------------
+01: 396(18C): Blue D.  x1
+02: 396(18C): Blue D.  x1
+03: 397(18D): FatalEye x1
+04: 397(18D): FatalEye x1
+05: 395(18B): Warlock  x3
+06: 394(18A): King-Ryu x2
+07: 398(18E): Blue D.  x2
+08: 399(18F): Ging-Ryu x1, RedGiant x1
+
+Lunar Subterrane6 -085
+-----------------
+01: 395(18B): Warlock  x3
+02: 396(18C): Blue D.  x1
+03: 397(18D): FatalEye x1
+04: 399(18F): Ging-Ryu x1, RedGiant x1
+05: 398(18E): Blue D.  x2
+06: 399(18F): Ging-Ryu x1, RedGiant x1
+07: 400(190): FatalEye x2
+08: 394(18A): King-Ryu x2
+
+Lunar Subterrane7 -086
+-----------------
+01: 401(191): D.Fossil x1
+02: 401(191): D.Fossil x1
+03: 402(192): King-Ryu x1
+04: 402(192): King-Ryu x1
+05: 403(193): King-Ryu x1, Ging-Ryu x1
+06: 403(193): King-Ryu x1, Ging-Ryu x1
+07: 404(194): Tricker  x1
+08: 405(195): Tricker  x1
+
+Lunar Subterrane8 -087
+-----------------
+01: 401(191): D.Fossil x1
+02: 402(192): King-Ryu x1
+03: 403(193): King-Ryu x1, Ging-Ryu x1
+04: 404(194): Tricker  x1
+05: 403(193): King-Ryu x1, Ging-Ryu x1
+06: 404(194): Tricker  x1
+07: 405(195): Tricker  x1
+08: 404(194): Tricker  x1
+
+Lunar Subterrane9 -088
+-----------------
+01: 407(197): EvilMask  x1
+02: 407(197): EvilMask  x1
+03: 419(1A3): Behehmoth x1
+04: 419(1A3): Behehmoth x1
+05: 409(199): Red D.    x1
+06: 409(199): Red D.    x1
+07: 409(199): Red D.    x1
+08: 410(19A): Red D.    x2
+
+Lunar Subterrane10 -089
+------------------
+01: 419(1A3): Behemoth x1
+02: 415(19F): Red D.   x3
+03: 411(19B): Red D.   x1, Behemoth x1
+04: 412(19C): EvilMask x1
+05: 413(19D): Behemoth x2
+06: 413(19D): Behemoth x2
+07: 414(19E): EvilMask x2
+08: 414(19E): EvilMask x2
+
+Lunar Path -090
+----------
+01: 374(176): Red Worm x1, Procyote x1, Juclyote x1
+02: 447(1BF): Red Worm x1, Grenade  x3
+03: 446(1BE): Slime    x1, Tofu     x1, Pudding  x1
+04: 445(1BD): Balloon  x2, Grenade  x2
+05: 372(174): Procyote x1, Pudding  x2
+06: 371(173): Procyote x1, Juclyote x2
+07: 375(177): Red Worm x2
+08: 375(177): Red Worm x2
+
+Lunar Path2 -091
+-----------
+01: 444(1BC): Pudding  x2, Grenade  x2
+02: 443(1BB): Pudding  x4
+03: 373(175): Juclyote x1, Procyote x2
+04: 373(175): Juclyote x1, Procyote x2
+05: 374(176): Red Worm x1, Procyote x1, Juclyote x1
+06: 375(177): Red Worm x2
+07: 375(177): Red Worm x2
+08: 375(177): Red Worm x2
+
+Lunar Subterrane-PinkPuff Room -092
+------------------------------
+01: 401(191): D.Fossil x1
+02: 402(192): King-Ryu x1
+03: 403(193): King-Ryu x1, Ging-Ryu x1
+04: 404(194): Tricker  x1
+05: 403(193): King-Ryu x1, Ging-Ryu x1
+06: 404(194): Tricker  x1
+07: 405(195): Tricker  x1
+08: 406(196): PinkPuff x5
