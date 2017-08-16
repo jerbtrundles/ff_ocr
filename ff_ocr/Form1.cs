@@ -4,7 +4,9 @@ using System.ComponentModel;
 using System.Data;
 using System.Diagnostics;
 using System.Drawing;
+using System.IO;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -28,8 +30,8 @@ namespace ff_ocr {
 
         int width = 389;
         int height = 292;
-        int x = 433;
-        int y = 719;
+        int x = 423;
+        int y = 709;
         char[] filters = { ' ', '1', '2', '3', '4', '5', '6', '7', '8', '9' };
 
         int noBattleCount = 0;
@@ -69,7 +71,7 @@ namespace ff_ocr {
             if (result.Lines.Count == 0) {
                 richTextBox1.Clear();
 
-                if (++noBattleCount == 5) {
+                if (++noBattleCount == 3) {
                     ClearEnemyData();
                 }
             }
@@ -131,8 +133,17 @@ namespace ff_ocr {
         }
 
         private void SetEnemy(Enemy enemy, PictureBox pb, RichTextBox rtb) {
-            pb.Load(enemy.ImageURL);
+            pb.Image = Image.FromFile(enemy.ImagePath);
             rtb.Text = enemy.FullString;
         }
+
+        //private void DownloadImages() {
+        //    Directory.CreateDirectory("images");
+        //    using (WebClient client = new WebClient()) {
+        //        foreach (Enemy e in Enemies) {
+        //            client.DownloadFile(new Uri(e.ImageURL), Path.Combine("images", e.ImageURLStem));                    
+        //        }
+        //    }
+        //}
     }
 }

@@ -1038,6 +1038,9 @@
     </tr>
   </table>
   <table width="600" border="6" bordercolor="00349a" cellpadding="2" cellspacing="0">
+  <verified/>
+  <strings>
+  <string>CaveT0Qd</string></strings>
     <tr bgcolor="00349a">
       <td colspan="11">
         <b>CaveToad</b>
@@ -2220,6 +2223,10 @@
     </tr>
   </table>
   <table width="600" border="6" bordercolor="00349a" cellpadding="2" cellspacing="0">
+  <verified/>
+  <strings>
+  <string>EvilShe</string>
+  </strings>
     <tr bgcolor="00349a">
       <td colspan="11">
         <b>EvilShel</b>
@@ -2590,9 +2597,12 @@
     </tr>
   </table>
   <table width="600" border="6" bordercolor="00349a" cellpadding="2" cellspacing="0">
+  <verified/>
+  <strings>
+  <string>Aigator</string></strings>
     <tr bgcolor="00349a">
       <td colspan="11">
-        <b>Gator</b>
+        <b>Aligator</b>
       </td>
     </tr>
     <tr>
@@ -3966,6 +3976,7 @@
     </tr>
   </table>
   <table width="600" border="6" bordercolor="00349a" cellpadding="2" cellspacing="0">
+  <verified/>
     <tr bgcolor="00349a">
       <td colspan="11">
         <b>Jelly</b>
@@ -4606,6 +4617,9 @@
     </tr>
   </table>
   <table width="600" border="6" bordercolor="00349a" cellpadding="2" cellspacing="0">
+  <verified/>
+  <strings>
+  <string>HadToad</string></strings>
     <tr bgcolor="00349a">
       <td colspan="11">
         <b>MadToad</b>
@@ -5361,6 +5375,7 @@
     </tr>
   </table>
   <table width="600" border="6" bordercolor="00349a" cellpadding="2" cellspacing="0">
+  <verified/>
     <tr bgcolor="00349a">
       <td colspan="11">
         <b>Pike</b>
@@ -7411,6 +7426,7 @@
     <verified/>
     <strings>
       <string>SuordRQt</string>
+	  <string>SwordRQt</string>
       <string>SwordRat</string>
     </strings>
     <tr bgcolor="00349a">
@@ -7530,6 +7546,9 @@
     </tr>
   </table>
   <table width="600" border="6" bordercolor="00349a" cellpadding="2" cellspacing="0">
+  <verified/>
+  <strings>
+  <string>TinyHage</string></strings>
     <tr bgcolor="00349a">
       <td colspan="11">
         <b>Tiny Mage</b>
@@ -8414,9 +8433,12 @@
     </tr>
   </table>
   <table width="600" border="6" bordercolor="00349a" cellpadding="2" cellspacing="0">
+  <verified/>
+  <strings>
+  <string>Watereug</string></strings>
     <tr bgcolor="00349a">
       <td colspan="11">
-        <b>Waterbug</b>
+        <b>WaterBug</b>
       </td>
     </tr>
     <tr>
@@ -8658,6 +8680,7 @@
     </tr>
   </table>
   <table width="600" border="6" bordercolor="00349a" cellpadding="2" cellspacing="0">
+  <verified/>
     <tr bgcolor="00349a">
       <td colspan="11">
         <b>Zombie</b>
@@ -8970,6 +8993,9 @@
     </tr>
   </table>
   <table width="600" border="6" bordercolor="00349a" cellpadding="2" cellspacing="0">
+  <verified/>
+  <strings>
+  <string>Octonanm</string></strings>
     <tr bgcolor="00349a">
       <td colspan="11">
         <b>Octomamm</b>
@@ -9371,9 +9397,10 @@
     </tr>
   </table>
   <table width="600" border="6" bordercolor="00349a" cellpadding="2" cellspacing="0">
+  <verified/>
     <tr bgcolor="00349a">
       <td colspan="11">
-        <b>Waterhag</b>
+        <b>WaterHag</b>
       </td>
     </tr>
     <tr>

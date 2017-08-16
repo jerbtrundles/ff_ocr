@@ -10,7 +10,9 @@ namespace ff_ocr {
         public List<string> MatchStrings = new List<string>();
 
         public string Name { get; set; }
-        public string ImageURL { get; set; }
+        //public string ImageURLStem { get; set; }
+        //public string ImageURL { get; set; }
+        public string ImagePath { get; set; }
         public string Level { get; set; }
         public string HP { get; set; }
         public string Attack { get; set; }
@@ -68,7 +70,8 @@ namespace ff_ocr {
             //
 
             XElement eSecondRow = eFirstRow.ElementsAfterSelf().First();
-            ImageURL = "http://www.finalfantasykingdom.net/" + eSecondRow.Element("td").Element("img").Attribute("src").Value;
+            ImagePath = eSecondRow.Element("td").Element("img").Attribute("src").Value.Replace("4/", "images\\");
+            //ImageURL = "http://www.finalfantasykingdom.net/" + eSecondRow.Element("td").Element("img").Attribute("src").Value;            
 
             //
 
