@@ -28,10 +28,11 @@ namespace ff_ocr {
         Enemy enemy2;
         Enemy enemy3;
 
-        int width = 389;
-        int height = 292;
-        int x = 423;
-        int y = 709;
+        int width = 330;
+        int height = 210;
+        int x = 410;
+        int y = 720;
+
         char[] filters = { ' ', '1', '2', '3', '4', '5', '6', '7', '8', '9' };
 
         int noBattleCount = 0;
@@ -42,13 +43,24 @@ namespace ff_ocr {
 
         private async void Form1_Load(object sender, EventArgs e) {
             ocr = OcrEngine.TryCreateFromUserProfileLanguages();
+
+            txtCaptureX.Text = x.ToString();
+            txtCaptureY.Text = y.ToString();
+            txtCaptureWidth.Text = width.ToString();
+            txtCaptureHeight.Text = height.ToString();
             bmp = new Bitmap(width, height);
 
-            XDocument doc = XDocument.Load(@"ffiv_enemies.xml");
-            foreach (XElement eTable in doc.Root.Elements("table")) {
-                Enemy enemy = new Enemy(eTable);
-                Enemies.Add(enemy);
-            }
+            XDocument doc = XDocument.Load(@"enemies.xml");
+            Enemies = doc.Root.Elements("enemy").Select(x => new Enemy(x)).ToList();
+
+            //XDocument doc = XDocument.Load(@"ffiv_enemies.xml");
+            //foreach (XElement eTable in doc.Root.Elements("table")) {
+            //    Enemy enemy = new Enemy(eTable);
+            //    Enemies.Add(enemy);
+            //}
+
+            //XElement eOutput = new XElement("enemies", Enemies.Select(x => x.ToElement()));
+            //eOutput.Save(@"c:\users\baxte\desktop\enemies.xml");
         }
 
         private async Task Recognize() {
@@ -60,6 +72,7 @@ namespace ff_ocr {
             }
 
             bmp.Save(path);
+            pbCapture.Image = bmp;
 
             StorageFile input = await StorageFile.GetFileFromPathAsync(path);
             using (IRandomAccessStream stream = await input.OpenAsync(FileAccessMode.Read)) {
@@ -135,6 +148,66 @@ namespace ff_ocr {
         private void SetEnemy(Enemy enemy, PictureBox pb, RichTextBox rtb) {
             pb.Image = Image.FromFile(enemy.ImagePath);
             rtb.Text = enemy.FullString;
+        }
+
+        private void btnSetCaptureData_Click(object sender, EventArgs e) {
+            if(!int.TryParse(txtCaptureX.Text, out int newX)) {
+                lblCaptureStatus.Text = "Error: X value is not a number.";
+                return;
+            }
+
+            if (!int.TryParse(txtCaptureY.Text, out int newY)) {
+                lblCaptureStatus.Text = "Error: Y value is not a number.";
+                return;
+            }
+
+
+            if (!int.TryParse(txtCaptureWidth.Text, out int newWidth)) {
+                lblCaptureStatus.Text = "Error: Width value is not a number.";
+                return;
+            }
+
+            if (!int.TryParse(txtCaptureHeight.Text, out int newHeight)) {
+                lblCaptureStatus.Text = "Error: Height value is not a number.";
+                return;
+            }
+
+            if(newX < 10 || newX > 1000) {
+                lblCaptureStatus.Text = "Error: X value must be between 10 and 1000.";
+                return;
+            }
+
+            if (newY < 10 || newY > 1000) {
+                lblCaptureStatus.Text = "Error: Y value must be between 10 and 1000.";
+                return;
+            }
+
+            if (newWidth < 10 || newWidth > 1000) {
+                lblCaptureStatus.Text = "Error: Width value must be between 10 and 1000.";
+                return;
+            }
+
+            if (newHeight < 10 || newHeight > 1000) {
+                lblCaptureStatus.Text = "Error: Height value must be between 10 and 1000.";
+                return;
+            }
+
+            x = newX;
+            y = newY;
+            width = newWidth;
+            height = newHeight;
+            bmp = new Bitmap(width, height);
+            lblCaptureStatus.Text = "Capture data successfully set.";
+            timer2.Enabled = true;
+        }
+
+        private void txtNumeric_KeyPress(object sender, KeyPressEventArgs e) {
+            if (!char.IsNumber(e.KeyChar) && !char.IsControl(e.KeyChar)) { e.Handled = true; }
+        }
+
+        private void timer2_Tick(object sender, EventArgs e) {
+            lblCaptureStatus.Text = string.Empty;
+            timer2.Enabled = false;
         }
 
         //private void DownloadImages() {

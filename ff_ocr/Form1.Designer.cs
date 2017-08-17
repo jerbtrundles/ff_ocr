@@ -35,19 +35,34 @@
             this.txtEnemy3 = new System.Windows.Forms.RichTextBox();
             this.pbEnemy3 = new System.Windows.Forms.PictureBox();
             this.grpEnemy3 = new System.Windows.Forms.GroupBox();
+            this.pbCapture = new System.Windows.Forms.PictureBox();
+            this.grpCapture = new System.Windows.Forms.GroupBox();
+            this.btnSetCaptureData = new System.Windows.Forms.Button();
+            this.txtCaptureHeight = new System.Windows.Forms.TextBox();
+            this.txtCaptureWidth = new System.Windows.Forms.TextBox();
+            this.txtCaptureY = new System.Windows.Forms.TextBox();
+            this.txtCaptureX = new System.Windows.Forms.TextBox();
+            this.lblCaptureHeight = new System.Windows.Forms.Label();
+            this.lblCaptureWidth = new System.Windows.Forms.Label();
+            this.lblCaptureY = new System.Windows.Forms.Label();
+            this.lblCaptureX = new System.Windows.Forms.Label();
+            this.lblCaptureStatus = new System.Windows.Forms.Label();
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pbEnemy1)).BeginInit();
             this.grpEnemy1.SuspendLayout();
             this.grpEnemy2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbEnemy2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbEnemy3)).BeginInit();
             this.grpEnemy3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbCapture)).BeginInit();
+            this.grpCapture.SuspendLayout();
             this.SuspendLayout();
             // 
             // richTextBox1
             // 
             this.richTextBox1.Location = new System.Drawing.Point(12, 12);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(227, 550);
+            this.richTextBox1.Size = new System.Drawing.Size(227, 290);
             this.richTextBox1.TabIndex = 0;
             this.richTextBox1.Text = "";
             // 
@@ -67,9 +82,10 @@
             // 
             // grpEnemy1
             // 
+            this.grpEnemy1.BackColor = System.Drawing.SystemColors.Control;
             this.grpEnemy1.Controls.Add(this.txtEnemy1);
             this.grpEnemy1.Controls.Add(this.pbEnemy1);
-            this.grpEnemy1.Location = new System.Drawing.Point(245, 12);
+            this.grpEnemy1.Location = new System.Drawing.Point(692, 12);
             this.grpEnemy1.Name = "grpEnemy1";
             this.grpEnemy1.Size = new System.Drawing.Size(388, 272);
             this.grpEnemy1.TabIndex = 5;
@@ -86,9 +102,10 @@
             // 
             // grpEnemy2
             // 
+            this.grpEnemy2.BackColor = System.Drawing.SystemColors.Control;
             this.grpEnemy2.Controls.Add(this.txtEnemy2);
             this.grpEnemy2.Controls.Add(this.pbEnemy2);
-            this.grpEnemy2.Location = new System.Drawing.Point(245, 290);
+            this.grpEnemy2.Location = new System.Drawing.Point(692, 290);
             this.grpEnemy2.Name = "grpEnemy2";
             this.grpEnemy2.Size = new System.Drawing.Size(388, 272);
             this.grpEnemy2.TabIndex = 6;
@@ -129,20 +146,143 @@
             // 
             // grpEnemy3
             // 
+            this.grpEnemy3.BackColor = System.Drawing.SystemColors.Control;
             this.grpEnemy3.Controls.Add(this.txtEnemy3);
             this.grpEnemy3.Controls.Add(this.pbEnemy3);
-            this.grpEnemy3.Location = new System.Drawing.Point(639, 12);
+            this.grpEnemy3.Location = new System.Drawing.Point(692, 568);
             this.grpEnemy3.Name = "grpEnemy3";
             this.grpEnemy3.Size = new System.Drawing.Size(388, 272);
             this.grpEnemy3.TabIndex = 6;
             this.grpEnemy3.TabStop = false;
             this.grpEnemy3.Text = "Enemy 3";
             // 
+            // pbCapture
+            // 
+            this.pbCapture.Location = new System.Drawing.Point(9, 58);
+            this.pbCapture.Name = "pbCapture";
+            this.pbCapture.Size = new System.Drawing.Size(426, 439);
+            this.pbCapture.TabIndex = 7;
+            this.pbCapture.TabStop = false;
+            // 
+            // grpCapture
+            // 
+            this.grpCapture.BackColor = System.Drawing.SystemColors.Control;
+            this.grpCapture.Controls.Add(this.lblCaptureStatus);
+            this.grpCapture.Controls.Add(this.btnSetCaptureData);
+            this.grpCapture.Controls.Add(this.txtCaptureHeight);
+            this.grpCapture.Controls.Add(this.txtCaptureWidth);
+            this.grpCapture.Controls.Add(this.txtCaptureY);
+            this.grpCapture.Controls.Add(this.txtCaptureX);
+            this.grpCapture.Controls.Add(this.lblCaptureHeight);
+            this.grpCapture.Controls.Add(this.lblCaptureWidth);
+            this.grpCapture.Controls.Add(this.lblCaptureY);
+            this.grpCapture.Controls.Add(this.lblCaptureX);
+            this.grpCapture.Controls.Add(this.pbCapture);
+            this.grpCapture.Location = new System.Drawing.Point(245, 12);
+            this.grpCapture.Name = "grpCapture";
+            this.grpCapture.Size = new System.Drawing.Size(441, 503);
+            this.grpCapture.TabIndex = 8;
+            this.grpCapture.TabStop = false;
+            this.grpCapture.Text = "Capture";
+            // 
+            // btnSetCaptureData
+            // 
+            this.btnSetCaptureData.Location = new System.Drawing.Point(381, 17);
+            this.btnSetCaptureData.Name = "btnSetCaptureData";
+            this.btnSetCaptureData.Size = new System.Drawing.Size(54, 23);
+            this.btnSetCaptureData.TabIndex = 16;
+            this.btnSetCaptureData.Text = "&Set";
+            this.btnSetCaptureData.UseVisualStyleBackColor = true;
+            this.btnSetCaptureData.Click += new System.EventHandler(this.btnSetCaptureData_Click);
+            // 
+            // txtCaptureHeight
+            // 
+            this.txtCaptureHeight.Location = new System.Drawing.Point(308, 19);
+            this.txtCaptureHeight.Name = "txtCaptureHeight";
+            this.txtCaptureHeight.Size = new System.Drawing.Size(49, 20);
+            this.txtCaptureHeight.TabIndex = 15;
+            this.txtCaptureHeight.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNumeric_KeyPress);
+            // 
+            // txtCaptureWidth
+            // 
+            this.txtCaptureWidth.Location = new System.Drawing.Point(206, 19);
+            this.txtCaptureWidth.Name = "txtCaptureWidth";
+            this.txtCaptureWidth.Size = new System.Drawing.Size(49, 20);
+            this.txtCaptureWidth.TabIndex = 14;
+            this.txtCaptureWidth.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNumeric_KeyPress);
+            // 
+            // txtCaptureY
+            // 
+            this.txtCaptureY.Location = new System.Drawing.Point(107, 19);
+            this.txtCaptureY.Name = "txtCaptureY";
+            this.txtCaptureY.Size = new System.Drawing.Size(49, 20);
+            this.txtCaptureY.TabIndex = 13;
+            this.txtCaptureY.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNumeric_KeyPress);
+            // 
+            // txtCaptureX
+            // 
+            this.txtCaptureX.Location = new System.Drawing.Point(29, 19);
+            this.txtCaptureX.Name = "txtCaptureX";
+            this.txtCaptureX.Size = new System.Drawing.Size(49, 20);
+            this.txtCaptureX.TabIndex = 12;
+            this.txtCaptureX.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNumeric_KeyPress);
+            // 
+            // lblCaptureHeight
+            // 
+            this.lblCaptureHeight.AutoSize = true;
+            this.lblCaptureHeight.Location = new System.Drawing.Point(261, 22);
+            this.lblCaptureHeight.Name = "lblCaptureHeight";
+            this.lblCaptureHeight.Size = new System.Drawing.Size(41, 13);
+            this.lblCaptureHeight.TabIndex = 11;
+            this.lblCaptureHeight.Text = "Height:";
+            // 
+            // lblCaptureWidth
+            // 
+            this.lblCaptureWidth.AutoSize = true;
+            this.lblCaptureWidth.Location = new System.Drawing.Point(162, 22);
+            this.lblCaptureWidth.Name = "lblCaptureWidth";
+            this.lblCaptureWidth.Size = new System.Drawing.Size(38, 13);
+            this.lblCaptureWidth.TabIndex = 10;
+            this.lblCaptureWidth.Text = "Width:";
+            // 
+            // lblCaptureY
+            // 
+            this.lblCaptureY.AutoSize = true;
+            this.lblCaptureY.Location = new System.Drawing.Point(84, 22);
+            this.lblCaptureY.Name = "lblCaptureY";
+            this.lblCaptureY.Size = new System.Drawing.Size(17, 13);
+            this.lblCaptureY.TabIndex = 9;
+            this.lblCaptureY.Text = "Y:";
+            // 
+            // lblCaptureX
+            // 
+            this.lblCaptureX.AutoSize = true;
+            this.lblCaptureX.Location = new System.Drawing.Point(6, 22);
+            this.lblCaptureX.Name = "lblCaptureX";
+            this.lblCaptureX.Size = new System.Drawing.Size(17, 13);
+            this.lblCaptureX.TabIndex = 8;
+            this.lblCaptureX.Text = "X:";
+            // 
+            // lblCaptureStatus
+            // 
+            this.lblCaptureStatus.AutoSize = true;
+            this.lblCaptureStatus.Location = new System.Drawing.Point(6, 42);
+            this.lblCaptureStatus.Name = "lblCaptureStatus";
+            this.lblCaptureStatus.Size = new System.Drawing.Size(0, 13);
+            this.lblCaptureStatus.TabIndex = 17;
+            // 
+            // timer2
+            // 
+            this.timer2.Interval = 3000;
+            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1032, 578);
+            this.BackColor = System.Drawing.SystemColors.ControlText;
+            this.ClientSize = new System.Drawing.Size(1096, 848);
+            this.Controls.Add(this.grpCapture);
             this.Controls.Add(this.grpEnemy3);
             this.Controls.Add(this.grpEnemy2);
             this.Controls.Add(this.grpEnemy1);
@@ -156,6 +296,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbEnemy2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbEnemy3)).EndInit();
             this.grpEnemy3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbCapture)).EndInit();
+            this.grpCapture.ResumeLayout(false);
+            this.grpCapture.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -173,6 +316,19 @@
         private System.Windows.Forms.RichTextBox txtEnemy3;
         private System.Windows.Forms.PictureBox pbEnemy3;
         private System.Windows.Forms.GroupBox grpEnemy3;
+        private System.Windows.Forms.PictureBox pbCapture;
+        private System.Windows.Forms.GroupBox grpCapture;
+        private System.Windows.Forms.TextBox txtCaptureHeight;
+        private System.Windows.Forms.TextBox txtCaptureWidth;
+        private System.Windows.Forms.TextBox txtCaptureY;
+        private System.Windows.Forms.TextBox txtCaptureX;
+        private System.Windows.Forms.Label lblCaptureHeight;
+        private System.Windows.Forms.Label lblCaptureWidth;
+        private System.Windows.Forms.Label lblCaptureY;
+        private System.Windows.Forms.Label lblCaptureX;
+        private System.Windows.Forms.Button btnSetCaptureData;
+        private System.Windows.Forms.Label lblCaptureStatus;
+        private System.Windows.Forms.Timer timer2;
     }
 }
 

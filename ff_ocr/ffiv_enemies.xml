@@ -290,6 +290,7 @@
     </tr>
   </table>
   <table width="600" border="6" bordercolor="00349a" cellpadding="2" cellspacing="0">
+  <verified/><strings><string>Easilisk</string></strings>
     <tr bgcolor="00349a">
       <td colspan="11">
         <b>Basilisk</b>
@@ -1511,6 +1512,9 @@
     </tr>
   </table>
   <table width="600" border="6" bordercolor="00349a" cellpadding="2" cellspacing="0">
+  <verified/>
+  <strings>
+  <string>Crean</string></strings>
     <tr bgcolor="00349a">
       <td colspan="11">
         <b>Cream</b>
@@ -3798,6 +3802,9 @@
     </tr>
   </table>
   <table width="600" border="6" bordercolor="00349a" cellpadding="2" cellspacing="0">
+  <verified/>
+  <strings>
+  <string>InpCap.</string></strings>
     <tr bgcolor="00349a">
       <td colspan="11">
         <b>Imp Cap.</b>
@@ -6448,6 +6455,7 @@
   </table>
   <table width="600" border="6" bordercolor="00349a" cellpadding="2" cellspacing="0">
     <verified/>
+	<strings><string>SandHan</string></strings>
     <tr bgcolor="00349a">
       <td colspan="11">
         <b>Sand Man</b>
@@ -8081,6 +8089,7 @@
     </tr>
   </table>
   <table width="600" border="6" bordercolor="00349a" cellpadding="2" cellspacing="0">
+  <verified/><strings><string>Turte</string></strings>
     <tr bgcolor="00349a">
       <td colspan="11">
         <b>Turtle</b>
@@ -9055,6 +9064,7 @@
     </tr>
   </table>
   <table width="600" border="6" bordercolor="00349a" cellpadding="2" cellspacing="0">
+  <verified/>
     <tr bgcolor="00349a">
       <td colspan="11">
         <b>Antlion</b>
@@ -9285,6 +9295,7 @@
     </tr>
   </table>
   <table width="600" border="6" bordercolor="00349a" cellpadding="2" cellspacing="0">
+  <verified/>
     <tr bgcolor="00349a">
       <td colspan="11">
         <b>Weeper</b>

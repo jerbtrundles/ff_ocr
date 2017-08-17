@@ -1,20 +1,3 @@
-02: 032(020): Imp      x3, Imp Cap. x1
-03: 033(021): Turtle   x1, Imp      x2
-04: 034(022): Cream    x4
-05: 035(023): Basilisk x1, Imp      x3
-06: 036(024): Turtle   x2
-07: 037(025): Weeper   x1, Turtle   x1, Basilisk x1
-08: 037(025): Weeper   x1, Turtle   x1, Basilisk x1
-
-Antlion's Nest B2F/Nest -022
----------------
-01: 034(022): Cream    x4
-02: 035(023): Basilisk x1, Imp      x3
-03: 036(024): Turtle   x2
-04: 037(025): Weeper   x1, Turtle   x1, Basilisk x1
-05: 038(026): Basilisk x1, Turtle   x1
-06: 039(027): Weeper   x2
-
 Mt. Hobs West -023
 -------------
 01: 040(028): Skelton  x4
