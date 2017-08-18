@@ -53,6 +53,8 @@ namespace ff_ocr {
             XDocument doc = XDocument.Load(@"enemies.xml");
             Enemies = doc.Root.Elements("enemy").Select(x => new Enemy(x)).ToList();
 
+            //LoadExtraData();
+
             //XDocument doc = XDocument.Load(@"ffiv_enemies.xml");
             //foreach (XElement eTable in doc.Root.Elements("table")) {
             //    Enemy enemy = new Enemy(eTable);
@@ -60,11 +62,47 @@ namespace ff_ocr {
             //}
 
             //XElement eOutput = new XElement("enemies", Enemies.Select(x => x.ToElement()));
-            //eOutput.Save(@"c:\users\baxte\desktop\enemies.xml");
+            //eOutput.Save(@"c:\users\joshbax\desktop\enemies.xml");
+        }
+
+        private void LoadExtraData() {
+            List<string> matches = new List<string>();
+            List<string> nonMatches = new List<string>();
+
+            string path = @"extra_data.txt";
+            string[] lines = File.ReadAllLines(path);
+            foreach (string line in lines) {
+                if (line.StartsWith("*") || line.StartsWith("=")) { continue; }
+                string[] tokens = line.Split(" ".ToCharArray(), StringSplitOptions.RemoveEmptyEntries);
+                int i = 1;
+
+                StringBuilder sb = new StringBuilder(tokens[0]);
+                while (i < tokens.Length && char.IsLetter(tokens[i][0])) {
+                    sb.Append(" " + tokens[i++]);
+                }
+                string name = sb.ToString();
+
+                Enemy e = Enemies.Find(x => x.Name.ToLower().Replace(" ", "").Replace(".", "").Replace("-", "") == name.ToLower().Replace(" ", "").Replace(".", "").Replace("-", ""));
+                if (e != null) {
+                    // match
+                    // matches.Add(name);
+                    e.HP2 = tokens[i];
+                    e.Experience2 = tokens[++i];
+                    e.GP2 = tokens[++i];
+                }
+                //else {
+                //    // no match
+                //    nonMatches.Add(name);
+                //}
+            }
+
+            //List<Enemy> n = Enemies.Where(x => matches.Find(y => x.Name.ToLower().Replace(" ", "").Replace(".", "").Replace("-", "") == y.ToLower().Replace(" ", "").Replace(".", "").Replace("-", "")) == null).ToList();
+
+            //int j = 0;
         }
 
         private async Task Recognize() {
-            string path = @"c:\users\baxte\desktop\temp.bmp";
+            string path = @"c:\users\joshbax\desktop\temp.bmp";
             Stopwatch s = Stopwatch.StartNew();
 
             using (Graphics g = Graphics.FromImage(bmp)) {
@@ -151,7 +189,7 @@ namespace ff_ocr {
         }
 
         private void btnSetCaptureData_Click(object sender, EventArgs e) {
-            if(!int.TryParse(txtCaptureX.Text, out int newX)) {
+            if (!int.TryParse(txtCaptureX.Text, out int newX)) {
                 lblCaptureStatus.Text = "Error: X value is not a number.";
                 return;
             }
@@ -172,7 +210,7 @@ namespace ff_ocr {
                 return;
             }
 
-            if(newX < 10 || newX > 1000) {
+            if (newX < 10 || newX > 1000) {
                 lblCaptureStatus.Text = "Error: X value must be between 10 and 1000.";
                 return;
             }

@@ -1,0 +1,219 @@
+Alert          1425      2100      380                 Beam,Alert
+Aligator       150       840       95        I
+Antlion        1000      1500      800                 Counter
+Aquaworm       638       1200      350       L         Wave
+Arachne        3500      4400      585       I,A       Quake
+Armadilo       300       1600      195
+Asura          23000     20000     0                   Cure3,Cure4,Life1
+Attacker       2000      150000    10333               Maser
+=======================================================================
+Bahamut        37000     35000     0                   Meganuke
+Left Arm    350       10        0
+Right Arm    350       10        0
+Baigan   3500      4800      3000                Recover,Wall
+Balloon        600       2480      315       A
+Balnab         3927 0 0
+Basilisk       90        120       30
+Beamer         1800      3250      890                 Beam
+Behemoth       16000     58700     65000               Storm
+Black Cat      593       2800      345                 Bluster
+Black Liz      700       1300      45        I         Petrify
+BladeMan       1050      2600      215       S
+Blue D.        13200     3600      40200               Blizzard
+Bomb           50        370       80
+Breath         31300     60000     50000               Report,Blast
+Brena  	       300 0 0
+======================================================================
+Cal            1000 0 0
+Calbrena       4624      19000     7000
+Cannibal        370       960       220       F
+Carapace       700       1350      230       I
+Cave Bat       150       630       150       S,A
+Cave Naga      255       750       205       S
+Cave Toad      44        90        25        I
+Centaur        380       1000      175
+Centpede       600       2800      345
+Chimera        700       2875      230
+Cindy          4300      3000      3000                Remedy
+Clapper        7000      8000      900       A
+Cocatrice       100       280       120       A         Stone
+Conjurer       3000      3700      475
+CPU            20000     150000    10333               Globe99,Wall
+Cream          55        ??        ??
+Crocdile       292       870       300	     I         2XAttack
+========================================================================
+Dark Elf       3000      6000      5000
+Dark Imp       199       1940      45
+Darktree       1800      5500      525       F
+D. Bone        9000      14100     6750      F         Poison
+D. Fossil      10000     15100     8100      F         Curse
+D. Knight      1000      0         0
+D. Lunar       21000     100000    0         F         Wall,Remedy,Virus,Fire
+MechD      15000     41500     2550      F
+D. Mist        465       700       200                 Coldmist
+Defender       2000      150000    10333               Remedy
+Kain        65000 0 0                   Jump
+Dr. Lugae   4416 0 0
+Lugaeborg   6600      15000     4000                Gas,Poison,Beam
+=======================================================================
+Eagle          18        30        10        A
+Egg            700                           I         Hatch
+Elecfish       200       650       230       A
+Epeegirl       390       1260      200
+EvilDoll       300       1420      270
+Evil Mask      25500     50000     65000               Wall,Virus,Nuke,White
+Evil Shel      58        110       30        L
+Evil Wall      19000     23000     8000                Crush,Petrify
+=======================================================================
+Fangshel       300       850       350       L
+Veteran      25000     40000     65200     A         Count
+Fiend          2980      6400      650
+Fighter        65        410       100
+FlameDog       1221      1720      245       I         Fire
+FlameMan       579       1720      300       I
+Float-Eye      20        40        10        A
+=======================================================================
+Gargoyle       160       318       100       S,A
+General        320       610       155
+Ghast          170       200       75        F,S       Drain
+Ghost          1100      3700      365                 Fire2
+Ghoul          120       930       200       F,S
+Giant Bat      399       1280      365       F,A       Vampire
+Ging-Ryu       7500      25000     19000
+Golbez         5000      20000     11000     F,S       HoldGas,Call,Lit3,Fir2
+GrayBomb       100       450       105                 Explode
+Green D.       2200      ???       ???		       Thunder(DMG)
+Gremlin        385       1500      275       F         
+Grenade        820       2650      630       A
+Grudger        1400      2460      150       S
+Guard          200       720       500                 Size,Piggy
+=======================================================================
+Hooligan       1900      4090      485       S,A       Weak
+Horseman       3000      9900      1220
+HugeCell       555       1510      255                 Remedy
+Huge Naga      1200      3600      240                 Mute
+Hydra          200       680       230       I,L
+=======================================================================
+Ice Beast      445       1570      280       F
+Ice Liz        400       1500      290       F
+Imp            6         20        10
+Imp Cap        37        190       50
+IronBack       100       1100      235
+IronMan        2500      3700      385
+=======================================================================
+Jelly          35        140       35        F
+Juclyote       1700      7200      1560
+=======================================================================
+Kainazzo       4000      5500      4000      I         Wave
+Karate   4000      0         0
+Kary           2700      13100     3500		       Hug
+K. Eblan       60000     0 0
+King-Ryu       8200      30000     23000               Blitz,Entangle
+=======================================================================
+Lamia          1200      2060      1210                Charm
+Larva          28        ???       ???		       Counter vs. Magic
+Last Arm       9500      8800      340                 Search,Magnet,Fission
+Leviatan       35000     28000     0         L         Ice2,Bigwave
+Lilith         320       2750      365       F
+=======================================================================
+MacGiant       8500      31000     1500
+Machine        3600      8200      985
+Mad Ogre       1700      2370      270
+Mad Toad       59        130       35        I
+Mage           500       1100      235
+Mantcore       2000      35000     1200                Blaze
+Marion         473       1290      195                 Call
+Medusa         430       1250      225                 Glance
+Milon          3100      3000      3000                Lit1
+Milon Z.       3000      4000      3000      F,S,A     Poison
+Mind           12300     65000     50000               Charm,Armor
+Mindy          2200      3000      3000                L2 Black Magic
+Malboro        1999      11000     460                 Digest,Breath
+Mombomb        10800     1750      1200      D         Explode
+MoonCell       980       3300      1100                Remedy
+=======================================================================
+Naga           900       1120      150
+Needler        110       370       55                  Needle
+=======================================================================
+Octomamm       2350      1200      500       L,D
+Odin           20500     18000     0         L         Sword Attack
+Officer        221       400       80
+Ogopogo        37000     61100     0                   Blaze,Bigwave
+Ogre           865       1100      240       S
+=======================================================================
+Pale Dim       27300     59000     0                   Slow
+Panther        285       830       255       S         Bluster
+Pike           65        120       35        L
+Pink Puff      10000 0 0	               Dance
+Piranha        105       460       145       L
+Plague         28000     31200     550       A         Count(X All)
+Procyote       2200      8100      1850                Poison
+Pudding        1050      3060      1300
+Puppet         256       860       180       F
+Python         90        760       225       I,S
+=======================================================================
+Q. Eblan       60000     0 0
+Q Lamia    11000   0 0                                Charm
+=======================================================================
+Zuu          941       740       700       A         2X Attack
+Red Bone       170       670       170       F,S
+Red D.         15000     51800     65000     I         Heat Ray,2Xattack
+Red Eye        2000      3500      465       A
+Red Giant      11800     18900     7000                Emission,Beam
+Red Worm       7000      7350      310       F         Vampire
+Revenant       160       680       190       F,S
+Roc            999       1410      150       A         2X Attack
+Roc Baby       50        1010      85        A         Stone
+Roc Larva     800       2830      40
+Roc Moth      850       3200      315       A         Powder
+Rubicant       25200     25000     7000      I         Fire2,Glance
+=======================================================================
+Sand Man       20        80        20        I
+Sand Moth      40        ??        ??        A
+Sand Pede      60        80        20
+Sand Worm      75        88        25
+Sandy          2500      3000      3000                Wall
+Searcher       5500      18200     900                 Alert,Beam
+Shadow         ???       ???       ???
+Skeleton        50        240       120       F,S       Lit1
+Skull          740       1055      120       F,S
+Slime          50        760       50        F
+Soldier        27        160       55
+Sorcerer       1000      2370      275
+Soul           150       160       165       S         Fire1
+Spirit         50        290       125       S         Fire1
+Stale Man      2100      2100      445       I
+StingRat       300       1210      220                 Needle
+Stone Man      2000      2950      240       I
+Sword Man      320       1100      175       F,S
+Sword Rat      30        68        20                  Needle
+=======================================================================
+Tiny Mage      69        260       100
+TinyToad       400       1850      335       I         Toad
+Toad Lady      2960      3500      600                 Toad
+Tofu           102       1060      385       I
+Tortoise       400       1700      235       I
+Trapdoor       5000      31100     4500                Search,Disrupt
+TrapRose       300       1210      35        F         Pollen
+Treant         260       1000      150       F
+Tricker        12000     21000     10700     L         Fast,Lit3
+Turtle         150       240       80        I
+=======================================================================
+Valvalis       6000      9500      5500                Weak,Ray
+VampGirl       250       819       195       F,S
+VampLady       2350      4600      220       F,S
+=======================================================================
+Warlock        4250      17300     2400                Drain,Psych L2 blacks
+Warrior        2400      4300      575
+Water Bug      110       230       80        L         Remedy
+Water Hag      48        800       100       L
+Weeper         100       160       40
+Were Bat       800       2050      355       F,A       Vampire
+Witch          300       1670      330                 Slow
+Wyvern         25000     64300     0                   Meganuke
+=======================================================================
+Yellow D.      1800      34000     1500                Thunder
+=======================================================================
+Zemus          11000 0 0
+Zeromus        105000    0         0                   Blk.Hole,Big Bang,White,Meteo,Nuke
+Zombie         40        120       35        F,S

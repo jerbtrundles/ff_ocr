@@ -30,6 +30,10 @@ namespace ff_ocr {
         public string Steal { get; set; }
         public string Drop { get; set; }
 
+        public string HP2 { get; set; }
+        public string GP2 { get; set; }
+        public string Experience2 { get; set; }
+
         public XElement ToElement() {
             XElement e = new XElement("enemy");
             e.Add(new XElement("name", Name));
@@ -51,6 +55,10 @@ namespace ff_ocr {
             e.Add(new XElement("absorbs", Absorbs));
             e.Add(new XElement("resists", Resists));
             e.Add(new XElement("image_path", ImagePath));
+
+            e.Add(new XElement("hp2", HP2));
+            e.Add(new XElement("gp2", GP2));
+            e.Add(new XElement("experience2", Experience2));
             return e;
         }
 
@@ -74,6 +82,13 @@ namespace ff_ocr {
             Absorbs = e.Element("absorbs").Value;
             Resists = e.Element("resists").Value;
             ImagePath = e.Element("image_path").Value;
+
+            XElement eHP2 = e.Element("hp2");
+            if (eHP2 != null) { HP2 = eHP2.Value; }
+            XElement eGP2 = e.Element("gp2");
+            if (eGP2 != null) { HP2 = eGP2.Value; }
+            XElement eExperience2 = e.Element("experience2");
+            if (eExperience2 != null) { HP2 = eExperience2.Value; }
         }
 
         public string FullString {
@@ -82,6 +97,7 @@ namespace ff_ocr {
                 sb.AppendLine("Name: " + Name);
                 sb.AppendLine("Level: " + Level);
                 sb.AppendLine("HP: " + HP);
+                sb.AppendLine("HP2: " + HP2);
                 sb.AppendLine("Attack: " + Attack);
                 sb.AppendLine("Hit Percentage: " + HitPercentage);
                 sb.AppendLine("Magic Attack: " + MagicAttack);
@@ -91,7 +107,9 @@ namespace ff_ocr {
                 sb.AppendLine("Magic Defense: " + MagicDefense);
                 sb.AppendLine("Magic Evasion: " + MagicEvasion);
                 sb.AppendLine("GP: " + GP);
+                sb.AppendLine("GP2: " + GP2);
                 sb.AppendLine("Experience: " + Experience);
+                sb.AppendLine("Experience2: " + Experience2);
                 sb.AppendLine("Weaknesses: " + Weaknesses);
                 sb.AppendLine("Absorbs: " + Absorbs);
                 sb.AppendLine("Resists: " + Resists);

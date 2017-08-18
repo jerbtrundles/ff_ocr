@@ -22,9 +22,6 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\securityeye.png</image_path>
-    <hp2>1425</hp2>
-    <gp2>380</gp2>
-    <experience2>2100</experience2>
   </enemy>
   <enemy>
     <name>AquaWorm</name>
@@ -48,9 +45,6 @@
     <absorbs>(none)</absorbs>
     <resists>darkness, mini, pig, sleep</resists>
     <image_path>images\floodworm.png</image_path>
-    <hp2>638</hp2>
-    <gp2>350</gp2>
-    <experience2>1200</experience2>
   </enemy>
   <enemy>
     <name>Arachne</name>
@@ -74,9 +68,6 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\arachne.png</image_path>
-    <hp2>3500</hp2>
-    <gp2>585</gp2>
-    <experience2>4400</experience2>
   </enemy>
   <enemy>
     <name>Armadilo</name>
@@ -100,9 +91,6 @@
     <absorbs>(none)</absorbs>
     <resists>mini, toad</resists>
     <image_path>images\armadillo.png</image_path>
-    <hp2>300</hp2>
-    <gp2>195</gp2>
-    <experience2>1600</experience2>
   </enemy>
   <enemy>
     <name>Balloon</name>
@@ -126,9 +114,6 @@
     <absorbs>(none)</absorbs>
     <resists>poison, pig, mini, toad</resists>
     <image_path>images\balloon.png</image_path>
-    <hp2>600</hp2>
-    <gp2>315</gp2>
-    <experience2>2480</experience2>
   </enemy>
   <enemy>
     <name>Basilisk</name>
@@ -153,9 +138,6 @@
     <absorbs>(none)</absorbs>
     <resists>mini, pig</resists>
     <image_path>images\basilisk.png</image_path>
-    <hp2>90</hp2>
-    <gp2>30</gp2>
-    <experience2>120</experience2>
   </enemy>
   <enemy>
     <name>Beamer</name>
@@ -179,9 +161,6 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\beamer.png</image_path>
-    <hp2>1800</hp2>
-    <gp2>890</gp2>
-    <experience2>3250</experience2>
   </enemy>
   <enemy>
     <name>Behemoth</name>
@@ -205,9 +184,6 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\behemoth.png</image_path>
-    <hp2>16000</hp2>
-    <gp2>65000</gp2>
-    <experience2>58700</experience2>
   </enemy>
   <enemy>
     <name>BlackCat</name>
@@ -231,9 +207,6 @@
     <absorbs>(none)</absorbs>
     <resists>mini, toad</resists>
     <image_path>images\coeurl.png</image_path>
-    <hp2>593</hp2>
-    <gp2>345</gp2>
-    <experience2>2800</experience2>
   </enemy>
   <enemy>
     <name>BlackLiz</name>
@@ -257,9 +230,6 @@
     <absorbs>(none)</absorbs>
     <resists>mini, pig</resists>
     <image_path>images\blacklizard.png</image_path>
-    <hp2>700</hp2>
-    <gp2>45</gp2>
-    <experience2>1300</experience2>
   </enemy>
   <enemy>
     <name>BladeMan</name>
@@ -283,9 +253,6 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\ghostknight.png</image_path>
-    <hp2>1050</hp2>
-    <gp2>215</gp2>
-    <experience2>2600</experience2>
   </enemy>
   <enemy>
     <name>Blue D.</name>
@@ -310,9 +277,6 @@
     <absorbs>fire, ice, lightning, darkness, holy, throw</absorbs>
     <resists>(none)</resists>
     <image_path>images\bluedragon.png</image_path>
-    <hp2>13200</hp2>
-    <gp2>40200</gp2>
-    <experience2>3600</experience2>
   </enemy>
   <enemy>
     <name>Bomb</name>
@@ -336,9 +300,6 @@
     <absorbs>(none)</absorbs>
     <resists>poison, pig, mini, toad</resists>
     <image_path>images\bomb.png</image_path>
-    <hp2>50</hp2>
-    <gp2>80</gp2>
-    <experience2>370</experience2>
   </enemy>
   <enemy>
     <name>Breath</name>
@@ -362,9 +323,6 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\zemussbreath.png</image_path>
-    <hp2>31300</hp2>
-    <gp2>50000</gp2>
-    <experience2>60000</experience2>
   </enemy>
   <enemy>
     <name>Cannibal</name>
@@ -388,9 +346,6 @@
     <absorbs>(none)</absorbs>
     <resists>darkness, mini, pig, toad</resists>
     <image_path>images\deathflower.png</image_path>
-    <hp2>370</hp2>
-    <gp2>220</gp2>
-    <experience2>960</experience2>
   </enemy>
   <enemy>
     <name>Carapace</name>
@@ -414,9 +369,6 @@
     <absorbs>(none)</absorbs>
     <resists>mini, pig</resists>
     <image_path>images\hellturtle.png</image_path>
-    <hp2>700</hp2>
-    <gp2>230</gp2>
-    <experience2>1350</experience2>
   </enemy>
   <enemy>
     <name>CaveBat</name>
@@ -440,9 +392,6 @@
     <absorbs>lightning</absorbs>
     <resists>mini, pig, toad</resists>
     <image_path>images\cavebat.png</image_path>
-    <hp2>150</hp2>
-    <gp2>150</gp2>
-    <experience2>630</experience2>
   </enemy>
   <enemy>
     <name>CaveNaga</name>
@@ -466,9 +415,6 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\cavenaga.png</image_path>
-    <hp2>255</hp2>
-    <gp2>205</gp2>
-    <experience2>750</experience2>
   </enemy>
   <enemy>
     <name>CaveToad</name>
@@ -493,9 +439,6 @@
     <absorbs>(none)</absorbs>
     <resists>toad</resists>
     <image_path>images\gigantoad.png</image_path>
-    <hp2>44</hp2>
-    <gp2>25</gp2>
-    <experience2>90</experience2>
   </enemy>
   <enemy>
     <name>Centaur</name>
@@ -519,9 +462,6 @@
     <absorbs>(none)</absorbs>
     <resists>pig, toad</resists>
     <image_path>images\centaurknight.png</image_path>
-    <hp2>380</hp2>
-    <gp2>175</gp2>
-    <experience2>1000</experience2>
   </enemy>
   <enemy>
     <name>Centpede</name>
@@ -545,9 +485,6 @@
     <absorbs>(none)</absorbs>
     <resists>darkness, mini, pig, toad</resists>
     <image_path>images\undergrounder.png</image_path>
-    <hp2>600</hp2>
-    <gp2>345</gp2>
-    <experience2>2800</experience2>
   </enemy>
   <enemy>
     <name>Chimera</name>
@@ -571,9 +508,6 @@
     <absorbs>fire, ice, lightning</absorbs>
     <resists>mini, pig, toad, death, sleep, paralyze</resists>
     <image_path>images\chimera.png</image_path>
-    <hp2>700</hp2>
-    <gp2>230</gp2>
-    <experience2>2875</experience2>
   </enemy>
   <enemy>
     <name>Clapper</name>
@@ -597,9 +531,6 @@
     <absorbs>lightning</absorbs>
     <resists>(none)</resists>
     <image_path>images\thunderdragon.png</image_path>
-    <hp2>7000</hp2>
-    <gp2>900</gp2>
-    <experience2>8000</experience2>
   </enemy>
   <enemy>
     <name>Cocatrice</name>
@@ -623,9 +554,6 @@
     <absorbs>(none)</absorbs>
     <resists>mini, pig, toad</resists>
     <image_path>images\cockatrice.png</image_path>
-    <hp2>100</hp2>
-    <gp2>120</gp2>
-    <experience2>280</experience2>
   </enemy>
   <enemy>
     <name>Conjurer</name>
@@ -649,9 +577,6 @@
     <absorbs>(none)</absorbs>
     <resists>pig, toad</resists>
     <image_path>images\summoner.png</image_path>
-    <hp2>3000</hp2>
-    <gp2>475</gp2>
-    <experience2>3700</experience2>
   </enemy>
   <enemy>
     <name>Crawler</name>
@@ -675,9 +600,6 @@
     <absorbs>(none)</absorbs>
     <resists>mini, pig, toad</resists>
     <image_path>images\crawler.png</image_path>
-    <hp2 />
-    <gp2 />
-    <experience2 />
   </enemy>
   <enemy>
     <name>Cream</name>
@@ -702,9 +624,6 @@
     <absorbs>(none)</absorbs>
     <resists>confuse</resists>
     <image_path>images\yellowjelly.png</image_path>
-    <hp2>55</hp2>
-    <gp2>??</gp2>
-    <experience2>??</experience2>
   </enemy>
   <enemy>
     <name>Crocdile</name>
@@ -728,9 +647,6 @@
     <absorbs>(none)</absorbs>
     <resists>mini, pig</resists>
     <image_path>images\gigasgator.png</image_path>
-    <hp2>292</hp2>
-    <gp2>300	</gp2>
-    <experience2>870</experience2>
   </enemy>
   <enemy>
     <name>Dark Imp</name>
@@ -755,9 +671,6 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\goblincaptain.png</image_path>
-    <hp2>199</hp2>
-    <gp2>45</gp2>
-    <experience2>1940</experience2>
   </enemy>
   <enemy>
     <name>DarkTree</name>
@@ -781,9 +694,6 @@
     <absorbs>(none)</absorbs>
     <resists>mini, pig, toad</resists>
     <image_path>images\mammon.png</image_path>
-    <hp2>1800</hp2>
-    <gp2>525</gp2>
-    <experience2>5500</experience2>
   </enemy>
   <enemy>
     <name>D.Bone</name>
@@ -807,9 +717,6 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\bonedragon.png</image_path>
-    <hp2>9000</hp2>
-    <gp2>6750</gp2>
-    <experience2>14100</experience2>
   </enemy>
   <enemy>
     <name>D.Fossil</name>
@@ -833,9 +740,6 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\dinozombie.png</image_path>
-    <hp2>10000</hp2>
-    <gp2>8100</gp2>
-    <experience2>15100</experience2>
   </enemy>
   <enemy>
     <name>Eagle</name>
@@ -860,9 +764,6 @@
     <absorbs>(none)</absorbs>
     <resists>mini, pig, toad</resists>
     <image_path>images\helldiver.png</image_path>
-    <hp2>18</hp2>
-    <gp2>10</gp2>
-    <experience2>30</experience2>
   </enemy>
   <enemy>
     <name>Egg</name>
@@ -886,9 +787,6 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\mysteryegg.png</image_path>
-    <hp2>700</hp2>
-    <gp2>Hatch</gp2>
-    <experience2>I</experience2>
   </enemy>
   <enemy>
     <name>Elecfish</name>
@@ -912,9 +810,6 @@
     <absorbs>lightning</absorbs>
     <resists>mini, pig</resists>
     <image_path>images\electrofish.png</image_path>
-    <hp2>200</hp2>
-    <gp2>230</gp2>
-    <experience2>650</experience2>
   </enemy>
   <enemy>
     <name>EpeeGirl</name>
@@ -938,9 +833,6 @@
     <absorbs>(none)</absorbs>
     <resists>pig, toad</resists>
     <image_path>images\soldieress.png</image_path>
-    <hp2>390</hp2>
-    <gp2>200</gp2>
-    <experience2>1260</experience2>
   </enemy>
   <enemy>
     <name>EvilDoll</name>
@@ -964,9 +856,6 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\evildoll.png</image_path>
-    <hp2>300</hp2>
-    <gp2>270</gp2>
-    <experience2>1420</experience2>
   </enemy>
   <enemy>
     <name>EvilMask</name>
@@ -990,9 +879,6 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\wickedmask.png</image_path>
-    <hp2>25500</hp2>
-    <gp2>65000</gp2>
-    <experience2>50000</experience2>
   </enemy>
   <enemy>
     <name>EvilShel</name>
@@ -1017,9 +903,6 @@
     <absorbs>(none)</absorbs>
     <resists>mini, pig</resists>
     <image_path>images\vileshell.png</image_path>
-    <hp2>58</hp2>
-    <gp2>30</gp2>
-    <experience2>110</experience2>
   </enemy>
   <enemy>
     <name>FangShel</name>
@@ -1043,9 +926,6 @@
     <absorbs>(none)</absorbs>
     <resists>mini, pig</resists>
     <image_path>images\deathshell.png</image_path>
-    <hp2>300</hp2>
-    <gp2>350</gp2>
-    <experience2>850</experience2>
   </enemy>
   <enemy>
     <name>Fiend</name>
@@ -1069,9 +949,6 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\minisatana.png</image_path>
-    <hp2>2980</hp2>
-    <gp2>650</gp2>
-    <experience2>6400</experience2>
   </enemy>
   <enemy>
     <name>Flame Dog</name>
@@ -1096,9 +973,6 @@
     <absorbs>fire</absorbs>
     <resists>mini, toad</resists>
     <image_path>images\fieryhound.png</image_path>
-    <hp2>1221</hp2>
-    <gp2>245</gp2>
-    <experience2>1720</experience2>
   </enemy>
   <enemy>
     <name>FlameMan</name>
@@ -1122,9 +996,6 @@
     <absorbs>fire</absorbs>
     <resists>(none)</resists>
     <image_path>images\fieryknight.png</image_path>
-    <hp2>579</hp2>
-    <gp2>300</gp2>
-    <experience2>1720</experience2>
   </enemy>
   <enemy>
     <name>FloatEye</name>
@@ -1149,9 +1020,6 @@
     <absorbs>(none)</absorbs>
     <resists>mini, pig, toad, berserk, sleep, paralyze</resists>
     <image_path>images\floatingeyeball.png</image_path>
-    <hp2>20</hp2>
-    <gp2>10</gp2>
-    <experience2>40</experience2>
   </enemy>
   <enemy>
     <name>Aligator</name>
@@ -1176,9 +1044,6 @@
     <absorbs>(none)</absorbs>
     <resists>mini, pig</resists>
     <image_path>images\alligator.png</image_path>
-    <hp2>150</hp2>
-    <gp2>95</gp2>
-    <experience2>840</experience2>
   </enemy>
   <enemy>
     <name>Ghost</name>
@@ -1202,9 +1067,6 @@
     <absorbs>fire</absorbs>
     <resists>poison, darkness, stone, death, sleep, paralyze</resists>
     <image_path>images\evildreamer.png</image_path>
-    <hp2>1100</hp2>
-    <gp2>365</gp2>
-    <experience2>3700</experience2>
   </enemy>
   <enemy>
     <name>Ghoul</name>
@@ -1228,9 +1090,6 @@
     <absorbs>(none)</absorbs>
     <resists>poison, darkness, mini, pig, toad, death, sleep, paralyze</resists>
     <image_path>images\ghoul.png</image_path>
-    <hp2>120</hp2>
-    <gp2>200</gp2>
-    <experience2>930</experience2>
   </enemy>
   <enemy>
     <name>GiantBat</name>
@@ -1254,9 +1113,6 @@
     <absorbs>lightning</absorbs>
     <resists>mini, pig, toad</resists>
     <image_path>images\bloodybat.png</image_path>
-    <hp2>399</hp2>
-    <gp2>365</gp2>
-    <experience2>1280</experience2>
   </enemy>
   <enemy>
     <name>Ging-Ryu</name>
@@ -1280,9 +1136,6 @@
     <absorbs>(none)</absorbs>
     <resists>darkness, pig, toad, stone, paralyze, silence, death, confuse</resists>
     <image_path>images\silverdragon.png</image_path>
-    <hp2>7500</hp2>
-    <gp2>19000</gp2>
-    <experience2>25000</experience2>
   </enemy>
   <enemy>
     <name>GlomWing</name>
@@ -1306,9 +1159,6 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\gloomwing.png</image_path>
-    <hp2 />
-    <gp2 />
-    <experience2 />
   </enemy>
   <enemy>
     <name>Gorgon</name>
@@ -1332,9 +1182,6 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\gorgon.png</image_path>
-    <hp2 />
-    <gp2 />
-    <experience2 />
   </enemy>
   <enemy>
     <name>GrayBomb</name>
@@ -1358,9 +1205,6 @@
     <absorbs>(none)</absorbs>
     <resists>poison, mini, pig, toad</resists>
     <image_path>images\graybomb.png</image_path>
-    <hp2>100</hp2>
-    <gp2>105</gp2>
-    <experience2>450</experience2>
   </enemy>
   <enemy>
     <name>GreenD</name>
@@ -1384,9 +1228,6 @@
     <absorbs>(none)</absorbs>
     <resists>mini, pig, toad, sleep</resists>
     <image_path>images\greendragon.png</image_path>
-    <hp2>2200</hp2>
-    <gp2>???		</gp2>
-    <experience2>???</experience2>
   </enemy>
   <enemy>
     <name>Gremlin</name>
@@ -1410,9 +1251,6 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\gremlin.png</image_path>
-    <hp2>385</hp2>
-    <gp2>275</gp2>
-    <experience2>1500</experience2>
   </enemy>
   <enemy>
     <name>Grenade</name>
@@ -1436,9 +1274,6 @@
     <absorbs>(none)</absorbs>
     <resists>poison, mini, pig, toad</resists>
     <image_path>images\darkgrenade.png</image_path>
-    <hp2>820</hp2>
-    <gp2>630</gp2>
-    <experience2>2650</experience2>
   </enemy>
   <enemy>
     <name>Grudger</name>
@@ -1462,9 +1297,6 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\grudger.png</image_path>
-    <hp2>1400</hp2>
-    <gp2>150</gp2>
-    <experience2>2460</experience2>
   </enemy>
   <enemy>
     <name>Hooligan</name>
@@ -1488,9 +1320,6 @@
     <absorbs>(none)</absorbs>
     <resists>mini, pig, death</resists>
     <image_path>images\belphegor.png</image_path>
-    <hp2>1900</hp2>
-    <gp2>485</gp2>
-    <experience2>4090</experience2>
   </enemy>
   <enemy>
     <name>Horse Man</name>
@@ -1515,9 +1344,6 @@
     <absorbs>(none)</absorbs>
     <resists>mini, pig, toad</resists>
     <image_path>images\centaurion.png</image_path>
-    <hp2>3000</hp2>
-    <gp2>1220</gp2>
-    <experience2>9900</experience2>
   </enemy>
   <enemy>
     <name>HugeCell</name>
@@ -1541,9 +1367,6 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\mors.png</image_path>
-    <hp2>555</hp2>
-    <gp2>255</gp2>
-    <experience2>1510</experience2>
   </enemy>
   <enemy>
     <name>Huge Naga</name>
@@ -1568,9 +1391,6 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\kingnaga.png</image_path>
-    <hp2>1200</hp2>
-    <gp2>240</gp2>
-    <experience2>3600</experience2>
   </enemy>
   <enemy>
     <name>Hydra</name>
@@ -1594,9 +1414,6 @@
     <absorbs>(none)</absorbs>
     <resists>mini, pig</resists>
     <image_path>images\hydra.png</image_path>
-    <hp2>200</hp2>
-    <gp2>230</gp2>
-    <experience2>680</experience2>
   </enemy>
   <enemy>
     <name>Ice Beast</name>
@@ -1621,9 +1438,6 @@
     <absorbs>ice</absorbs>
     <resists>mini, toad</resists>
     <image_path>images\coldbeast.png</image_path>
-    <hp2>445</hp2>
-    <gp2>280</gp2>
-    <experience2>1570</experience2>
   </enemy>
   <enemy>
     <name>IceLiz</name>
@@ -1647,9 +1461,6 @@
     <absorbs>(none)</absorbs>
     <resists>mini, pig</resists>
     <image_path>images\icelizard.png</image_path>
-    <hp2>400</hp2>
-    <gp2>290</gp2>
-    <experience2>1500</experience2>
   </enemy>
   <enemy>
     <name>Imp</name>
@@ -1674,9 +1485,6 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\goblin.png</image_path>
-    <hp2>6</hp2>
-    <gp2>10</gp2>
-    <experience2>20</experience2>
   </enemy>
   <enemy>
     <name>Imp Cap.</name>
@@ -1702,9 +1510,6 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\domovoi.png</image_path>
-    <hp2>37</hp2>
-    <gp2>50</gp2>
-    <experience2>190</experience2>
   </enemy>
   <enemy>
     <name>Ironback</name>
@@ -1728,9 +1533,6 @@
     <absorbs>(none)</absorbs>
     <resists>mini, toad</resists>
     <image_path>images\ironback.png</image_path>
-    <hp2>100</hp2>
-    <gp2>235</gp2>
-    <experience2>1100</experience2>
   </enemy>
   <enemy>
     <name>Iron Man</name>
@@ -1755,9 +1557,6 @@
     <absorbs>(none)</absorbs>
     <resists>poison, darkness, mini, toad, silence, death</resists>
     <image_path>images\mythrilgolem.png</image_path>
-    <hp2>2500</hp2>
-    <gp2>385</gp2>
-    <experience2>3700</experience2>
   </enemy>
   <enemy>
     <name>Jelly</name>
@@ -1781,9 +1580,6 @@
     <absorbs>(none)</absorbs>
     <resists>confuse</resists>
     <image_path>images\redmousse.png</image_path>
-    <hp2>35</hp2>
-    <gp2>35</gp2>
-    <experience2>140</experience2>
   </enemy>
   <enemy>
     <name>juclyote</name>
@@ -1807,9 +1603,6 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\eukaryote.png</image_path>
-    <hp2>1700</hp2>
-    <gp2>1560</gp2>
-    <experience2>7200</experience2>
   </enemy>
   <enemy>
     <name>Kary</name>
@@ -1833,9 +1626,6 @@
     <absorbs>(none)</absorbs>
     <resists>pig, toad</resists>
     <image_path>images\seleneguardian.png</image_path>
-    <hp2>2700</hp2>
-    <gp2>3500		</gp2>
-    <experience2>13100</experience2>
   </enemy>
   <enemy>
     <name>King-Ryu</name>
@@ -1859,9 +1649,6 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\golddragon.png</image_path>
-    <hp2>8200</hp2>
-    <gp2>23000</gp2>
-    <experience2>30000</experience2>
   </enemy>
   <enemy>
     <name>Lamia</name>
@@ -1885,9 +1672,6 @@
     <absorbs>(none)</absorbs>
     <resists>sleep, paralyze</resists>
     <image_path>images\lamia.png</image_path>
-    <hp2>1200</hp2>
-    <gp2>1210</gp2>
-    <experience2>2060</experience2>
   </enemy>
   <enemy>
     <name>Larva</name>
@@ -1911,9 +1695,6 @@
     <absorbs>(none)</absorbs>
     <resists>mini, pig, toad</resists>
     <image_path>images\insectus.png</image_path>
-    <hp2>28</hp2>
-    <gp2>???		</gp2>
-    <experience2>???</experience2>
   </enemy>
   <enemy>
     <name>lastArm</name>
@@ -1937,9 +1718,6 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\lastarm.png</image_path>
-    <hp2>9500</hp2>
-    <gp2>340</gp2>
-    <experience2>8800</experience2>
   </enemy>
   <enemy>
     <name>Lilith</name>
@@ -1963,9 +1741,6 @@
     <absorbs>(none)</absorbs>
     <resists>death, sleep, paralyze</resists>
     <image_path>images\lilith.png</image_path>
-    <hp2>320</hp2>
-    <gp2>365</gp2>
-    <experience2>2750</experience2>
   </enemy>
   <enemy>
     <name>MacGiant</name>
@@ -1989,9 +1764,6 @@
     <absorbs>(none)</absorbs>
     <resists>berserk</resists>
     <image_path>images\giantsoldier.png</image_path>
-    <hp2>8500</hp2>
-    <gp2>1500</gp2>
-    <experience2>31000</experience2>
   </enemy>
   <enemy>
     <name>Machine</name>
@@ -2015,9 +1787,6 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\mechsoldier.png</image_path>
-    <hp2>3600</hp2>
-    <gp2>985</gp2>
-    <experience2>8200</experience2>
   </enemy>
   <enemy>
     <name>Mad Ogre</name>
@@ -2042,9 +1811,6 @@
     <absorbs>(none)</absorbs>
     <resists>pig, toad</resists>
     <image_path>images\madogre.png</image_path>
-    <hp2>1700</hp2>
-    <gp2>270</gp2>
-    <experience2>2370</experience2>
   </enemy>
   <enemy>
     <name>MadToad</name>
@@ -2069,9 +1835,6 @@
     <absorbs>(none)</absorbs>
     <resists>toad</resists>
     <image_path>images\toadgre.png</image_path>
-    <hp2>59</hp2>
-    <gp2>35</gp2>
-    <experience2>130</experience2>
   </enemy>
   <enemy>
     <name>Mage</name>
@@ -2095,9 +1858,6 @@
     <absorbs>(none)</absorbs>
     <resists>poison, death, paralyze</resists>
     <image_path>images\mindflayer.png</image_path>
-    <hp2>500</hp2>
-    <gp2>235</gp2>
-    <experience2>1100</experience2>
   </enemy>
   <enemy>
     <name>Malboro</name>
@@ -2121,9 +1881,6 @@
     <absorbs>(none)</absorbs>
     <resists>mini, pig, death</resists>
     <image_path>images\malboro.png</image_path>
-    <hp2>1999</hp2>
-    <gp2>460</gp2>
-    <experience2>11000</experience2>
   </enemy>
   <enemy>
     <name>Mantcore</name>
@@ -2147,9 +1904,6 @@
     <absorbs>fire, ice, lightning</absorbs>
     <resists>mini, pig, toad, death, sleep, paralyze</resists>
     <image_path>images\chimerabrain.png</image_path>
-    <hp2>2000</hp2>
-    <gp2>1200</gp2>
-    <experience2>35000</experience2>
   </enemy>
   <enemy>
     <name>Marion</name>
@@ -2173,9 +1927,6 @@
     <absorbs>(none)</absorbs>
     <resists>pig, toad</resists>
     <image_path>images\puppeteer.png</image_path>
-    <hp2>473</hp2>
-    <gp2>195</gp2>
-    <experience2>1290</experience2>
   </enemy>
   <enemy>
     <name>MechD</name>
@@ -2199,9 +1950,6 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\mechdragon.png</image_path>
-    <hp2>15000</hp2>
-    <gp2>2550</gp2>
-    <experience2>41500</experience2>
   </enemy>
   <enemy>
     <name>Medusa</name>
@@ -2225,9 +1973,6 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\medusa.png</image_path>
-    <hp2>430</hp2>
-    <gp2>225</gp2>
-    <experience2>1250</experience2>
   </enemy>
   <enemy>
     <name>Mind</name>
@@ -2251,9 +1996,6 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\zemussmind.png</image_path>
-    <hp2>12300</hp2>
-    <gp2>50000</gp2>
-    <experience2>65000</experience2>
   </enemy>
   <enemy>
     <name>MoonCell</name>
@@ -2277,9 +2019,6 @@
     <absorbs>(none)</absorbs>
     <resists>mini, pig, toad</resists>
     <image_path>images\lunarvirus.png</image_path>
-    <hp2>980</hp2>
-    <gp2>1100</gp2>
-    <experience2>3300</experience2>
   </enemy>
   <enemy>
     <name>Naga</name>
@@ -2303,9 +2042,6 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\naga.png</image_path>
-    <hp2>900</hp2>
-    <gp2>150</gp2>
-    <experience2>1120</experience2>
   </enemy>
   <enemy>
     <name>Needler</name>
@@ -2329,9 +2065,6 @@
     <absorbs>(none)</absorbs>
     <resists>mini, toad</resists>
     <image_path>images\gatlinger.png</image_path>
-    <hp2>110</hp2>
-    <gp2>55</gp2>
-    <experience2>370</experience2>
   </enemy>
   <enemy>
     <name>Ogre</name>
@@ -2355,9 +2088,6 @@
     <absorbs>(none)</absorbs>
     <resists>pig, toad</resists>
     <image_path>images\ogre.png</image_path>
-    <hp2>865</hp2>
-    <gp2>240</gp2>
-    <experience2>1100</experience2>
   </enemy>
   <enemy>
     <name>Panther</name>
@@ -2381,9 +2111,6 @@
     <absorbs>(none)</absorbs>
     <resists>mini, toad</resists>
     <image_path>images\panther.png</image_path>
-    <hp2>285</hp2>
-    <gp2>255</gp2>
-    <experience2>830</experience2>
   </enemy>
   <enemy>
     <name>Pike</name>
@@ -2407,9 +2134,6 @@
     <absorbs>(none)</absorbs>
     <resists>mini, pig</resists>
     <image_path>images\killerfish.png</image_path>
-    <hp2>65</hp2>
-    <gp2>35</gp2>
-    <experience2>120</experience2>
   </enemy>
   <enemy>
     <name>PinkPuff</name>
@@ -2433,9 +2157,6 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\flanprincess.png</image_path>
-    <hp2>10000</hp2>
-    <gp2>0	</gp2>
-    <experience2>0</experience2>
   </enemy>
   <enemy>
     <name>Piranha</name>
@@ -2459,9 +2180,6 @@
     <absorbs>(none)</absorbs>
     <resists>mini, pig, toad</resists>
     <image_path>images\splasher.png</image_path>
-    <hp2>105</hp2>
-    <gp2>145</gp2>
-    <experience2>460</experience2>
   </enemy>
   <enemy>
     <name>Procyote</name>
@@ -2485,9 +2203,6 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\prokaryote.png</image_path>
-    <hp2>2200</hp2>
-    <gp2>1850</gp2>
-    <experience2>8100</experience2>
   </enemy>
   <enemy>
     <name>Pudding</name>
@@ -2511,9 +2226,6 @@
     <absorbs>(none)</absorbs>
     <resists>confuse</resists>
     <image_path>images\blackflan.png</image_path>
-    <hp2>1050</hp2>
-    <gp2>1300</gp2>
-    <experience2>3060</experience2>
   </enemy>
   <enemy>
     <name>Puppet</name>
@@ -2537,9 +2249,6 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\puppet.png</image_path>
-    <hp2>256</hp2>
-    <gp2>180</gp2>
-    <experience2>860</experience2>
   </enemy>
   <enemy>
     <name>Python</name>
@@ -2563,9 +2272,6 @@
     <absorbs>(none)</absorbs>
     <resists>mini, pig</resists>
     <image_path>images\twinsnake.png</image_path>
-    <hp2>90</hp2>
-    <gp2>225</gp2>
-    <experience2>760</experience2>
   </enemy>
   <enemy>
     <name>Q.Lamia</name>
@@ -2589,9 +2295,6 @@
     <absorbs>(none)</absorbs>
     <resists>sleep, paralyze</resists>
     <image_path>images\lamiamatriarch.png</image_path>
-    <hp2>11000</hp2>
-    <gp2>0</gp2>
-    <experience2>0</experience2>
   </enemy>
   <enemy>
     <name>RedBone</name>
@@ -2615,9 +2318,6 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\bloodbones.png</image_path>
-    <hp2>170</hp2>
-    <gp2>170</gp2>
-    <experience2>670</experience2>
   </enemy>
   <enemy>
     <name>Red D.</name>
@@ -2642,9 +2342,6 @@
     <absorbs>fire</absorbs>
     <resists>(none)</resists>
     <image_path>images\reddragon.png</image_path>
-    <hp2>15000</hp2>
-    <gp2>65000</gp2>
-    <experience2>51800</experience2>
   </enemy>
   <enemy>
     <name>Red Eye</name>
@@ -2669,9 +2366,6 @@
     <absorbs>(none)</absorbs>
     <resists>mini, pig, toad, berserk, sleep, paralyze</resists>
     <image_path>images\bloodyeye.png</image_path>
-    <hp2>2000</hp2>
-    <gp2>465</gp2>
-    <experience2>3500</experience2>
   </enemy>
   <enemy>
     <name>RedGiant</name>
@@ -2695,9 +2389,6 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\giantwarrior.png</image_path>
-    <hp2>11800</hp2>
-    <gp2>7000</gp2>
-    <experience2>18900</experience2>
   </enemy>
   <enemy>
     <name>Red Worm</name>
@@ -2722,9 +2413,6 @@
     <absorbs>(none)</absorbs>
     <resists>darkness, mini, pig, sleep</resists>
     <image_path>images\abyssworm.png</image_path>
-    <hp2>7000</hp2>
-    <gp2>310</gp2>
-    <experience2>7350</experience2>
   </enemy>
   <enemy>
     <name>Revenant</name>
@@ -2748,9 +2436,6 @@
     <absorbs>(none)</absorbs>
     <resists>darkness, poison, mini, pig, toad, death, sleep, paralyze</resists>
     <image_path>images\revenant.png</image_path>
-    <hp2>160</hp2>
-    <gp2>190</gp2>
-    <experience2>680</experience2>
   </enemy>
   <enemy>
     <name>Roc</name>
@@ -2774,9 +2459,6 @@
     <absorbs>(none)</absorbs>
     <resists>mini, pig, toad</resists>
     <image_path>images\roc.png</image_path>
-    <hp2>999</hp2>
-    <gp2>150</gp2>
-    <experience2>1410</experience2>
   </enemy>
   <enemy>
     <name>RocBaby</name>
@@ -2800,9 +2482,6 @@
     <absorbs>(none)</absorbs>
     <resists>mini, pig, toad</resists>
     <image_path>images\rocbaby.png</image_path>
-    <hp2>50</hp2>
-    <gp2>85</gp2>
-    <experience2>1010</experience2>
   </enemy>
   <enemy>
     <name>RocLarva</name>
@@ -2826,9 +2505,6 @@
     <absorbs>(none)</absorbs>
     <resists>mini, toad</resists>
     <image_path>images\chrysalis.png</image_path>
-    <hp2>800</hp2>
-    <gp2>40</gp2>
-    <experience2>2830</experience2>
   </enemy>
   <enemy>
     <name>RocMoth</name>
@@ -2852,9 +2528,6 @@
     <absorbs>(none)</absorbs>
     <resists>darkness, mini, pig, toad</resists>
     <image_path>images\hellflapper.png</image_path>
-    <hp2>850</hp2>
-    <gp2>315</gp2>
-    <experience2>3200</experience2>
   </enemy>
   <enemy>
     <name>Sand Man</name>
@@ -2880,9 +2553,6 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\desertsahagin.png</image_path>
-    <hp2>20</hp2>
-    <gp2>20</gp2>
-    <experience2>80</experience2>
   </enemy>
   <enemy>
     <name>SandMoth</name>
@@ -2906,9 +2576,6 @@
     <absorbs>(none)</absorbs>
     <resists>darkness, mini, pig, toad</resists>
     <image_path>images\flyingeyes.png</image_path>
-    <hp2>40</hp2>
-    <gp2>??</gp2>
-    <experience2>??</experience2>
   </enemy>
   <enemy>
     <name>Sandpede</name>
@@ -2932,9 +2599,6 @@
     <absorbs>(none)</absorbs>
     <resists>darkness, mini, pig, toad</resists>
     <image_path>images\hundlegs.png</image_path>
-    <hp2>60</hp2>
-    <gp2>20</gp2>
-    <experience2>80</experience2>
   </enemy>
   <enemy>
     <name>SandWorm</name>
@@ -2959,9 +2623,6 @@
     <absorbs>(none)</absorbs>
     <resists>darkness, mini, pig, sleep</resists>
     <image_path>images\sandworm.png</image_path>
-    <hp2>75</hp2>
-    <gp2>25</gp2>
-    <experience2>88</experience2>
   </enemy>
   <enemy>
     <name>Screamer</name>
@@ -2985,9 +2646,6 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\screamer.png</image_path>
-    <hp2 />
-    <gp2 />
-    <experience2 />
   </enemy>
   <enemy>
     <name>Searcher</name>
@@ -3011,9 +2669,6 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\searcher.png</image_path>
-    <hp2>5500</hp2>
-    <gp2>900</gp2>
-    <experience2>18200</experience2>
   </enemy>
   <enemy>
     <name>Slime</name>
@@ -3037,9 +2692,6 @@
     <absorbs>(none)</absorbs>
     <resists>lightning</resists>
     <image_path>images\purplebavarois.png</image_path>
-    <hp2>50</hp2>
-    <gp2>50</gp2>
-    <experience2>760</experience2>
   </enemy>
   <enemy>
     <name>Skeleton</name>
@@ -3063,9 +2715,6 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\skeleton.png</image_path>
-    <hp2>50</hp2>
-    <gp2>120</gp2>
-    <experience2>240</experience2>
   </enemy>
   <enemy>
     <name>Skull</name>
@@ -3089,9 +2738,6 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\skuldier.png</image_path>
-    <hp2>740</hp2>
-    <gp2>120</gp2>
-    <experience2>1055</experience2>
   </enemy>
   <enemy>
     <name>Sorcerer</name>
@@ -3115,9 +2761,6 @@
     <absorbs>(none)</absorbs>
     <resists>pig, toad</resists>
     <image_path>images\sorcerer.png</image_path>
-    <hp2>1000</hp2>
-    <gp2>275</gp2>
-    <experience2>2370</experience2>
   </enemy>
   <enemy>
     <name>Soul</name>
@@ -3141,9 +2784,6 @@
     <absorbs>(none)</absorbs>
     <resists>poison, darkness, stone, death, sleep, paralyze</resists>
     <image_path>images\soul.png</image_path>
-    <hp2>150</hp2>
-    <gp2>165</gp2>
-    <experience2>160</experience2>
   </enemy>
   <enemy>
     <name>Spirit</name>
@@ -3167,9 +2807,6 @@
     <absorbs>fire</absorbs>
     <resists>poison, darkness, stone, death, sleep, paralyze</resists>
     <image_path>images\spirit.png</image_path>
-    <hp2>50</hp2>
-    <gp2>125</gp2>
-    <experience2>290</experience2>
   </enemy>
   <enemy>
     <name>Staleman</name>
@@ -3193,9 +2830,6 @@
     <absorbs>(none)</absorbs>
     <resists>poison, darkness, mini, toad, silence, death</resists>
     <image_path>images\steelgolem.png</image_path>
-    <hp2>2100</hp2>
-    <gp2>445</gp2>
-    <experience2>2100</experience2>
   </enemy>
   <enemy>
     <name>Sting rat</name>
@@ -3220,9 +2854,6 @@
     <absorbs>(none)</absorbs>
     <resists>mini, toad</resists>
     <image_path>images\hellneedle.png</image_path>
-    <hp2>300</hp2>
-    <gp2>220</gp2>
-    <experience2>1210</experience2>
   </enemy>
   <enemy>
     <name>Stoneman</name>
@@ -3246,9 +2877,6 @@
     <absorbs>(none)</absorbs>
     <resists>poison, darkness, mini, toad, silence, death</resists>
     <image_path>images\stonegolem.png</image_path>
-    <hp2>2000</hp2>
-    <gp2>240</gp2>
-    <experience2>2950</experience2>
   </enemy>
   <enemy>
     <name>Swordman</name>
@@ -3272,9 +2900,6 @@
     <absorbs>(none)</absorbs>
     <resists>death, darkness</resists>
     <image_path>images\blackknight.png</image_path>
-    <hp2>320</hp2>
-    <gp2>175</gp2>
-    <experience2>1100</experience2>
   </enemy>
   <enemy>
     <name>Sword Rat</name>
@@ -3302,9 +2927,6 @@
     <absorbs>(none)</absorbs>
     <resists>mini, toad</resists>
     <image_path>images\swordrat.png</image_path>
-    <hp2>30</hp2>
-    <gp2>20</gp2>
-    <experience2>68</experience2>
   </enemy>
   <enemy>
     <name>Tarantula</name>
@@ -3328,9 +2950,6 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\tarantula.png</image_path>
-    <hp2 />
-    <gp2 />
-    <experience2 />
   </enemy>
   <enemy>
     <name>Tiny Mage</name>
@@ -3356,9 +2975,6 @@
     <absorbs>(none)</absorbs>
     <resists>pig, toad</resists>
     <image_path>images\tinymage.png</image_path>
-    <hp2>69</hp2>
-    <gp2>100</gp2>
-    <experience2>260</experience2>
   </enemy>
   <enemy>
     <name>Tiny Toad</name>
@@ -3383,9 +2999,6 @@
     <absorbs>(none)</absorbs>
     <resists>mini, pig, toad</resists>
     <image_path>images\tinytoad.png</image_path>
-    <hp2>400</hp2>
-    <gp2>335</gp2>
-    <experience2>1850</experience2>
   </enemy>
   <enemy>
     <name>Toad Lady</name>
@@ -3410,9 +3023,6 @@
     <absorbs>(none)</absorbs>
     <resists>mini, pig, sleep, paralyze</resists>
     <image_path>images\bogwitch.png</image_path>
-    <hp2>2960</hp2>
-    <gp2>600</gp2>
-    <experience2>3500</experience2>
   </enemy>
   <enemy>
     <name>Tofu</name>
@@ -3436,9 +3046,6 @@
     <absorbs>(none)</absorbs>
     <resists>confuse</resists>
     <image_path>images\whitemousse.png</image_path>
-    <hp2>102</hp2>
-    <gp2>385</gp2>
-    <experience2>1060</experience2>
   </enemy>
   <enemy>
     <name>Tortoise</name>
@@ -3462,9 +3069,6 @@
     <absorbs>(none)</absorbs>
     <resists>mini, pig</resists>
     <image_path>images\magmatortoise.png</image_path>
-    <hp2>400</hp2>
-    <gp2>235</gp2>
-    <experience2>1700</experience2>
   </enemy>
   <enemy>
     <name>TrapDoor</name>
@@ -3488,9 +3092,6 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\trapdoor.png</image_path>
-    <hp2>5000</hp2>
-    <gp2>4500</gp2>
-    <experience2>31100</experience2>
   </enemy>
   <enemy>
     <name>TrapRose</name>
@@ -3514,9 +3115,6 @@
     <absorbs>(none)</absorbs>
     <resists>mini, pig</resists>
     <image_path>images\bloodflower.png</image_path>
-    <hp2>300</hp2>
-    <gp2>35</gp2>
-    <experience2>1210</experience2>
   </enemy>
   <enemy>
     <name>Treant</name>
@@ -3540,9 +3138,6 @@
     <absorbs>(none)</absorbs>
     <resists>mini, pig, toad</resists>
     <image_path>images\treant.png</image_path>
-    <hp2>260</hp2>
-    <gp2>150</gp2>
-    <experience2>1000</experience2>
   </enemy>
   <enemy>
     <name>Tricker</name>
@@ -3566,9 +3161,6 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\lilmurderer.png</image_path>
-    <hp2>12000</hp2>
-    <gp2>10700</gp2>
-    <experience2>21000</experience2>
   </enemy>
   <enemy>
     <name>Turtle</name>
@@ -3593,9 +3185,6 @@
     <absorbs>(none)</absorbs>
     <resists>mini, pig</resists>
     <image_path>images\adamantoise.png</image_path>
-    <hp2>150</hp2>
-    <gp2>80</gp2>
-    <experience2>240</experience2>
   </enemy>
   <enemy>
     <name>VampGirl</name>
@@ -3619,9 +3208,6 @@
     <absorbs>lightning</absorbs>
     <resists>death</resists>
     <image_path>images\draculady.png</image_path>
-    <hp2>250</hp2>
-    <gp2>195</gp2>
-    <experience2>819</experience2>
   </enemy>
   <enemy>
     <name>VampLady</name>
@@ -3645,9 +3231,6 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\missvamp.png</image_path>
-    <hp2>2350</hp2>
-    <gp2>220</gp2>
-    <experience2>4600</experience2>
   </enemy>
   <enemy>
     <name>Veteran</name>
@@ -3671,9 +3254,6 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\ahriman.png</image_path>
-    <hp2>25000</hp2>
-    <gp2>65200</gp2>
-    <experience2>40000</experience2>
   </enemy>
   <enemy>
     <name>Warlock</name>
@@ -3697,9 +3277,6 @@
     <absorbs>(none)</absorbs>
     <resists>toad</resists>
     <image_path>images\darksage.png</image_path>
-    <hp2>4250</hp2>
-    <gp2>2400</gp2>
-    <experience2>17300</experience2>
   </enemy>
   <enemy>
     <name>Warrior</name>
@@ -3723,9 +3300,6 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\warrior.png</image_path>
-    <hp2>2400</hp2>
-    <gp2>575</gp2>
-    <experience2>4300</experience2>
   </enemy>
   <enemy>
     <name>WaterBug</name>
@@ -3750,9 +3324,6 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\waterbug.png</image_path>
-    <hp2>110</hp2>
-    <gp2>80</gp2>
-    <experience2>230</experience2>
   </enemy>
   <enemy>
     <name>WereBat</name>
@@ -3776,9 +3347,6 @@
     <absorbs>lightning</absorbs>
     <resists>mini, pig, toad</resists>
     <image_path>images\evilbat.png</image_path>
-    <hp2>800</hp2>
-    <gp2>355</gp2>
-    <experience2>2050</experience2>
   </enemy>
   <enemy>
     <name>Witch</name>
@@ -3802,9 +3370,6 @@
     <absorbs>(none)</absorbs>
     <resists>toad</resists>
     <image_path>images\sorceress.png</image_path>
-    <hp2>300</hp2>
-    <gp2>330</gp2>
-    <experience2>1670</experience2>
   </enemy>
   <enemy>
     <name>YellowD</name>
@@ -3828,9 +3393,6 @@
     <absorbs>lightning</absorbs>
     <resists>mini, pig, toad, sleep</resists>
     <image_path>images\yellowdragon.png</image_path>
-    <hp2>1800</hp2>
-    <gp2>1500</gp2>
-    <experience2>34000</experience2>
   </enemy>
   <enemy>
     <name>Zombie</name>
@@ -3854,9 +3416,6 @@
     <absorbs>(none)</absorbs>
     <resists>poison, darkness, mini, pig, toad, death, sleep, paralyze</resists>
     <image_path>images\zombie.png</image_path>
-    <hp2>40</hp2>
-    <gp2>35</gp2>
-    <experience2>120</experience2>
   </enemy>
   <enemy>
     <name>Zuu</name>
@@ -3880,9 +3439,6 @@
     <absorbs>(none)</absorbs>
     <resists>mini, pig, toad</resists>
     <image_path>images\zu.png</image_path>
-    <hp2>941</hp2>
-    <gp2>700</gp2>
-    <experience2>740</experience2>
   </enemy>
   <enemy>
     <name>D.Mist</name>
@@ -3907,9 +3463,6 @@
     <absorbs>(none)</absorbs>
     <resists>mini, pig, toad</resists>
     <image_path>images\mistdragon.png</image_path>
-    <hp2>465</hp2>
-    <gp2>200</gp2>
-    <experience2>700</experience2>
   </enemy>
   <enemy>
     <name>Officer</name>
@@ -3933,9 +3486,6 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\general.png</image_path>
-    <hp2>221</hp2>
-    <gp2>80</gp2>
-    <experience2>400</experience2>
   </enemy>
   <enemy>
     <name>Soldier</name>
@@ -3959,9 +3509,6 @@
     <absorbs>(none)</absorbs>
     <resists>confuse</resists>
     <image_path>images\baronsoldier.png</image_path>
-    <hp2>27</hp2>
-    <gp2>55</gp2>
-    <experience2>160</experience2>
   </enemy>
   <enemy>
     <name>Octomamm</name>
@@ -3986,9 +3533,6 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\octomammoth.png</image_path>
-    <hp2>2350</hp2>
-    <gp2>500</gp2>
-    <experience2>1200</experience2>
   </enemy>
   <enemy>
     <name>Antlion</name>
@@ -4012,9 +3556,6 @@
     <absorbs>(none)</absorbs>
     <resists>darkness</resists>
     <image_path>images\antlion.png</image_path>
-    <hp2>1000</hp2>
-    <gp2>800</gp2>
-    <experience2>1500</experience2>
   </enemy>
   <enemy>
     <name>Mombomb</name>
@@ -4038,9 +3579,6 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\mombomb.png</image_path>
-    <hp2>10800</hp2>
-    <gp2>1200</gp2>
-    <experience2>1750</experience2>
   </enemy>
   <enemy>
     <name>General</name>
@@ -4064,9 +3602,6 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\captain.png</image_path>
-    <hp2>320</hp2>
-    <gp2>155</gp2>
-    <experience2>610</experience2>
   </enemy>
   <enemy>
     <name>Fighter</name>
@@ -4090,9 +3625,6 @@
     <absorbs>(none)</absorbs>
     <resists>darkness, confuse, holy</resists>
     <image_path>images\baronwarrior.png</image_path>
-    <hp2>65</hp2>
-    <gp2>100</gp2>
-    <experience2>410</experience2>
   </enemy>
   <enemy>
     <name>Weeper</name>
@@ -4116,9 +3648,6 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\leshy.png</image_path>
-    <hp2>100</hp2>
-    <gp2>40</gp2>
-    <experience2>160</experience2>
   </enemy>
   <enemy>
     <name>Imp Cap.</name>
@@ -4143,9 +3672,6 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\goblincaptain.png</image_path>
-    <hp2 />
-    <gp2 />
-    <experience2 />
   </enemy>
   <enemy>
     <name>WaterHag</name>
@@ -4169,9 +3695,6 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\sahagin.png</image_path>
-    <hp2>48</hp2>
-    <gp2>100</gp2>
-    <experience2>800</experience2>
   </enemy>
   <enemy>
     <name>Gargoyle</name>
@@ -4195,9 +3718,6 @@
     <absorbs>(none)</absorbs>
     <resists>mini, pig, death</resists>
     <image_path>images\gargoyle.png</image_path>
-    <hp2>160</hp2>
-    <gp2>100</gp2>
-    <experience2>318</experience2>
   </enemy>
   <enemy>
     <name>Kain</name>
@@ -4221,9 +3741,6 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\spacer.png</image_path>
-    <hp2>65000</hp2>
-    <gp2>0</gp2>
-    <experience2>0</experience2>
   </enemy>
   <enemy>
     <name>Milon</name>
@@ -4247,9 +3764,6 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\milon.png</image_path>
-    <hp2>3100</hp2>
-    <gp2>3000</gp2>
-    <experience2>3000</experience2>
   </enemy>
   <enemy>
     <name>Ghast</name>
@@ -4273,9 +3787,6 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\skullnant.png</image_path>
-    <hp2>170</hp2>
-    <gp2>75</gp2>
-    <experience2>200</experience2>
   </enemy>
   <enemy>
     <name>Milon-Z</name>
@@ -4299,9 +3810,6 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\scarmiglione.png</image_path>
-    <hp2>3000</hp2>
-    <gp2>3000</gp2>
-    <experience2>4000</experience2>
   </enemy>
   <enemy>
     <name>D. Knight</name>
@@ -4326,9 +3834,6 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\spacer.png</image_path>
-    <hp2>1000</hp2>
-    <gp2>0</gp2>
-    <experience2>0</experience2>
   </enemy>
   <enemy>
     <name>Guard</name>
@@ -4352,9 +3857,6 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\baronguard.png</image_path>
-    <hp2>200</hp2>
-    <gp2>500</gp2>
-    <experience2>720</experience2>
   </enemy>
   <enemy>
     <name>Karate</name>
@@ -4378,9 +3880,6 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\spacer.png</image_path>
-    <hp2>4000</hp2>
-    <gp2>0</gp2>
-    <experience2>0</experience2>
   </enemy>
   <enemy>
     <name>Baigan</name>
@@ -4404,9 +3903,6 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\baigan.png</image_path>
-    <hp2>3500</hp2>
-    <gp2>3000</gp2>
-    <experience2>4800</experience2>
   </enemy>
   <enemy>
     <name>Left Arm</name>
@@ -4431,9 +3927,6 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\leftarm.png</image_path>
-    <hp2>350</hp2>
-    <gp2>0</gp2>
-    <experience2>10</experience2>
   </enemy>
   <enemy>
     <name>Right Arm</name>
@@ -4458,9 +3951,6 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\rightarm.png</image_path>
-    <hp2>350</hp2>
-    <gp2>0</gp2>
-    <experience2>10</experience2>
   </enemy>
   <enemy>
     <name>Kainazzo</name>
@@ -4484,9 +3974,6 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\cagnazzo.png</image_path>
-    <hp2>4000</hp2>
-    <gp2>4000</gp2>
-    <experience2>5500</experience2>
   </enemy>
   <enemy>
     <name>Dark Elf</name>
@@ -4511,9 +3998,6 @@
     <absorbs>fire, lightning, fire, holy</absorbs>
     <resists>darkness, mini, toad</resists>
     <image_path>images\darkelf.png</image_path>
-    <hp2>3000</hp2>
-    <gp2>5000</gp2>
-    <experience2>6000</experience2>
   </enemy>
   <enemy>
     <name>Dark Dragon</name>
@@ -4538,9 +4022,6 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\darkdragon.png</image_path>
-    <hp2 />
-    <gp2 />
-    <experience2 />
   </enemy>
   <enemy>
     <name>Sandy</name>
@@ -4564,9 +4045,6 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\sandy.png</image_path>
-    <hp2>2500</hp2>
-    <gp2>3000</gp2>
-    <experience2>3000</experience2>
   </enemy>
   <enemy>
     <name>Cindy</name>
@@ -4590,9 +4068,6 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\cindy.png</image_path>
-    <hp2>4300</hp2>
-    <gp2>3000</gp2>
-    <experience2>3000</experience2>
   </enemy>
   <enemy>
     <name>Mindy</name>
@@ -4616,9 +4091,6 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\mindy.png</image_path>
-    <hp2>2200</hp2>
-    <gp2>3000</gp2>
-    <experience2>3000</experience2>
   </enemy>
   <enemy>
     <name>Valvalis</name>
@@ -4642,9 +4114,6 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\barbariccia.png</image_path>
-    <hp2>6000</hp2>
-    <gp2>5500</gp2>
-    <experience2>9500</experience2>
   </enemy>
   <enemy>
     <name>Cal</name>
@@ -4668,9 +4137,6 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\calco.png</image_path>
-    <hp2>1000</hp2>
-    <gp2>0</gp2>
-    <experience2>0</experience2>
   </enemy>
   <enemy>
     <name>Brena</name>
@@ -4694,9 +4160,6 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\brina.png</image_path>
-    <hp2>	</hp2>
-    <gp2>0</gp2>
-    <experience2>300</experience2>
   </enemy>
   <enemy>
     <name>Calbrena</name>
@@ -4720,9 +4183,6 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\calcobrina.png</image_path>
-    <hp2>4624</hp2>
-    <gp2>7000</gp2>
-    <experience2>19000</experience2>
   </enemy>
   <enemy>
     <name>Golbez</name>
@@ -4746,9 +4206,6 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\golbez.png</image_path>
-    <hp2>5000</hp2>
-    <gp2>11000</gp2>
-    <experience2>20000</experience2>
   </enemy>
   <enemy>
     <name>Shadow</name>
@@ -4772,9 +4229,6 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\shadowdragon.png</image_path>
-    <hp2>???</hp2>
-    <gp2>???</gp2>
-    <experience2>???</experience2>
   </enemy>
   <enemy>
     <name>Dr. Lugae</name>
@@ -4799,9 +4253,6 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\doctor.png</image_path>
-    <hp2>4416</hp2>
-    <gp2>0</gp2>
-    <experience2>0</experience2>
   </enemy>
   <enemy>
     <name>Balnab</name>
@@ -4825,9 +4276,6 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\barnabas.png</image_path>
-    <hp2>3927</hp2>
-    <gp2>0</gp2>
-    <experience2>0</experience2>
   </enemy>
   <enemy>
     <name>Balnabz</name>
@@ -4851,9 +4299,6 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\barnabasz.png</image_path>
-    <hp2 />
-    <gp2 />
-    <experience2 />
   </enemy>
   <enemy>
     <name>Lugaeborg</name>
@@ -4877,9 +4322,6 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\drlugae.png</image_path>
-    <hp2>6600</hp2>
-    <gp2>4000</gp2>
-    <experience2>15000</experience2>
   </enemy>
   <enemy>
     <name>K.Eblan</name>
@@ -4903,9 +4345,6 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\kingeblan.png</image_path>
-    <hp2>60000</hp2>
-    <gp2>0</gp2>
-    <experience2>0</experience2>
   </enemy>
   <enemy>
     <name>Q.Eblan</name>
@@ -4929,9 +4368,6 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\queeneblan.png</image_path>
-    <hp2>60000</hp2>
-    <gp2>0</gp2>
-    <experience2>0</experience2>
   </enemy>
   <enemy>
     <name>Rubicant</name>
@@ -4955,9 +4391,6 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\rubicante.png</image_path>
-    <hp2>25200</hp2>
-    <gp2>7000</gp2>
-    <experience2>25000</experience2>
   </enemy>
   <enemy>
     <name>Asura</name>
@@ -4981,9 +4414,6 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\asura.png</image_path>
-    <hp2>23000</hp2>
-    <gp2>0</gp2>
-    <experience2>20000</experience2>
   </enemy>
   <enemy>
     <name>Leviatan</name>
@@ -5007,9 +4437,6 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\leviathan.png</image_path>
-    <hp2>35000</hp2>
-    <gp2>0</gp2>
-    <experience2>28000</experience2>
   </enemy>
   <enemy>
     <name>EvilWall</name>
@@ -5033,9 +4460,6 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\demonwall.png</image_path>
-    <hp2>19000</hp2>
-    <gp2>8000</gp2>
-    <experience2>23000</experience2>
   </enemy>
   <enemy>
     <name>Elements</name>
@@ -5059,9 +4483,6 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\fiends.png</image_path>
-    <hp2 />
-    <gp2 />
-    <experience2 />
   </enemy>
   <enemy>
     <name>CPU</name>
@@ -5085,9 +4506,6 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\cpu.png</image_path>
-    <hp2>20000</hp2>
-    <gp2>10333</gp2>
-    <experience2>150000</experience2>
   </enemy>
   <enemy>
     <name>Attacker</name>
@@ -5111,9 +4529,6 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\attacknode.png</image_path>
-    <hp2>2000</hp2>
-    <gp2>10333</gp2>
-    <experience2>150000</experience2>
   </enemy>
   <enemy>
     <name>Defender</name>
@@ -5137,9 +4552,6 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\defensenode.png</image_path>
-    <hp2>2000</hp2>
-    <gp2>10333</gp2>
-    <experience2>150000</experience2>
   </enemy>
   <enemy>
     <name>Odin</name>
@@ -5163,9 +4575,6 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\odin.png</image_path>
-    <hp2>20500</hp2>
-    <gp2>0</gp2>
-    <experience2>18000</experience2>
   </enemy>
   <enemy>
     <name>Bahamut</name>
@@ -5189,9 +4598,6 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\bahamut.png</image_path>
-    <hp2>37000</hp2>
-    <gp2>0</gp2>
-    <experience2>35000</experience2>
   </enemy>
   <enemy>
     <name>Pale Dim</name>
@@ -5216,9 +4622,6 @@
     <absorbs>fire, ice, lightning</absorbs>
     <resists>(none)</resists>
     <image_path>images\whitedragon.png</image_path>
-    <hp2>27300</hp2>
-    <gp2>0</gp2>
-    <experience2>59000</experience2>
   </enemy>
   <enemy>
     <name>Wyvern</name>
@@ -5242,9 +4645,6 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\darkbahamut.png</image_path>
-    <hp2>25000</hp2>
-    <gp2>0</gp2>
-    <experience2>64300</experience2>
   </enemy>
   <enemy>
     <name>Plague</name>
@@ -5268,9 +4668,6 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\plague.png</image_path>
-    <hp2>28000</hp2>
-    <gp2>550</gp2>
-    <experience2>31200</experience2>
   </enemy>
   <enemy>
     <name>D.Lunar</name>
@@ -5294,9 +4691,6 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\lunasaur.png</image_path>
-    <hp2>21000</hp2>
-    <gp2>0</gp2>
-    <experience2>100000</experience2>
   </enemy>
   <enemy>
     <name>Ogopogo</name>
@@ -5320,9 +4714,6 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\ogopogo.png</image_path>
-    <hp2>37000</hp2>
-    <gp2>0</gp2>
-    <experience2>61100</experience2>
   </enemy>
   <enemy>
     <name>Zemus</name>
@@ -5346,9 +4737,6 @@
     <absorbs>fire, ice, lightning, holy</absorbs>
     <resists>(none)</resists>
     <image_path>images\zemus.png</image_path>
-    <hp2>11000</hp2>
-    <gp2>0</gp2>
-    <experience2>0</experience2>
   </enemy>
   <enemy>
     <name>Zeromus (Round 1)</name>
@@ -5373,9 +4761,6 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\zeromus1.png</image_path>
-    <hp2 />
-    <gp2 />
-    <experience2 />
   </enemy>
   <enemy>
     <name>Zeromus (Round 2)</name>
@@ -5400,9 +4785,6 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\zeromus1.png</image_path>
-    <hp2 />
-    <gp2 />
-    <experience2 />
   </enemy>
   <enemy>
     <name>Zeromus (Final)</name>
@@ -5427,8 +4809,5 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\zeromus2.png</image_path>
-    <hp2 />
-    <gp2 />
-    <experience2 />
   </enemy>
 </enemies>
