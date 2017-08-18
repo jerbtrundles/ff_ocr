@@ -27,8 +27,14 @@ Larva x 3
 45 GP
 75 Experience (150)
 
+SandMoth x 2
+Larva x 2
+70 GP
+130 Experience (260)
+
 Imp - 10 GP, 20 Experience
 FloatEye - 10 GP, 40 Experience
 Eagle - 10 GP, 30 Experience
 SwordRat - 20 GP, 70 Experience
 Larva - 15 GP, 50 Experience
+SandMoth - 20 GP, 80 Experience
