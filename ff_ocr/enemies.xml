@@ -602,10 +602,10 @@
     <experience2>8000</experience2>
   </enemy>
   <enemy>
-    <name>Cocatrice</name>
-    <verified>false</verified>
+    <name>Cocktric</name>
+    <verified>true</verified>
     <match_strings>
-      <match_string>cocatrice</match_string>
+      <match_string>cocktric</match_string>
     </match_strings>
     <level>11</level>
     <hp>149</hp>
@@ -1132,6 +1132,7 @@
     <match_strings>
       <match_string>foateye</match_string>
       <match_string>floateye</match_string>
+	  <match_string>fqteye</match_string>
     </match_strings>
     <level>4</level>
     <hp>20</hp>
@@ -3147,7 +3148,7 @@
   </enemy>
   <enemy>
     <name>Spirit</name>
-    <verified>false</verified>
+    <verified>true</verified>
     <match_strings>
       <match_string>spirit</match_string>
     </match_strings>

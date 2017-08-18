@@ -705,6 +705,7 @@
     <Content Include="images\zu.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="manual_data.txt" />
     <Content Include="test.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

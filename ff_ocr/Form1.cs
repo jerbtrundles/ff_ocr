@@ -28,12 +28,12 @@ namespace ff_ocr {
         Enemy enemy2;
         Enemy enemy3;
 
+        int x = 401;
+        int y = 690;
         int width = 330;
         int height = 210;
-        int x = 410;
-        int y = 720;
 
-        char[] filters = { ' ', '1', '2', '3', '4', '5', '6', '7', '8', '9' };
+        char[] filters = { ' ', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9' };
 
         int noBattleCount = 0;
 
@@ -65,44 +65,44 @@ namespace ff_ocr {
             //eOutput.Save(@"c:\users\joshbax\desktop\enemies.xml");
         }
 
-        private void LoadExtraData() {
-            List<string> matches = new List<string>();
-            List<string> nonMatches = new List<string>();
+        //private void LoadExtraData() {
+        //    List<string> matches = new List<string>();
+        //    List<string> nonMatches = new List<string>();
 
-            string path = @"extra_data.txt";
-            string[] lines = File.ReadAllLines(path);
-            foreach (string line in lines) {
-                if (line.StartsWith("*") || line.StartsWith("=")) { continue; }
-                string[] tokens = line.Split(" ".ToCharArray(), StringSplitOptions.RemoveEmptyEntries);
-                int i = 1;
+        //    string path = @"extra_data.txt";
+        //    string[] lines = File.ReadAllLines(path);
+        //    foreach (string line in lines) {
+        //        if (line.StartsWith("*") || line.StartsWith("=")) { continue; }
+        //        string[] tokens = line.Split(" ".ToCharArray(), StringSplitOptions.RemoveEmptyEntries);
+        //        int i = 1;
 
-                StringBuilder sb = new StringBuilder(tokens[0]);
-                while (i < tokens.Length && char.IsLetter(tokens[i][0])) {
-                    sb.Append(" " + tokens[i++]);
-                }
-                string name = sb.ToString();
+        //        StringBuilder sb = new StringBuilder(tokens[0]);
+        //        while (i < tokens.Length && char.IsLetter(tokens[i][0])) {
+        //            sb.Append(" " + tokens[i++]);
+        //        }
+        //        string name = sb.ToString();
 
-                Enemy e = Enemies.Find(x => x.Name.ToLower().Replace(" ", "").Replace(".", "").Replace("-", "") == name.ToLower().Replace(" ", "").Replace(".", "").Replace("-", ""));
-                if (e != null) {
-                    // match
-                    // matches.Add(name);
-                    e.HP2 = tokens[i];
-                    e.Experience2 = tokens[++i];
-                    e.GP2 = tokens[++i];
-                }
-                //else {
-                //    // no match
-                //    nonMatches.Add(name);
-                //}
-            }
+        //        Enemy e = Enemies.Find(x => x.Name.ToLower().Replace(" ", "").Replace(".", "").Replace("-", "") == name.ToLower().Replace(" ", "").Replace(".", "").Replace("-", ""));
+        //        if (e != null) {
+        //            // match
+        //            // matches.Add(name);
+        //            e.HP2 = tokens[i];
+        //            e.Experience2 = tokens[++i];
+        //            e.GP2 = tokens[++i];
+        //        }
+        //        //else {
+        //        //    // no match
+        //        //    nonMatches.Add(name);
+        //        //}
+        //    }
 
-            //List<Enemy> n = Enemies.Where(x => matches.Find(y => x.Name.ToLower().Replace(" ", "").Replace(".", "").Replace("-", "") == y.ToLower().Replace(" ", "").Replace(".", "").Replace("-", "")) == null).ToList();
+        //    //List<Enemy> n = Enemies.Where(x => matches.Find(y => x.Name.ToLower().Replace(" ", "").Replace(".", "").Replace("-", "") == y.ToLower().Replace(" ", "").Replace(".", "").Replace("-", "")) == null).ToList();
 
-            //int j = 0;
-        }
+        //    //int j = 0;
+        //}
 
         private async Task Recognize() {
-            string path = @"c:\users\joshbax\desktop\temp.bmp";
+            string path = @"c:\users\baxte\desktop\temp.bmp";
             Stopwatch s = Stopwatch.StartNew();
 
             using (Graphics g = Graphics.FromImage(bmp)) {
