@@ -23,6 +23,7 @@ namespace ff_ocr {
         Bitmap bmp;
         bool bReady = true;
         List<Enemy> Enemies = new List<Enemy>();
+        string path = @"c:\users\baxte\desktop\temp2.bmp";
 
         Enemy enemy1;
         Enemy enemy2;
@@ -30,8 +31,11 @@ namespace ff_ocr {
 
         int x = 401;
         int y = 690;
-        int width = 330;
+        int width = 360;
         int height = 210;
+        int frameX = 0;
+        int frameY = 0;
+        int dataClearThreshold = 20;
 
         char[] filters = { ' ', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9' };
 
@@ -41,7 +45,7 @@ namespace ff_ocr {
             InitializeComponent();
         }
 
-        private async void Form1_Load(object sender, EventArgs e) {
+        private void Form1_Load(object sender, EventArgs e) {
             ocr = OcrEngine.TryCreateFromUserProfileLanguages();
 
             txtCaptureX.Text = x.ToString();
@@ -65,48 +69,14 @@ namespace ff_ocr {
             //eOutput.Save(@"c:\users\joshbax\desktop\enemies.xml");
         }
 
-        //private void LoadExtraData() {
-        //    List<string> matches = new List<string>();
-        //    List<string> nonMatches = new List<string>();
-
-        //    string path = @"extra_data.txt";
-        //    string[] lines = File.ReadAllLines(path);
-        //    foreach (string line in lines) {
-        //        if (line.StartsWith("*") || line.StartsWith("=")) { continue; }
-        //        string[] tokens = line.Split(" ".ToCharArray(), StringSplitOptions.RemoveEmptyEntries);
-        //        int i = 1;
-
-        //        StringBuilder sb = new StringBuilder(tokens[0]);
-        //        while (i < tokens.Length && char.IsLetter(tokens[i][0])) {
-        //            sb.Append(" " + tokens[i++]);
-        //        }
-        //        string name = sb.ToString();
-
-        //        Enemy e = Enemies.Find(x => x.Name.ToLower().Replace(" ", "").Replace(".", "").Replace("-", "") == name.ToLower().Replace(" ", "").Replace(".", "").Replace("-", ""));
-        //        if (e != null) {
-        //            // match
-        //            // matches.Add(name);
-        //            e.HP2 = tokens[i];
-        //            e.Experience2 = tokens[++i];
-        //            e.GP2 = tokens[++i];
-        //        }
-        //        //else {
-        //        //    // no match
-        //        //    nonMatches.Add(name);
-        //        //}
-        //    }
-
-        //    //List<Enemy> n = Enemies.Where(x => matches.Find(y => x.Name.ToLower().Replace(" ", "").Replace(".", "").Replace("-", "") == y.ToLower().Replace(" ", "").Replace(".", "").Replace("-", "")) == null).ToList();
-
-        //    //int j = 0;
-        //}
-
         private async Task Recognize() {
-            string path = @"c:\users\baxte\desktop\temp.bmp";
+            frameX = (frameX + 1) % 3;
+            frameY = (frameY + 1) % 4;
+
             Stopwatch s = Stopwatch.StartNew();
 
             using (Graphics g = Graphics.FromImage(bmp)) {
-                g.CopyFromScreen(Screen.PrimaryScreen.Bounds.X + x, Screen.PrimaryScreen.Bounds.Y + y, 0, 0, bmp.Size, CopyPixelOperation.SourceCopy);
+                g.CopyFromScreen(Screen.PrimaryScreen.Bounds.X + x + frameX, Screen.PrimaryScreen.Bounds.Y + y + frameY, 0, 0, bmp.Size, CopyPixelOperation.SourceCopy);
             }
 
             bmp.Save(path);
@@ -120,9 +90,9 @@ namespace ff_ocr {
 
             OcrResult result = await ocr.RecognizeAsync(bitmap);
             if (result.Lines.Count == 0) {
-                richTextBox1.Clear();
+                Append("(nothing)");
 
-                if (++noBattleCount == 3) {
+                if (++noBattleCount == dataClearThreshold) {
                     ClearEnemyData();
                 }
             }
@@ -133,7 +103,7 @@ namespace ff_ocr {
                     sb.AppendLine(l.Text);
                     string name = String.Join("", l.Text.ToLower().Trim().Split(filters, StringSplitOptions.RemoveEmptyEntries));
                     if (name.Length > 0) {
-                        richTextBox1.AppendText(name + "\r\n");
+                        Append(name);
                         Enemy enemy = Enemies.Find(x => x.MatchStrings.Contains(name));
                         if (enemy != null) {
                             if (enemy == enemy1) { continue; }
@@ -155,11 +125,22 @@ namespace ff_ocr {
                         }
                     }
                 }
-                richTextBox1.Text = sb.ToString() + Environment.NewLine;
+                //richTextBox1.Text = sb.ToString() + Environment.NewLine;
             }
 
             s.Stop();
-            richTextBox1.AppendText("Time: " + s.ElapsedMilliseconds.ToString() + " ms\r\n");
+            txtTime.Text = "Time: " + s.ElapsedMilliseconds.ToString() + " ms";
+        }
+
+        private void Append(string str) {
+            if (richTextBox1.Lines.Length > 20) {
+                richTextBox1.Text = richTextBox1.Text.Substring(richTextBox1.Text.IndexOf('\n') + 1);
+            }
+            richTextBox1.AppendText(str + "\r\n");
+
+            if (!richTextBox2.Text.Contains(str)) {
+                richTextBox2.AppendText(str + "\r\n");
+            }
         }
 
         private async void timer1_Tick(object sender, EventArgs e) {
@@ -181,6 +162,8 @@ namespace ff_ocr {
             enemy1 = null;
             enemy2 = null;
             enemy3 = null;
+
+            richTextBox2.Clear();
         }
 
         private void SetEnemy(Enemy enemy, PictureBox pb, RichTextBox rtb) {
@@ -189,54 +172,17 @@ namespace ff_ocr {
         }
 
         private void btnSetCaptureData_Click(object sender, EventArgs e) {
-            if (!int.TryParse(txtCaptureX.Text, out int newX)) {
-                lblCaptureStatus.Text = "Error: X value is not a number.";
-                return;
+            if (ValidateCaptureData()) {
+                x = int.Parse(txtCaptureX.Text);
+                y = int.Parse(txtCaptureY.Text);
+                width = int.Parse(txtCaptureWidth.Text);
+                height = int.Parse(txtCaptureHeight.Text);
+                bmp = new Bitmap(width, height);
+                lblCaptureStatus.Text = "Capture data successfully set.";
+
+                // timer to clear status text
+                timer2.Enabled = true;
             }
-
-            if (!int.TryParse(txtCaptureY.Text, out int newY)) {
-                lblCaptureStatus.Text = "Error: Y value is not a number.";
-                return;
-            }
-
-
-            if (!int.TryParse(txtCaptureWidth.Text, out int newWidth)) {
-                lblCaptureStatus.Text = "Error: Width value is not a number.";
-                return;
-            }
-
-            if (!int.TryParse(txtCaptureHeight.Text, out int newHeight)) {
-                lblCaptureStatus.Text = "Error: Height value is not a number.";
-                return;
-            }
-
-            if (newX < 10 || newX > 1000) {
-                lblCaptureStatus.Text = "Error: X value must be between 10 and 1000.";
-                return;
-            }
-
-            if (newY < 10 || newY > 1000) {
-                lblCaptureStatus.Text = "Error: Y value must be between 10 and 1000.";
-                return;
-            }
-
-            if (newWidth < 10 || newWidth > 1000) {
-                lblCaptureStatus.Text = "Error: Width value must be between 10 and 1000.";
-                return;
-            }
-
-            if (newHeight < 10 || newHeight > 1000) {
-                lblCaptureStatus.Text = "Error: Height value must be between 10 and 1000.";
-                return;
-            }
-
-            x = newX;
-            y = newY;
-            width = newWidth;
-            height = newHeight;
-            bmp = new Bitmap(width, height);
-            lblCaptureStatus.Text = "Capture data successfully set.";
-            timer2.Enabled = true;
         }
 
         private void txtNumeric_KeyPress(object sender, KeyPressEventArgs e) {
@@ -248,13 +194,97 @@ namespace ff_ocr {
             timer2.Enabled = false;
         }
 
-        //private void DownloadImages() {
-        //    Directory.CreateDirectory("images");
-        //    using (WebClient client = new WebClient()) {
-        //        foreach (Enemy e in Enemies) {
-        //            client.DownloadFile(new Uri(e.ImageURL), Path.Combine("images", e.ImageURLStem));                    
-        //        }
-        //    }
-        //}
+        private bool ValidateCaptureData() {
+            if (!int.TryParse(txtCaptureX.Text, out int newX)) {
+                lblCaptureStatus.Text = "Error: X value is not a number.";
+                return false;
+            }
+
+            if (!int.TryParse(txtCaptureY.Text, out int newY)) {
+                lblCaptureStatus.Text = "Error: Y value is not a number.";
+                return false;
+            }
+
+            if (!int.TryParse(txtCaptureWidth.Text, out int newWidth)) {
+                lblCaptureStatus.Text = "Error: Width value is not a number.";
+                return false;
+            }
+
+            if (!int.TryParse(txtCaptureHeight.Text, out int newHeight)) {
+                lblCaptureStatus.Text = "Error: Height value is not a number.";
+                return false;
+            }
+
+            if (newX < 10 || newX > 1000) {
+                lblCaptureStatus.Text = "Error: X value must be between 10 and 1000.";
+                return false;
+            }
+
+            if (newY < 10 || newY > 1000) {
+                lblCaptureStatus.Text = "Error: Y value must be between 10 and 1000.";
+                return false;
+            }
+
+            if (newWidth < 10 || newWidth > 1000) {
+                lblCaptureStatus.Text = "Error: Width value must be between 10 and 1000.";
+                return false;
+            }
+
+            if (newHeight < 10 || newHeight > 1000) {
+                lblCaptureStatus.Text = "Error: Height value must be between 10 and 1000.";
+                return false;
+            }
+
+            return true;
+        }
+
+        private void Form1_FormClosed(object sender, FormClosedEventArgs e) {
+            if (File.Exists(path)) { File.Delete(path); }
+        }
     }
 }
+
+//private void LoadExtraData() {
+//    List<string> matches = new List<string>();
+//    List<string> nonMatches = new List<string>();
+
+//    string path = @"extra_data.txt";
+//    string[] lines = File.ReadAllLines(path);
+//    foreach (string line in lines) {
+//        if (line.StartsWith("*") || line.StartsWith("=")) { continue; }
+//        string[] tokens = line.Split(" ".ToCharArray(), StringSplitOptions.RemoveEmptyEntries);
+//        int i = 1;
+
+//        StringBuilder sb = new StringBuilder(tokens[0]);
+//        while (i < tokens.Length && char.IsLetter(tokens[i][0])) {
+//            sb.Append(" " + tokens[i++]);
+//        }
+//        string name = sb.ToString();
+
+//        Enemy e = Enemies.Find(x => x.Name.ToLower().Replace(" ", "").Replace(".", "").Replace("-", "") == name.ToLower().Replace(" ", "").Replace(".", "").Replace("-", ""));
+//        if (e != null) {
+//            // match
+//            // matches.Add(name);
+//            e.HP2 = tokens[i];
+//            e.Experience2 = tokens[++i];
+//            e.GP2 = tokens[++i];
+//        }
+//        //else {
+//        //    // no match
+//        //    nonMatches.Add(name);
+//        //}
+//    }
+
+//    //List<Enemy> n = Enemies.Where(x => matches.Find(y => x.Name.ToLower().Replace(" ", "").Replace(".", "").Replace("-", "") == y.ToLower().Replace(" ", "").Replace(".", "").Replace("-", "")) == null).ToList();
+
+//    //int j = 0;
+//}
+
+//private void DownloadImages() {
+//    Directory.CreateDirectory("images");
+//    using (WebClient client = new WebClient()) {
+//        foreach (Enemy e in Enemies) {
+//            client.DownloadFile(new Uri(e.ImageURL), Path.Combine("images", e.ImageURLStem));                    
+//        }
+//    }
+//}

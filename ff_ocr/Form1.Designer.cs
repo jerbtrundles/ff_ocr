@@ -37,6 +37,7 @@
             this.grpEnemy3 = new System.Windows.Forms.GroupBox();
             this.pbCapture = new System.Windows.Forms.PictureBox();
             this.grpCapture = new System.Windows.Forms.GroupBox();
+            this.lblCaptureStatus = new System.Windows.Forms.Label();
             this.btnSetCaptureData = new System.Windows.Forms.Button();
             this.txtCaptureHeight = new System.Windows.Forms.TextBox();
             this.txtCaptureWidth = new System.Windows.Forms.TextBox();
@@ -46,8 +47,9 @@
             this.lblCaptureWidth = new System.Windows.Forms.Label();
             this.lblCaptureY = new System.Windows.Forms.Label();
             this.lblCaptureX = new System.Windows.Forms.Label();
-            this.lblCaptureStatus = new System.Windows.Forms.Label();
             this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.txtTime = new System.Windows.Forms.TextBox();
+            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbEnemy1)).BeginInit();
             this.grpEnemy1.SuspendLayout();
             this.grpEnemy2.SuspendLayout();
@@ -62,7 +64,7 @@
             // 
             this.richTextBox1.Location = new System.Drawing.Point(12, 12);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(227, 290);
+            this.richTextBox1.Size = new System.Drawing.Size(227, 477);
             this.richTextBox1.TabIndex = 0;
             this.richTextBox1.Text = "";
             // 
@@ -77,7 +79,7 @@
             // timer1
             // 
             this.timer1.Enabled = true;
-            this.timer1.Interval = 500;
+            this.timer1.Interval = 1;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // grpEnemy1
@@ -185,6 +187,14 @@
             this.grpCapture.TabStop = false;
             this.grpCapture.Text = "Capture";
             // 
+            // lblCaptureStatus
+            // 
+            this.lblCaptureStatus.AutoSize = true;
+            this.lblCaptureStatus.Location = new System.Drawing.Point(6, 42);
+            this.lblCaptureStatus.Name = "lblCaptureStatus";
+            this.lblCaptureStatus.Size = new System.Drawing.Size(0, 13);
+            this.lblCaptureStatus.TabIndex = 17;
+            // 
             // btnSetCaptureData
             // 
             this.btnSetCaptureData.Location = new System.Drawing.Point(381, 17);
@@ -263,18 +273,25 @@
             this.lblCaptureX.TabIndex = 8;
             this.lblCaptureX.Text = "X:";
             // 
-            // lblCaptureStatus
-            // 
-            this.lblCaptureStatus.AutoSize = true;
-            this.lblCaptureStatus.Location = new System.Drawing.Point(6, 42);
-            this.lblCaptureStatus.Name = "lblCaptureStatus";
-            this.lblCaptureStatus.Size = new System.Drawing.Size(0, 13);
-            this.lblCaptureStatus.TabIndex = 17;
-            // 
             // timer2
             // 
             this.timer2.Interval = 3000;
             this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
+            // 
+            // txtTime
+            // 
+            this.txtTime.Location = new System.Drawing.Point(12, 495);
+            this.txtTime.Name = "txtTime";
+            this.txtTime.Size = new System.Drawing.Size(227, 20);
+            this.txtTime.TabIndex = 9;
+            // 
+            // richTextBox2
+            // 
+            this.richTextBox2.Location = new System.Drawing.Point(12, 521);
+            this.richTextBox2.Name = "richTextBox2";
+            this.richTextBox2.Size = new System.Drawing.Size(227, 313);
+            this.richTextBox2.TabIndex = 10;
+            this.richTextBox2.Text = "";
             // 
             // Form1
             // 
@@ -282,6 +299,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlText;
             this.ClientSize = new System.Drawing.Size(1096, 848);
+            this.Controls.Add(this.richTextBox2);
+            this.Controls.Add(this.txtTime);
             this.Controls.Add(this.grpCapture);
             this.Controls.Add(this.grpEnemy3);
             this.Controls.Add(this.grpEnemy2);
@@ -289,6 +308,7 @@
             this.Controls.Add(this.richTextBox1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbEnemy1)).EndInit();
             this.grpEnemy1.ResumeLayout(false);
@@ -300,6 +320,7 @@
             this.grpCapture.ResumeLayout(false);
             this.grpCapture.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -329,6 +350,8 @@
         private System.Windows.Forms.Button btnSetCaptureData;
         private System.Windows.Forms.Label lblCaptureStatus;
         private System.Windows.Forms.Timer timer2;
+        private System.Windows.Forms.TextBox txtTime;
+        private System.Windows.Forms.RichTextBox richTextBox2;
     }
 }
 

@@ -90,7 +90,8 @@ namespace ff_ocr {
             XElement eExperience2 = e.Element("experience2");
             if (eExperience2 != null) { Experience2 = eExperience2.Value; }
 
-            MatchStrings.Add(Name.Replace("B", "E").Replace("m", "n").Replace("l", "").ToLower());
+            MatchStrings.Add(Name.Replace("B", "E").Replace("m", "n").Replace("l", "").Replace("-", "").ToLower());
+            MatchStrings.Add(Name.Replace("B", "E").Replace("l", "").Replace("-", "").ToLower());
         }
 
         public string FullString {

@@ -2890,6 +2890,9 @@
     <verified>true</verified>
     <match_strings>
       <match_string>sandmoth</match_string>
+	  <match_string>sandhoth</match_string>
+	  <match_string>sqndhoth</match_string>
+	  <match_string>sqndmoth</match_string>
     </match_strings>
     <level>5</level>
     <hp>40</hp>
@@ -4019,9 +4022,10 @@
   </enemy>
   <enemy>
     <name>Mombomb</name>
-    <verified>false</verified>
+    <verified>true</verified>
     <match_strings>
       <match_string>mombomb</match_string>
+	  <match_string>homeomb</match_string>
     </match_strings>
     <level>38</level>
     <hp>1150</hp>
