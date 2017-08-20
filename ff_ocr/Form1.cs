@@ -23,13 +23,18 @@ namespace ff_ocr {
         Bitmap bmp;
         bool bReady = true;
         List<Enemy> Enemies = new List<Enemy>();
-        string path = @"c:\users\baxte\desktop\temp2.bmp";
+
+        // file paths
+        static string profile = "baxte";
+        static string desktop = Path.Combine(@"c:\users\", profile, "desktop");
+        static string temp = Path.Combine(desktop, "temp.bmp");
+        static string enemies = Path.Combine(desktop, "enemies.xml");
 
         Enemy enemy1;
         Enemy enemy2;
         Enemy enemy3;
 
-        int x = 401;
+        int x = 395;
         int y = 690;
         int width = 360;
         int height = 210;
@@ -64,14 +69,11 @@ namespace ff_ocr {
             //    Enemy enemy = new Enemy(eTable);
             //    Enemies.Add(enemy);
             //}
-
-            //XElement eOutput = new XElement("enemies", Enemies.Select(x => x.ToElement()));
-            //eOutput.Save(@"c:\users\joshbax\desktop\enemies.xml");
         }
 
         private async Task Recognize() {
-            frameX = (frameX + 1) % 3;
-            frameY = (frameY + 1) % 4;
+            frameX = (frameX + 1) % 5;
+            frameY = (frameY + 1) % 6;
 
             Stopwatch s = Stopwatch.StartNew();
 
@@ -79,10 +81,10 @@ namespace ff_ocr {
                 g.CopyFromScreen(Screen.PrimaryScreen.Bounds.X + x + frameX, Screen.PrimaryScreen.Bounds.Y + y + frameY, 0, 0, bmp.Size, CopyPixelOperation.SourceCopy);
             }
 
-            bmp.Save(path);
+            bmp.Save(temp);
             pbCapture.Image = bmp;
 
-            StorageFile input = await StorageFile.GetFileFromPathAsync(path);
+            StorageFile input = await StorageFile.GetFileFromPathAsync(temp);
             using (IRandomAccessStream stream = await input.OpenAsync(FileAccessMode.Read)) {
                 BitmapDecoder decoder = await BitmapDecoder.CreateAsync(stream);
                 bitmap = await decoder.GetSoftwareBitmapAsync();
@@ -138,12 +140,17 @@ namespace ff_ocr {
             }
             richTextBox1.AppendText(str + "\r\n");
 
-            if (!richTextBox2.Text.Contains(str)) {
-                richTextBox2.AppendText(str + "\r\n");
+            string[] lines = txtUniqueStrings.Text.Split("\r\n".ToCharArray(), StringSplitOptions.RemoveEmptyEntries);
+            foreach (string line in lines) {
+                if (line == str) {
+                    return;
+                }
             }
+
+            txtUniqueStrings.AppendText(str + "\r\n");
         }
 
-        private async void timer1_Tick(object sender, EventArgs e) {
+        private async void timerRecognize_Tick(object sender, EventArgs e) {
             if (!bReady) { return; }
 
             bReady = false;
@@ -163,7 +170,7 @@ namespace ff_ocr {
             enemy2 = null;
             enemy3 = null;
 
-            richTextBox2.Clear();
+            txtUniqueStrings.Clear();
         }
 
         private void SetEnemy(Enemy enemy, PictureBox pb, RichTextBox rtb) {
@@ -181,7 +188,7 @@ namespace ff_ocr {
                 lblCaptureStatus.Text = "Capture data successfully set.";
 
                 // timer to clear status text
-                timer2.Enabled = true;
+                timerClearCaptureStatus.Enabled = true;
             }
         }
 
@@ -189,9 +196,9 @@ namespace ff_ocr {
             if (!char.IsNumber(e.KeyChar) && !char.IsControl(e.KeyChar)) { e.Handled = true; }
         }
 
-        private void timer2_Tick(object sender, EventArgs e) {
+        private void timerClearCaptureStatus_Tick(object sender, EventArgs e) {
             lblCaptureStatus.Text = string.Empty;
-            timer2.Enabled = false;
+            timerClearCaptureStatus.Enabled = false;
         }
 
         private bool ValidateCaptureData() {
@@ -239,7 +246,42 @@ namespace ff_ocr {
         }
 
         private void Form1_FormClosed(object sender, FormClosedEventArgs e) {
-            if (File.Exists(path)) { File.Delete(path); }
+            if (File.Exists(temp)) { File.Delete(temp); }
+            SaveEnemies();
+        }
+
+        private void SaveEnemies() {
+            XElement eOutput = new XElement("enemies", Enemies.Select(x => x.ToElement()));
+            eOutput.Save(enemies);
+        }
+
+        private void btnAddManualString_Click(object sender, EventArgs e) {
+            timerClearAddManualStringStatus.Enabled = false;
+            string[] split = txtAddManualString.Text.Split(":".ToCharArray(), StringSplitOptions.RemoveEmptyEntries);
+            if (split.Length != 2) {
+                lblAddManualStringStatus.Text = "Invalid string format.";
+            }
+            else {
+                Enemy enemy = Enemies.Find(x => x.Name.ToLower() == split[0].ToLower());
+                if (enemy != null) {
+                    enemy.MatchStrings.Add(split[1].ToLower());
+                    lblAddManualStringStatus.Text = "String successfully added.";
+                }
+                else {
+                    lblAddManualStringStatus.Text = "Enemy not found.";
+                }
+            }
+
+            timerClearAddManualStringStatus.Enabled = true;
+        }
+
+        private void timerClearAddManualStringStatus_Tick(object sender, EventArgs e) {
+            lblAddManualStringStatus.Text = "";
+            timerClearAddManualStringStatus.Enabled = false;
+        }
+
+        private void btnClearUniqueStrings_Click(object sender, EventArgs e) {
+            txtUniqueStrings.Clear();
         }
     }
 }

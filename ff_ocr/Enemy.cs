@@ -92,6 +92,19 @@ namespace ff_ocr {
 
             MatchStrings.Add(Name.Replace("B", "E").Replace("m", "n").Replace("l", "").Replace("-", "").ToLower());
             MatchStrings.Add(Name.Replace("B", "E").Replace("l", "").Replace("-", "").ToLower());
+
+            List<string> msReplace = new List<string>();
+            msReplace.Add(MatchStrings[0]);
+            for (int i = 1; i < MatchStrings.Count; i++) {
+                if(msReplace.Contains(MatchStrings[i])){
+                    continue;
+                }
+                else {
+                    msReplace.Add(MatchStrings[i]);
+                }
+            }
+
+            MatchStrings = msReplace;
         }
 
         public string FullString {

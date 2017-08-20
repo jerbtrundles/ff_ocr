@@ -5,7 +5,6 @@
     <verified>false</verified>
     <match_strings>
       <match_string>alert</match_string>
-      <match_string>aert</match_string>
     </match_strings>
     <level>16</level>
     <hp>1425</hp>
@@ -32,7 +31,6 @@
     <verified>false</verified>
     <match_strings>
       <match_string>aquaworm</match_string>
-      <match_string>aquaworn</match_string>
     </match_strings>
     <level>18</level>
     <hp>638</hp>
@@ -85,8 +83,6 @@
     <verified>false</verified>
     <match_strings>
       <match_string>armadilo</match_string>
-      <match_string>arnadio</match_string>
-      <match_string>armadio</match_string>
     </match_strings>
     <level>27</level>
     <hp>325</hp>
@@ -113,7 +109,6 @@
     <verified>false</verified>
     <match_strings>
       <match_string>balloon</match_string>
-      <match_string>eaoon</match_string>
     </match_strings>
     <level>33</level>
     <hp>697</hp>
@@ -141,7 +136,6 @@
     <match_strings>
       <match_string>easilisk</match_string>
       <match_string>basilisk</match_string>
-      <match_string>easiisk</match_string>
     </match_strings>
     <level>5</level>
     <hp>90</hp>
@@ -168,8 +162,6 @@
     <verified>false</verified>
     <match_strings>
       <match_string>beamer</match_string>
-      <match_string>eeaner</match_string>
-      <match_string>eeamer</match_string>
     </match_strings>
     <level>50</level>
     <hp>3000</hp>
@@ -196,8 +188,6 @@
     <verified>false</verified>
     <match_strings>
       <match_string>behemoth</match_string>
-      <match_string>eehenoth</match_string>
-      <match_string>eehemoth</match_string>
     </match_strings>
     <level>99</level>
     <hp>23000</hp>
@@ -224,7 +214,6 @@
     <verified>false</verified>
     <match_strings>
       <match_string>blackcat</match_string>
-      <match_string>eackcat</match_string>
     </match_strings>
     <level>35</level>
     <hp>593</hp>
@@ -251,7 +240,6 @@
     <verified>false</verified>
     <match_strings>
       <match_string>blackliz</match_string>
-      <match_string>eackliz</match_string>
     </match_strings>
     <level>25</level>
     <hp>792</hp>
@@ -278,7 +266,6 @@
     <verified>false</verified>
     <match_strings>
       <match_string>blademan</match_string>
-      <match_string>eademan</match_string>
     </match_strings>
     <level>35</level>
     <hp>1050</hp>
@@ -306,7 +293,6 @@
     <match_strings>
       <match_string>blue d.</match_string>
       <match_string>blued.</match_string>
-      <match_string>eue d.</match_string>
     </match_strings>
     <level>98</level>
     <hp>15000</hp>
@@ -333,8 +319,6 @@
     <verified>false</verified>
     <match_strings>
       <match_string>bomb</match_string>
-      <match_string>eonb</match_string>
-      <match_string>eomb</match_string>
     </match_strings>
     <level>14</level>
     <hp>55</hp>
@@ -361,7 +345,6 @@
     <verified>false</verified>
     <match_strings>
       <match_string>breath</match_string>
-      <match_string>ereath</match_string>
     </match_strings>
     <level>99</level>
     <hp>40000</hp>
@@ -388,7 +371,6 @@
     <verified>false</verified>
     <match_strings>
       <match_string>cannibal</match_string>
-      <match_string>canniba</match_string>
     </match_strings>
     <level>19</level>
     <hp>440</hp>
@@ -441,7 +423,6 @@
     <verified>false</verified>
     <match_strings>
       <match_string>cavebat</match_string>
-      <match_string>caveeat</match_string>
     </match_strings>
     <level>20</level>
     <hp>334</hp>
@@ -573,7 +554,6 @@
     <verified>false</verified>
     <match_strings>
       <match_string>chimera</match_string>
-      <match_string>chinera</match_string>
     </match_strings>
     <level>28</level>
     <hp>700</hp>
@@ -600,7 +580,6 @@
     <verified>false</verified>
     <match_strings>
       <match_string>clapper</match_string>
-      <match_string>capper</match_string>
     </match_strings>
     <level>54</level>
     <hp>7600</hp>
@@ -679,7 +658,6 @@
     <verified>false</verified>
     <match_strings>
       <match_string>crawler</match_string>
-      <match_string>crawer</match_string>
     </match_strings>
     <level>43</level>
     <hp>1855</hp>
@@ -697,9 +675,9 @@
     <absorbs>(none)</absorbs>
     <resists>mini, pig, toad</resists>
     <image_path>images\crawler.png</image_path>
-    <hp2></hp2>
-    <gp2></gp2>
-    <experience2></experience2>
+    <hp2 />
+    <gp2 />
+    <experience2 />
   </enemy>
   <enemy>
     <name>Cream</name>
@@ -725,15 +703,14 @@
     <resists>confuse</resists>
     <image_path>images\yellowjelly.png</image_path>
     <hp2>55</hp2>
-    <gp2>35</gp2>
-    <experience2>150</experience2>
+    <gp2>??</gp2>
+    <experience2>??</experience2>
   </enemy>
   <enemy>
     <name>Crocdile</name>
     <verified>false</verified>
     <match_strings>
       <match_string>crocdile</match_string>
-      <match_string>crocdie</match_string>
     </match_strings>
     <level>17</level>
     <hp>292</hp>
@@ -761,7 +738,6 @@
     <match_strings>
       <match_string>dark imp</match_string>
       <match_string>darkimp</match_string>
-      <match_string>dark inp</match_string>
     </match_strings>
     <level>16</level>
     <hp>199</hp>
@@ -814,7 +790,6 @@
     <verified>false</verified>
     <match_strings>
       <match_string>d.bone</match_string>
-      <match_string>d.eone</match_string>
     </match_strings>
     <level>79</level>
     <hp>12000</hp>
@@ -841,7 +816,6 @@
     <verified>false</verified>
     <match_strings>
       <match_string>d.fossil</match_string>
-      <match_string>d.fossi</match_string>
     </match_strings>
     <level>79</level>
     <hp>12000</hp>
@@ -921,7 +895,6 @@
     <verified>false</verified>
     <match_strings>
       <match_string>elecfish</match_string>
-      <match_string>eecfish</match_string>
     </match_strings>
     <level>17</level>
     <hp>284</hp>
@@ -948,7 +921,6 @@
     <verified>false</verified>
     <match_strings>
       <match_string>epeegirl</match_string>
-      <match_string>epeegir</match_string>
     </match_strings>
     <level>26</level>
     <hp>425</hp>
@@ -975,7 +947,6 @@
     <verified>false</verified>
     <match_strings>
       <match_string>evildoll</match_string>
-      <match_string>evido</match_string>
     </match_strings>
     <level>30</level>
     <hp>388</hp>
@@ -1002,7 +973,6 @@
     <verified>false</verified>
     <match_strings>
       <match_string>evilmask</match_string>
-      <match_string>evimask</match_string>
     </match_strings>
     <level>99</level>
     <hp>37000</hp>
@@ -1030,7 +1000,6 @@
     <match_strings>
       <match_string>evilshe</match_string>
       <match_string>evilshel</match_string>
-      <match_string>evishe</match_string>
     </match_strings>
     <level>6</level>
     <hp>58</hp>
@@ -1057,7 +1026,6 @@
     <verified>false</verified>
     <match_strings>
       <match_string>fangshel</match_string>
-      <match_string>fangshe</match_string>
     </match_strings>
     <level>25</level>
     <hp>380</hp>
@@ -1111,8 +1079,6 @@
     <match_strings>
       <match_string>flame dog</match_string>
       <match_string>flamedog</match_string>
-      <match_string>fane dog</match_string>
-      <match_string>fame dog</match_string>
     </match_strings>
     <level>29</level>
     <hp>1221</hp>
@@ -1139,8 +1105,6 @@
     <verified>false</verified>
     <match_strings>
       <match_string>flameman</match_string>
-      <match_string>faneman</match_string>
-      <match_string>fameman</match_string>
     </match_strings>
     <level>31</level>
     <hp>579</hp>
@@ -1168,7 +1132,7 @@
     <match_strings>
       <match_string>foateye</match_string>
       <match_string>floateye</match_string>
-      <match_string>fqteye</match_string>
+	  <match_string>fqteye</match_string>
     </match_strings>
     <level>4</level>
     <hp>20</hp>
@@ -1248,7 +1212,6 @@
     <verified>false</verified>
     <match_strings>
       <match_string>ghoul</match_string>
-      <match_string>ghou</match_string>
     </match_strings>
     <level>16</level>
     <hp>222</hp>
@@ -1275,7 +1238,6 @@
     <verified>false</verified>
     <match_strings>
       <match_string>giantbat</match_string>
-      <match_string>gianteat</match_string>
     </match_strings>
     <level>31</level>
     <hp>439</hp>
@@ -1302,7 +1264,6 @@
     <verified>false</verified>
     <match_strings>
       <match_string>ging-ryu</match_string>
-      <match_string>gingryu</match_string>
     </match_strings>
     <level>97</level>
     <hp>7500</hp>
@@ -1329,8 +1290,6 @@
     <verified>false</verified>
     <match_strings>
       <match_string>glomwing</match_string>
-      <match_string>gonwing</match_string>
-      <match_string>gomwing</match_string>
     </match_strings>
     <level>41</level>
     <hp>1580</hp>
@@ -1348,9 +1307,9 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\gloomwing.png</image_path>
-    <hp2></hp2>
-    <gp2></gp2>
-    <experience2></experience2>
+    <hp2 />
+    <gp2 />
+    <experience2 />
   </enemy>
   <enemy>
     <name>Gorgon</name>
@@ -1374,17 +1333,15 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\gorgon.png</image_path>
-    <hp2></hp2>
-    <gp2></gp2>
-    <experience2></experience2>
+    <hp2 />
+    <gp2 />
+    <experience2 />
   </enemy>
   <enemy>
     <name>GrayBomb</name>
     <verified>false</verified>
     <match_strings>
       <match_string>graybomb</match_string>
-      <match_string>grayeonb</match_string>
-      <match_string>grayeomb</match_string>
     </match_strings>
     <level>14</level>
     <hp>111</hp>
@@ -1437,8 +1394,6 @@
     <verified>false</verified>
     <match_strings>
       <match_string>gremlin</match_string>
-      <match_string>grenin</match_string>
-      <match_string>gremin</match_string>
     </match_strings>
     <level>23</level>
     <hp>410</hp>
@@ -1517,7 +1472,6 @@
     <verified>false</verified>
     <match_strings>
       <match_string>hooligan</match_string>
-      <match_string>hooigan</match_string>
     </match_strings>
     <level>48</level>
     <hp>2200</hp>
@@ -1571,7 +1525,6 @@
     <verified>false</verified>
     <match_strings>
       <match_string>hugecell</match_string>
-      <match_string>hugece</match_string>
     </match_strings>
     <level>26</level>
     <hp>695</hp>
@@ -1652,7 +1605,6 @@
     <match_strings>
       <match_string>ice beast</match_string>
       <match_string>icebeast</match_string>
-      <match_string>ice eeast</match_string>
     </match_strings>
     <level>40</level>
     <hp>520</hp>
@@ -1734,7 +1686,6 @@
       <match_string>inpcap.</match_string>
       <match_string>imp cap.</match_string>
       <match_string>impcap.</match_string>
-      <match_string>inp cap.</match_string>
     </match_strings>
     <level>9</level>
     <hp>37</hp>
@@ -1814,7 +1765,6 @@
     <verified>true</verified>
     <match_strings>
       <match_string>jelly</match_string>
-      <match_string>jey</match_string>
     </match_strings>
     <level>7</level>
     <hp>35</hp>
@@ -1841,7 +1791,6 @@
     <verified>false</verified>
     <match_strings>
       <match_string>juclyote</match_string>
-      <match_string>jucyote</match_string>
     </match_strings>
     <level>54</level>
     <hp>1700</hp>
@@ -1894,7 +1843,6 @@
     <verified>false</verified>
     <match_strings>
       <match_string>king-ryu</match_string>
-      <match_string>kingryu</match_string>
     </match_strings>
     <level>97</level>
     <hp>8200</hp>
@@ -1921,7 +1869,6 @@
     <verified>false</verified>
     <match_strings>
       <match_string>lamia</match_string>
-      <match_string>lania</match_string>
     </match_strings>
     <level>34</level>
     <hp>1200</hp>
@@ -1974,8 +1921,6 @@
     <verified>false</verified>
     <match_strings>
       <match_string>lastarm</match_string>
-      <match_string>astarn</match_string>
-      <match_string>astarm</match_string>
     </match_strings>
     <level>40</level>
     <hp>9500</hp>
@@ -2002,7 +1947,6 @@
     <verified>false</verified>
     <match_strings>
       <match_string>lilith</match_string>
-      <match_string>liith</match_string>
     </match_strings>
     <level>33</level>
     <hp>466</hp>
@@ -2161,7 +2105,6 @@
     <verified>false</verified>
     <match_strings>
       <match_string>malboro</match_string>
-      <match_string>maboro</match_string>
     </match_strings>
     <level>34</level>
     <hp>4200</hp>
@@ -2318,7 +2261,6 @@
     <verified>false</verified>
     <match_strings>
       <match_string>mooncell</match_string>
-      <match_string>moonce</match_string>
     </match_strings>
     <level>48</level>
     <hp>980</hp>
@@ -2371,7 +2313,6 @@
     <verified>false</verified>
     <match_strings>
       <match_string>needler</match_string>
-      <match_string>needer</match_string>
     </match_strings>
     <level>14</level>
     <hp>115</hp>
@@ -2632,7 +2573,6 @@
     <verified>false</verified>
     <match_strings>
       <match_string>q.lamia</match_string>
-      <match_string>q.lania</match_string>
     </match_strings>
     <level>34</level>
     <hp>1100</hp>
@@ -2659,7 +2599,6 @@
     <verified>false</verified>
     <match_strings>
       <match_string>redbone</match_string>
-      <match_string>redeone</match_string>
     </match_strings>
     <level>13</level>
     <hp>210</hp>
@@ -2767,7 +2706,6 @@
     <match_strings>
       <match_string>red worm</match_string>
       <match_string>redworm</match_string>
-      <match_string>red worn</match_string>
     </match_strings>
     <level>37</level>
     <hp>7000</hp>
@@ -2846,7 +2784,6 @@
     <verified>false</verified>
     <match_strings>
       <match_string>rocbaby</match_string>
-      <match_string>roceaby</match_string>
     </match_strings>
     <level>23</level>
     <hp>50</hp>
@@ -2953,9 +2890,9 @@
     <verified>true</verified>
     <match_strings>
       <match_string>sandmoth</match_string>
-      <match_string>sandhoth</match_string>
-      <match_string>sqndhoth</match_string>
-      <match_string>sqndmoth</match_string>
+	  <match_string>sandhoth</match_string>
+	  <match_string>sqndhoth</match_string>
+	  <match_string>sqndmoth</match_string>
     </match_strings>
     <level>5</level>
     <hp>40</hp>
@@ -3035,7 +2972,6 @@
     <verified>false</verified>
     <match_strings>
       <match_string>screamer</match_string>
-      <match_string>screaner</match_string>
     </match_strings>
     <level>44</level>
     <hp>1400</hp>
@@ -3053,9 +2989,9 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\screamer.png</image_path>
-    <hp2></hp2>
-    <gp2></gp2>
-    <experience2></experience2>
+    <hp2 />
+    <gp2 />
+    <experience2 />
   </enemy>
   <enemy>
     <name>Searcher</name>
@@ -3088,8 +3024,6 @@
     <verified>false</verified>
     <match_strings>
       <match_string>slime</match_string>
-      <match_string>sine</match_string>
-      <match_string>sime</match_string>
     </match_strings>
     <level>21</level>
     <hp>105</hp>
@@ -3116,7 +3050,6 @@
     <verified>false</verified>
     <match_strings>
       <match_string>skeleton</match_string>
-      <match_string>skeeton</match_string>
     </match_strings>
     <level>10</level>
     <hp>135</hp>
@@ -3143,7 +3076,6 @@
     <verified>false</verified>
     <match_strings>
       <match_string>skull</match_string>
-      <match_string>sku</match_string>
     </match_strings>
     <level>31</level>
     <hp>740</hp>
@@ -3196,7 +3128,6 @@
     <verified>false</verified>
     <match_strings>
       <match_string>soul</match_string>
-      <match_string>sou</match_string>
     </match_strings>
     <level>16</level>
     <hp>200</hp>
@@ -3249,8 +3180,6 @@
     <verified>false</verified>
     <match_strings>
       <match_string>staleman</match_string>
-      <match_string>staenan</match_string>
-      <match_string>staeman</match_string>
     </match_strings>
     <level>32</level>
     <hp>1950</hp>
@@ -3304,7 +3233,6 @@
     <verified>false</verified>
     <match_strings>
       <match_string>stoneman</match_string>
-      <match_string>stonenan</match_string>
     </match_strings>
     <level>32</level>
     <hp>2560</hp>
@@ -3331,7 +3259,6 @@
     <verified>false</verified>
     <match_strings>
       <match_string>swordman</match_string>
-      <match_string>swordnan</match_string>
     </match_strings>
     <level>21</level>
     <hp>360</hp>
@@ -3361,6 +3288,7 @@
       <match_string>swordrqt</match_string>
       <match_string>swordrat</match_string>
       <match_string>sword rat</match_string>
+      <match_string>swordrat</match_string>
     </match_strings>
     <level>4</level>
     <hp>30</hp>
@@ -3387,7 +3315,6 @@
     <verified>false</verified>
     <match_strings>
       <match_string>tarantula</match_string>
-      <match_string>tarantua</match_string>
     </match_strings>
     <level>42</level>
     <hp>2315</hp>
@@ -3405,9 +3332,9 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\tarantula.png</image_path>
-    <hp2></hp2>
-    <gp2></gp2>
-    <experience2></experience2>
+    <hp2 />
+    <gp2 />
+    <experience2 />
   </enemy>
   <enemy>
     <name>Tiny Mage</name>
@@ -3679,8 +3606,6 @@
     <verified>false</verified>
     <match_strings>
       <match_string>vampgirl</match_string>
-      <match_string>vanpgir</match_string>
-      <match_string>vampgir</match_string>
     </match_strings>
     <level>20</level>
     <hp>270</hp>
@@ -3707,7 +3632,6 @@
     <verified>false</verified>
     <match_strings>
       <match_string>vamplady</match_string>
-      <match_string>vanplady</match_string>
     </match_strings>
     <level>41</level>
     <hp>2375</hp>
@@ -3760,7 +3684,6 @@
     <verified>false</verified>
     <match_strings>
       <match_string>warlock</match_string>
-      <match_string>warock</match_string>
     </match_strings>
     <level>71</level>
     <hp>5100</hp>
@@ -3840,7 +3763,6 @@
     <verified>false</verified>
     <match_strings>
       <match_string>werebat</match_string>
-      <match_string>wereeat</match_string>
     </match_strings>
     <level>32</level>
     <hp>1014</hp>
@@ -3893,7 +3815,6 @@
     <verified>false</verified>
     <match_strings>
       <match_string>yellowd</match_string>
-      <match_string>yeowd</match_string>
     </match_strings>
     <level>40</level>
     <hp>3100</hp>
@@ -3920,7 +3841,6 @@
     <verified>true</verified>
     <match_strings>
       <match_string>zombie</match_string>
-      <match_string>zonbie</match_string>
     </match_strings>
     <level>6</level>
     <hp>52</hp>
@@ -4026,7 +3946,6 @@
     <verified>true</verified>
     <match_strings>
       <match_string>soldier</match_string>
-      <match_string>sodier</match_string>
     </match_strings>
     <level>9</level>
     <hp>27</hp>
@@ -4054,7 +3973,6 @@
     <match_strings>
       <match_string>octonanm</match_string>
       <match_string>octomamm</match_string>
-      <match_string>octonann</match_string>
     </match_strings>
     <level>67</level>
     <hp>2350</hp>
@@ -4081,7 +3999,6 @@
     <verified>true</verified>
     <match_strings>
       <match_string>antlion</match_string>
-      <match_string>antion</match_string>
     </match_strings>
     <level>98</level>
     <hp>1000</hp>
@@ -4108,8 +4025,7 @@
     <verified>true</verified>
     <match_strings>
       <match_string>mombomb</match_string>
-      <match_string>homeomb</match_string>
-      <match_string>monbonb</match_string>
+	  <match_string>homeomb</match_string>
     </match_strings>
     <level>38</level>
     <hp>1150</hp>
@@ -4136,7 +4052,6 @@
     <verified>false</verified>
     <match_strings>
       <match_string>general</match_string>
-      <match_string>genera</match_string>
     </match_strings>
     <level>15</level>
     <hp>320</hp>
@@ -4216,7 +4131,6 @@
     <match_strings>
       <match_string>imp cap.</match_string>
       <match_string>impcap.</match_string>
-      <match_string>inp cap.</match_string>
     </match_strings>
     <level>9</level>
     <hp>37</hp>
@@ -4234,9 +4148,9 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\goblincaptain.png</image_path>
-    <hp2></hp2>
-    <gp2></gp2>
-    <experience2></experience2>
+    <hp2 />
+    <gp2 />
+    <experience2 />
   </enemy>
   <enemy>
     <name>WaterHag</name>
@@ -4269,7 +4183,6 @@
     <verified>false</verified>
     <match_strings>
       <match_string>gargoyle</match_string>
-      <match_string>gargoye</match_string>
     </match_strings>
     <level>12</level>
     <hp>160</hp>
@@ -4322,7 +4235,6 @@
     <verified>false</verified>
     <match_strings>
       <match_string>milon</match_string>
-      <match_string>mion</match_string>
     </match_strings>
     <level>32</level>
     <hp>2000</hp>
@@ -4375,7 +4287,6 @@
     <verified>false</verified>
     <match_strings>
       <match_string>milon-z</match_string>
-      <match_string>mionz</match_string>
     </match_strings>
     <level>107</level>
     <hp>3000</hp>
@@ -4481,7 +4392,6 @@
     <verified>false</verified>
     <match_strings>
       <match_string>baigan</match_string>
-      <match_string>eaigan</match_string>
     </match_strings>
     <level>31</level>
     <hp>4444</hp>
@@ -4509,7 +4419,6 @@
     <match_strings>
       <match_string>left arm</match_string>
       <match_string>leftarm</match_string>
-      <match_string>left arn</match_string>
     </match_strings>
     <level>9</level>
     <hp>444</hp>
@@ -4537,7 +4446,6 @@
     <match_strings>
       <match_string>right arm</match_string>
       <match_string>rightarm</match_string>
-      <match_string>right arn</match_string>
     </match_strings>
     <level>9</level>
     <hp>444</hp>
@@ -4591,7 +4499,6 @@
     <match_strings>
       <match_string>dark elf</match_string>
       <match_string>darkelf</match_string>
-      <match_string>dark ef</match_string>
     </match_strings>
     <level>49</level>
     <hp>40704</hp>
@@ -4636,9 +4543,9 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\darkdragon.png</image_path>
-    <hp2></hp2>
-    <gp2></gp2>
-    <experience2></experience2>
+    <hp2 />
+    <gp2 />
+    <experience2 />
   </enemy>
   <enemy>
     <name>Sandy</name>
@@ -4723,7 +4630,6 @@
     <verified>false</verified>
     <match_strings>
       <match_string>valvalis</match_string>
-      <match_string>vavais</match_string>
     </match_strings>
     <level>31</level>
     <hp>8636</hp>
@@ -4750,7 +4656,6 @@
     <verified>false</verified>
     <match_strings>
       <match_string>cal</match_string>
-      <match_string>ca</match_string>
     </match_strings>
     <level>47</level>
     <hp>1369</hp>
@@ -4777,7 +4682,6 @@
     <verified>false</verified>
     <match_strings>
       <match_string>brena</match_string>
-      <match_string>erena</match_string>
     </match_strings>
     <level>15</level>
     <hp>369</hp>
@@ -4795,7 +4699,7 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\brina.png</image_path>
-    <hp2></hp2>
+    <hp2>	</hp2>
     <gp2>0</gp2>
     <experience2>300</experience2>
   </enemy>
@@ -4804,7 +4708,6 @@
     <verified>false</verified>
     <match_strings>
       <match_string>calbrena</match_string>
-      <match_string>cabrena</match_string>
     </match_strings>
     <level>31</level>
     <hp>5315</hp>
@@ -4831,7 +4734,6 @@
     <verified>false</verified>
     <match_strings>
       <match_string>golbez</match_string>
-      <match_string>gobez</match_string>
     </match_strings>
     <level>36</level>
     <hp>23001</hp>
@@ -4911,7 +4813,6 @@
     <verified>false</verified>
     <match_strings>
       <match_string>balnab</match_string>
-      <match_string>eanab</match_string>
     </match_strings>
     <level>25</level>
     <hp>4832</hp>
@@ -4938,7 +4839,6 @@
     <verified>false</verified>
     <match_strings>
       <match_string>balnabz</match_string>
-      <match_string>eanabz</match_string>
     </match_strings>
     <level>47</level>
     <hp>4518</hp>
@@ -4956,9 +4856,9 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\barnabasz.png</image_path>
-    <hp2></hp2>
-    <gp2></gp2>
-    <experience2></experience2>
+    <hp2 />
+    <gp2 />
+    <experience2 />
   </enemy>
   <enemy>
     <name>Lugaeborg</name>
@@ -4991,7 +4891,6 @@
     <verified>false</verified>
     <match_strings>
       <match_string>k.eblan</match_string>
-      <match_string>k.eban</match_string>
     </match_strings>
     <level>15</level>
     <hp>60000</hp>
@@ -5018,7 +4917,6 @@
     <verified>false</verified>
     <match_strings>
       <match_string>q.eblan</match_string>
-      <match_string>q.eban</match_string>
     </match_strings>
     <level>15</level>
     <hp>60000</hp>
@@ -5123,7 +5021,6 @@
     <verified>false</verified>
     <match_strings>
       <match_string>evilwall</match_string>
-      <match_string>eviwa</match_string>
     </match_strings>
     <level>63</level>
     <hp>28000</hp>
@@ -5150,8 +5047,6 @@
     <verified>false</verified>
     <match_strings>
       <match_string>elements</match_string>
-      <match_string>eenents</match_string>
-      <match_string>eements</match_string>
     </match_strings>
     <level>79</level>
     <hp>28000(Ea)</hp>
@@ -5169,9 +5064,9 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\fiends.png</image_path>
-    <hp2></hp2>
-    <gp2></gp2>
-    <experience2></experience2>
+    <hp2 />
+    <gp2 />
+    <experience2 />
   </enemy>
   <enemy>
     <name>CPU</name>
@@ -5282,8 +5177,6 @@
     <verified>false</verified>
     <match_strings>
       <match_string>bahamut</match_string>
-      <match_string>eahanut</match_string>
-      <match_string>eahamut</match_string>
     </match_strings>
     <level>47</level>
     <hp>45001</hp>
@@ -5311,8 +5204,6 @@
     <match_strings>
       <match_string>pale dim</match_string>
       <match_string>paledim</match_string>
-      <match_string>pae din</match_string>
-      <match_string>pae dim</match_string>
     </match_strings>
     <level>98</level>
     <hp>32700</hp>
@@ -5365,7 +5256,6 @@
     <verified>false</verified>
     <match_strings>
       <match_string>plague</match_string>
-      <match_string>pague</match_string>
     </match_strings>
     <level>96</level>
     <hp>33333</hp>
@@ -5444,7 +5334,6 @@
     <verified>false</verified>
     <match_strings>
       <match_string>zemus</match_string>
-      <match_string>zenus</match_string>
     </match_strings>
     <level>63</level>
     <hp>65500</hp>
@@ -5472,7 +5361,6 @@
     <match_strings>
       <match_string>zeromus (round 1)</match_string>
       <match_string>zeromus(round1)</match_string>
-      <match_string>zeronus (round 1)</match_string>
     </match_strings>
     <level>63</level>
     <hp>65000</hp>
@@ -5490,9 +5378,9 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\zeromus1.png</image_path>
-    <hp2></hp2>
-    <gp2></gp2>
-    <experience2></experience2>
+    <hp2 />
+    <gp2 />
+    <experience2 />
   </enemy>
   <enemy>
     <name>Zeromus (Round 2)</name>
@@ -5500,7 +5388,6 @@
     <match_strings>
       <match_string>zeromus (round 2)</match_string>
       <match_string>zeromus(round2)</match_string>
-      <match_string>zeronus (round 2)</match_string>
     </match_strings>
     <level>98</level>
     <hp>65498</hp>
@@ -5518,9 +5405,9 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\zeromus1.png</image_path>
-    <hp2></hp2>
-    <gp2></gp2>
-    <experience2></experience2>
+    <hp2 />
+    <gp2 />
+    <experience2 />
   </enemy>
   <enemy>
     <name>Zeromus (Final)</name>
@@ -5528,8 +5415,6 @@
     <match_strings>
       <match_string>zeromus (final)</match_string>
       <match_string>zeromus(final)</match_string>
-      <match_string>zeronus (fina)</match_string>
-      <match_string>zeromus (fina)</match_string>
     </match_strings>
     <level>47</level>
     <hp>65000</hp>
@@ -5547,8 +5432,8 @@
     <absorbs>(none)</absorbs>
     <resists>(none)</resists>
     <image_path>images\zeromus2.png</image_path>
-    <hp2></hp2>
-    <gp2></gp2>
-    <experience2></experience2>
+    <hp2 />
+    <gp2 />
+    <experience2 />
   </enemy>
 </enemies>
