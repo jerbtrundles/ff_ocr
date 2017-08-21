@@ -19,48 +19,50 @@ using Windows.Storage.Streams;
 namespace ff_ocr {
     public partial class Form1 : Form {
         OcrEngine ocr;
-        SoftwareBitmap bitmap;
-        Bitmap bmp;
-        bool bReady = true;
-        List<Enemy> Enemies = new List<Enemy>();
+        bool bEnemyCaptureReady = true;
+        bool bItemCaptureReady = false;
 
-        // file paths
-        static string profile = "baxte";
-        static string desktop = Path.Combine(@"c:\users\", profile, "desktop");
-        static string temp = Path.Combine(desktop, "temp.bmp");
-        static string enemies = Path.Combine(desktop, "enemies.xml");
+        List<Enemy> Enemies = new List<Enemy>();
+        static string enemiesSourcePath = Path.Combine(Paths.Desktop, "enemies.xml");
 
         Enemy enemy1;
         Enemy enemy2;
         Enemy enemy3;
+        Item item;
 
-        int x = 395;
-        int y = 690;
-        int width = 360;
-        int height = 210;
-        int frameX = 0;
-        int frameY = 0;
-        int dataClearThreshold = 20;
+        DataCaptureArgs enemyData;
+        DataCaptureArgs itemData;
 
         char[] filters = { ' ', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9' };
 
-        int noBattleCount = 0;
-
+        #region Load
         public Form1() {
             InitializeComponent();
         }
-
         private void Form1_Load(object sender, EventArgs e) {
             ocr = OcrEngine.TryCreateFromUserProfileLanguages();
 
-            txtCaptureX.Text = x.ToString();
-            txtCaptureY.Text = y.ToString();
-            txtCaptureWidth.Text = width.ToString();
-            txtCaptureHeight.Text = height.ToString();
-            bmp = new Bitmap(width, height);
+            LoadEnemies();
 
-            XDocument doc = XDocument.Load(@"enemies.xml");
-            Enemies = doc.Root.Elements("enemy").Select(x => new Enemy(x)).ToList();
+            int enemyCaptureX = 395;
+            int enemyCaptureY = 690;
+            int enemyCaptureWidth = 360;
+            int enemyCaptureHeight = 210;
+            txtEnemyCaptureX.Text = enemyCaptureX.ToString();
+            txtEnemyCaptureY.Text = enemyCaptureY.ToString();
+            txtEnemyCaptureWidth.Text = enemyCaptureWidth.ToString();
+            txtEnemyCaptureHeight.Text = enemyCaptureHeight.ToString();
+            enemyData = new DataCaptureArgs("enemy", enemyCaptureX, enemyCaptureY, enemyCaptureWidth, enemyCaptureHeight, pbEnemyCapture, lblEnemyCaptureStatus);
+
+            int itemCaptureX = 450;
+            int itemCaptureY = 110;
+            int itemCaptureWidth = 600;
+            int itemCaptureHeight = 210;
+            txtItemCaptureX.Text = itemCaptureX.ToString();
+            txtItemCaptureY.Text = itemCaptureY.ToString();
+            txtItemCaptureWidth.Text = itemCaptureWidth.ToString();
+            txtItemCaptureHeight.Text = itemCaptureHeight.ToString();
+            itemData = new DataCaptureArgs("item", itemCaptureX, itemCaptureY, itemCaptureWidth, itemCaptureHeight, pbItemCapture, lblItemCaptureStatus);
 
             //LoadExtraData();
 
@@ -70,42 +72,29 @@ namespace ff_ocr {
             //    Enemies.Add(enemy);
             //}
         }
+        private void LoadEnemies() {
+            XDocument doc = XDocument.Load(@"enemies.xml");
+            Enemies = doc.Root.Elements("enemy").Select(x => new Enemy(x)).ToList();
+        }
+        #endregion
 
-        private async Task Recognize() {
-            frameX = (frameX + 1) % 5;
-            frameY = (frameY + 1) % 6;
-
+        #region Enemy
+        private async Task CaptureEnemyData() {
             Stopwatch s = Stopwatch.StartNew();
 
-            using (Graphics g = Graphics.FromImage(bmp)) {
-                g.CopyFromScreen(Screen.PrimaryScreen.Bounds.X + x + frameX, Screen.PrimaryScreen.Bounds.Y + y + frameY, 0, 0, bmp.Size, CopyPixelOperation.SourceCopy);
-            }
+            await enemyData.Capture(ocr);
+            if (enemyData.LastResult.Lines.Count == 0) {
+                AppendEnemyCaptureString("(nothing)");
 
-            bmp.Save(temp);
-            pbCapture.Image = bmp;
-
-            StorageFile input = await StorageFile.GetFileFromPathAsync(temp);
-            using (IRandomAccessStream stream = await input.OpenAsync(FileAccessMode.Read)) {
-                BitmapDecoder decoder = await BitmapDecoder.CreateAsync(stream);
-                bitmap = await decoder.GetSoftwareBitmapAsync();
-            }
-
-            OcrResult result = await ocr.RecognizeAsync(bitmap);
-            if (result.Lines.Count == 0) {
-                Append("(nothing)");
-
-                if (++noBattleCount == dataClearThreshold) {
-                    ClearEnemyData();
+                if (enemyData.IsStale) {
+                    ClearEnemyUI();
                 }
             }
             else {
-                StringBuilder sb = new StringBuilder();
-                noBattleCount = 0;
-                foreach (OcrLine l in result.Lines) {
-                    sb.AppendLine(l.Text);
+                foreach (OcrLine l in enemyData.LastResult.Lines) {
                     string name = String.Join("", l.Text.ToLower().Trim().Split(filters, StringSplitOptions.RemoveEmptyEntries));
                     if (name.Length > 0) {
-                        Append(name);
+                        AppendEnemyCaptureString(name);
                         Enemy enemy = Enemies.Find(x => x.MatchStrings.Contains(name));
                         if (enemy != null) {
                             if (enemy == enemy1) { continue; }
@@ -127,38 +116,12 @@ namespace ff_ocr {
                         }
                     }
                 }
-                //richTextBox1.Text = sb.ToString() + Environment.NewLine;
             }
 
             s.Stop();
-            txtTime.Text = "Time: " + s.ElapsedMilliseconds.ToString() + " ms";
+            lblEnemyCaptureTime.Text = s.ElapsedMilliseconds.ToString() + " ms";
         }
-
-        private void Append(string str) {
-            if (richTextBox1.Lines.Length > 20) {
-                richTextBox1.Text = richTextBox1.Text.Substring(richTextBox1.Text.IndexOf('\n') + 1);
-            }
-            richTextBox1.AppendText(str + "\r\n");
-
-            string[] lines = txtUniqueStrings.Text.Split("\r\n".ToCharArray(), StringSplitOptions.RemoveEmptyEntries);
-            foreach (string line in lines) {
-                if (line == str) {
-                    return;
-                }
-            }
-
-            txtUniqueStrings.AppendText(str + "\r\n");
-        }
-
-        private async void timerRecognize_Tick(object sender, EventArgs e) {
-            if (!bReady) { return; }
-
-            bReady = false;
-            await Recognize();
-            bReady = true;
-        }
-
-        private void ClearEnemyData() {
+        private void ClearEnemyUI() {
             pbEnemy1.Image = null;
             txtEnemy1.Clear();
             pbEnemy2.Image = null;
@@ -170,121 +133,214 @@ namespace ff_ocr {
             enemy2 = null;
             enemy3 = null;
 
-            txtUniqueStrings.Clear();
+            txtEnemyCaptureUnique.Clear();
         }
-
         private void SetEnemy(Enemy enemy, PictureBox pb, RichTextBox rtb) {
             pb.Image = Image.FromFile(enemy.ImagePath);
             rtb.Text = enemy.FullString;
         }
-
-        private void btnSetCaptureData_Click(object sender, EventArgs e) {
-            if (ValidateCaptureData()) {
-                x = int.Parse(txtCaptureX.Text);
-                y = int.Parse(txtCaptureY.Text);
-                width = int.Parse(txtCaptureWidth.Text);
-                height = int.Parse(txtCaptureHeight.Text);
-                bmp = new Bitmap(width, height);
-                lblCaptureStatus.Text = "Capture data successfully set.";
-
-                // timer to clear status text
-                timerClearCaptureStatus.Enabled = true;
-            }
-        }
-
-        private void txtNumeric_KeyPress(object sender, KeyPressEventArgs e) {
-            if (!char.IsNumber(e.KeyChar) && !char.IsControl(e.KeyChar)) { e.Handled = true; }
-        }
-
-        private void timerClearCaptureStatus_Tick(object sender, EventArgs e) {
-            lblCaptureStatus.Text = string.Empty;
-            timerClearCaptureStatus.Enabled = false;
-        }
-
-        private bool ValidateCaptureData() {
-            if (!int.TryParse(txtCaptureX.Text, out int newX)) {
-                lblCaptureStatus.Text = "Error: X value is not a number.";
-                return false;
-            }
-
-            if (!int.TryParse(txtCaptureY.Text, out int newY)) {
-                lblCaptureStatus.Text = "Error: Y value is not a number.";
-                return false;
-            }
-
-            if (!int.TryParse(txtCaptureWidth.Text, out int newWidth)) {
-                lblCaptureStatus.Text = "Error: Width value is not a number.";
-                return false;
-            }
-
-            if (!int.TryParse(txtCaptureHeight.Text, out int newHeight)) {
-                lblCaptureStatus.Text = "Error: Height value is not a number.";
-                return false;
-            }
-
-            if (newX < 10 || newX > 1000) {
-                lblCaptureStatus.Text = "Error: X value must be between 10 and 1000.";
-                return false;
-            }
-
-            if (newY < 10 || newY > 1000) {
-                lblCaptureStatus.Text = "Error: Y value must be between 10 and 1000.";
-                return false;
-            }
-
-            if (newWidth < 10 || newWidth > 1000) {
-                lblCaptureStatus.Text = "Error: Width value must be between 10 and 1000.";
-                return false;
-            }
-
-            if (newHeight < 10 || newHeight > 1000) {
-                lblCaptureStatus.Text = "Error: Height value must be between 10 and 1000.";
-                return false;
-            }
-
+        private bool ValidateEnemyCaptureData() {
+            if (!int.TryParse(txtEnemyCaptureX.Text, out int newX)) { return false; }
+            if (!int.TryParse(txtEnemyCaptureY.Text, out int newY)) { return false; }
+            if (!int.TryParse(txtEnemyCaptureWidth.Text, out int newWidth)) { return false; }
+            if (!int.TryParse(txtEnemyCaptureHeight.Text, out int newHeight)) { return false; }
+            if (newX < 10 || newX > 1000) { return false; }
+            if (newY < 10 || newY > 1000) { return false; }
+            if (newWidth < 10 || newWidth > 1000) { return false; }
+            if (newHeight < 10 || newHeight > 1000) { return false; }
             return true;
         }
+        private void btnSetEnemyCaptureData_Click(object sender, EventArgs e) {
+            if (ValidateEnemyCaptureData()) {
+                enemyData.Set(int.Parse(txtEnemyCaptureX.Text), int.Parse(txtEnemyCaptureY.Text), int.Parse(txtEnemyCaptureWidth.Text), int.Parse(txtEnemyCaptureHeight.Text));
+                lblEnemyCaptureStatus.Text = "Data set.";
+            }
+            else {
+                lblEnemyCaptureStatus.Text = "Invalid input.";
+            }
 
-        private void Form1_FormClosed(object sender, FormClosedEventArgs e) {
-            if (File.Exists(temp)) { File.Delete(temp); }
-            SaveEnemies();
+            timerClearEnemyCaptureStatus.Enabled = true;
         }
+        private void AppendEnemyCaptureString(string str) {
+            if (txtEnemyCaptureLast15.Text.Length > 0 && txtEnemyCaptureLast15.Lines.Length > 15) {
+                txtEnemyCaptureLast15.Text = txtEnemyCaptureLast15.Text.Substring(txtEnemyCaptureLast15.Text.IndexOf('\n') + 1);
+            }
+            txtEnemyCaptureLast15.AppendText(str + "\r\n");
 
-        private void SaveEnemies() {
-            XElement eOutput = new XElement("enemies", Enemies.Select(x => x.ToElement()));
-            eOutput.Save(enemies);
+            string[] lines = txtEnemyCaptureUnique.Text.Split("\r\n".ToCharArray(), StringSplitOptions.RemoveEmptyEntries);
+            foreach (string line in lines) {
+                if (line == str) {
+                    return;
+                }
+            }
+
+            txtEnemyCaptureUnique.AppendText(str + "\r\n");
         }
-
-        private void btnAddManualString_Click(object sender, EventArgs e) {
-            timerClearAddManualStringStatus.Enabled = false;
-            string[] split = txtAddManualString.Text.Split(":".ToCharArray(), StringSplitOptions.RemoveEmptyEntries);
+        private void timerClearEnemyCaptureStatus_Tick(object sender, EventArgs e) {
+            lblEnemyCaptureStatus.Text = string.Empty;
+            timerClearEnemyCaptureStatus.Enabled = false;
+        }
+        private void btnEnemyAddManualString_Click(object sender, EventArgs e) {
+            timerClearEnemyAddManualStringStatus.Enabled = false;
+            string[] split = txtEnemyAddManualString.Text.Split(":".ToCharArray(), StringSplitOptions.RemoveEmptyEntries);
             if (split.Length != 2) {
-                lblAddManualStringStatus.Text = "Invalid string format.";
+                lblEnemyAddManualStringStatus.Text = "Invalid string format.";
             }
             else {
                 Enemy enemy = Enemies.Find(x => x.Name.ToLower() == split[0].ToLower());
                 if (enemy != null) {
                     enemy.MatchStrings.Add(split[1].ToLower());
-                    lblAddManualStringStatus.Text = "String successfully added.";
+                    lblEnemyAddManualStringStatus.Text = "String successfully added.";
                 }
                 else {
-                    lblAddManualStringStatus.Text = "Enemy not found.";
+                    lblEnemyAddManualStringStatus.Text = "Enemy not found.";
                 }
             }
 
-            timerClearAddManualStringStatus.Enabled = true;
+            timerClearEnemyAddManualStringStatus.Enabled = true;
         }
-
         private void timerClearAddManualStringStatus_Tick(object sender, EventArgs e) {
-            lblAddManualStringStatus.Text = "";
-            timerClearAddManualStringStatus.Enabled = false;
+            lblEnemyAddManualStringStatus.Text = "";
+            timerClearEnemyAddManualStringStatus.Enabled = false;
         }
+        private void btnClearEnemyCaptureUnique_Click(object sender, EventArgs e) {
+            txtEnemyCaptureUnique.Clear();
+        }
+        private async void timerCaptureEnemyData_Tick(object sender, EventArgs e) {
+            if (!bEnemyCaptureReady) { return; }
+            bEnemyCaptureReady = false;
+            await CaptureEnemyData();
+            bItemCaptureReady = true;
+        }
+        #endregion
 
-        private void btnClearUniqueStrings_Click(object sender, EventArgs e) {
-            txtUniqueStrings.Clear();
+        #region Item
+        private async Task CaptureItemData() {
+            Stopwatch s = Stopwatch.StartNew();
+
+            await itemData.Capture(ocr);
+            if (itemData.LastResult.Lines.Count == 0) {
+                AppendItemCaptureString("(nothing)");
+
+                if (itemData.IsStale) {
+                    ClearItemUI();
+                }
+            }
+            else {
+                foreach (OcrLine l in itemData.LastResult.Lines) {
+                    string text = String.Join("", l.Text.ToLower().Trim().Split(filters, StringSplitOptions.RemoveEmptyEntries));
+                    if (text.Length > 0) {
+                        AppendItemCaptureString(text);
+                        //Enemy enemy = Enemies.Find(x => x.MatchStrings.Contains(name));
+                        //if (enemy != null) {
+                        //    if (enemy == enemy1) { continue; }
+                        //    if (enemy == enemy2) { continue; }
+                        //    if (enemy == enemy3) { continue; }
+
+                        //    if (pbEnemy1.Image == null) {
+                        //        enemy1 = enemy;
+                        //        SetEnemy(enemy, pbEnemy1, txtEnemy1);
+                        //    }
+                        //    else if (pbEnemy2.Image == null) {
+                        //        enemy2 = enemy;
+                        //        SetEnemy(enemy, pbEnemy2, txtEnemy2);
+                        //    }
+                        //    else if (pbEnemy3.Image == null) {
+                        //        enemy3 = enemy;
+                        //        SetEnemy(enemy, pbEnemy3, txtEnemy3);
+                        //    }
+                        //}
+                    }
+                }
+            }
+
+            s.Stop();
+            lblItemCaptureTime.Text = s.ElapsedMilliseconds.ToString() + " ms";
         }
+        private void btnItemCaptureSetData_Click(object sender, EventArgs e) {
+            if (ValidateItemCaptureData()) {
+                itemData.Set(int.Parse(txtItemCaptureX.Text), int.Parse(txtItemCaptureY.Text), int.Parse(txtItemCaptureWidth.Text), int.Parse(txtItemCaptureHeight.Text));
+                lblItemCaptureStatus.Text = "Data set.";
+            }
+            else {
+                lblItemCaptureStatus.Text = "Invalid input.";
+            }
+
+            timerClearItemCaptureStatus.Enabled = true;
+        }
+        private bool ValidateItemCaptureData() {
+            if (!int.TryParse(txtItemCaptureX.Text, out int newX)) { return false; }
+            if (!int.TryParse(txtItemCaptureY.Text, out int newY)) { return false; }
+            if (!int.TryParse(txtItemCaptureWidth.Text, out int newWidth)) { return false; }
+            if (!int.TryParse(txtItemCaptureHeight.Text, out int newHeight)) { return false; }
+            if (newX < 10 || newX > 1000) { return false; }
+            if (newY < 10 || newY > 1000) { return false; }
+            if (newWidth < 10 || newWidth > 1000) { return false; }
+            if (newHeight < 10 || newHeight > 1000) { return false; }
+            return true;
+        }
+        private void ClearItemUI() {
+            txtItemCaptureUnique.Clear();
+        }
+        private void AppendItemCaptureString(string str) {
+            if (txtItemCaptureLast15.Text.Length > 0 && txtItemCaptureLast15.Lines.Length > 15) {
+                txtItemCaptureLast15.Text = txtItemCaptureLast15.Text.Substring(txtItemCaptureLast15.Text.IndexOf('\n') + 1);
+            }
+            txtItemCaptureLast15.AppendText(str + "\r\n");
+
+            string[] lines = txtItemCaptureUnique.Text.Split("\r\n".ToCharArray(), StringSplitOptions.RemoveEmptyEntries);
+            foreach (string line in lines) {
+                if (line == str) {
+                    return;
+                }
+            }
+
+            txtItemCaptureUnique.AppendText(str + "\r\n");
+        }
+        private void btnClearItemCaptureUnique_Click(object sender, EventArgs e) {
+            txtItemCaptureUnique.Clear();
+        }
+        private async void timerCaptureItemData_Tick(object sender, EventArgs e) {
+            if (!bItemCaptureReady) { return; }
+            bItemCaptureReady = false;
+            await CaptureItemData();
+            bEnemyCaptureReady = true;
+        }
+        private void timerClearItemCaptureStatus_Tick(object sender, EventArgs e) {
+            lblItemCaptureStatus.Text = string.Empty;
+            timerClearItemCaptureStatus.Enabled = false;
+        }
+        #endregion
+
+        #region Cleanup
+        private void Form1_FormClosed(object sender, FormClosedEventArgs e) {
+            enemyData.Cleanup();
+            // if (File.Exists(tempItem)) { File.Delete(tempItem); }
+            SaveEnemies();
+        }
+        private void SaveEnemies() {
+            XElement eOutput = new XElement("enemies", Enemies.Select(x => x.ToElement()));
+            eOutput.Save(enemiesSourcePath);
+        }
+        #endregion
+
+        #region Miscellaneous Handlers
+        private void txtNumeric_KeyPress(object sender, KeyPressEventArgs e) {
+            if (!char.IsNumber(e.KeyChar) && !char.IsControl(e.KeyChar)) { e.Handled = true; }
+        }
+        #endregion
     }
 }
+
+
+//Stopwatch s = Stopwatch.StartNew();
+//OcrResult result = await enemyData.Recognize(ocr);
+
+
+
+//s.Stop();
+//            lblEnemyCaptureTime.Text = s.ElapsedMilliseconds.ToString() + " ms";
+
 
 //private void LoadExtraData() {
 //    List<string> matches = new List<string>();
@@ -330,3 +386,5 @@ namespace ff_ocr {
 //        }
 //    }
 //}
+
+
