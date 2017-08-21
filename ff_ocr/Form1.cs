@@ -315,6 +315,7 @@ namespace ff_ocr {
         #region Cleanup
         private void Form1_FormClosed(object sender, FormClosedEventArgs e) {
             enemyData.Cleanup();
+            itemData.Cleanup();
             // if (File.Exists(tempItem)) { File.Delete(tempItem); }
             SaveEnemies();
         }
