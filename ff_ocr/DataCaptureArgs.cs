@@ -31,12 +31,9 @@ namespace ff_ocr {
 
         private string _tempCapturePath;
         private int _noDataCount;
-        private bool _running;
 
         private OcrResult _lastResult;
         public OcrResult LastResult { get => _lastResult; }
-
-        public event EventHandler CaptureComplete;
 
         public DataCaptureArgs(string id, int x, int y, int width, int height, PictureBox pb, Label lblStatus) {
             Set(x, y, width, height);
@@ -78,21 +75,10 @@ namespace ff_ocr {
             else {
                 _noDataCount = 0;
             }
-
-            // raise event
-            OnCaptureComplete(null);
         }
 
         public void Cleanup() {
             if (File.Exists(_tempCapturePath)) { File.Delete(_tempCapturePath); }
-        }
-
-        protected virtual void OnCaptureComplete(EventArgs e) {
-            CaptureComplete?.Invoke(this, e);
-        }
-
-        public void Stop() {
-            _running = false;
         }
     }
 }

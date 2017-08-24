@@ -91,11 +91,15 @@ namespace ff_ocr {
                 }
             }
             else {
-                foreach (OcrLine l in enemyData.LastResult.Lines) {
-                    string name = String.Join("", l.Text.ToLower().Trim().Split(filters, StringSplitOptions.RemoveEmptyEntries));
-                    if (name.Length > 0) {
-                        AppendEnemyCaptureString(name);
-                        Enemy enemy = Enemies.Find(x => x.MatchStrings.Contains(name));
+                // grab text from OcrLines
+                IEnumerable<string> lines = enemyData.LastResult.Lines.Select(x => String.Join("", x.Text.ToLower().Trim().Split(filters, StringSplitOptions.RemoveEmptyEntries)));
+                foreach (string line in lines) {
+                    if (line.Length > 0) {
+                        AppendEnemyCaptureString(line);
+
+                        // consider processing edge cases (ghost/ghast, milon battle, ghost battle)
+
+                        Enemy enemy = Enemies.Find(x => x.MatchStrings.Contains(line));
                         if (enemy != null) {
                             if (enemy == enemy1) { continue; }
                             if (enemy == enemy2) { continue; }
@@ -205,6 +209,7 @@ namespace ff_ocr {
         }
         private void btnClearEnemyCaptureUnique_Click(object sender, EventArgs e) {
             txtEnemyCaptureUnique.Clear();
+            ClearEnemyUI();
         }
         private async void timerCaptureEnemyData_Tick(object sender, EventArgs e) {
             if (!bEnemyCaptureReady) { return; }

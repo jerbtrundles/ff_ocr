@@ -90,13 +90,13 @@ namespace ff_ocr {
             XElement eExperience2 = e.Element("experience2");
             if (eExperience2 != null) { Experience2 = eExperience2.Value; }
 
-            MatchStrings.Add(Name.Replace("B", "E").Replace("m", "n").Replace("l", "").Replace("-", "").ToLower());
-            MatchStrings.Add(Name.Replace("B", "E").Replace("l", "").Replace("-", "").ToLower());
+            MatchStrings.Add(Name.Replace("B", "E").Replace("m", "n").Replace("l", "").Replace("-", "").Replace("M", "h").ToLower());
+            MatchStrings.Add(Name.Replace("B", "E").Replace("l", "").Replace("-", "").Replace("M", "h").ToLower());
 
             List<string> msReplace = new List<string>();
             msReplace.Add(MatchStrings[0]);
             for (int i = 1; i < MatchStrings.Count; i++) {
-                if(msReplace.Contains(MatchStrings[i])){
+                if (msReplace.Contains(MatchStrings[i])) {
                     continue;
                 }
                 else {

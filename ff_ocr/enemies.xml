@@ -3112,11 +3112,11 @@
     <experience2>760</experience2>
   </enemy>
   <enemy>
-    <name>Skeleton</name>
+    <name>Skelton</name>
     <verified>false</verified>
     <match_strings>
-      <match_string>skeleton</match_string>
-      <match_string>skeeton</match_string>
+      <match_string>skelton</match_string>
+      <match_string>sketon</match_string>
     </match_strings>
     <level>10</level>
     <hp>135</hp>
@@ -3943,10 +3943,10 @@
     <experience2>120</experience2>
   </enemy>
   <enemy>
-    <name>Zuu</name>
+    <name>Raven</name>
     <verified>false</verified>
     <match_strings>
-      <match_string>zuu</match_string>
+      <match_string>raven</match_string>
     </match_strings>
     <level>15</level>
     <hp>941</hp>
@@ -4323,6 +4323,9 @@
     <match_strings>
       <match_string>milon</match_string>
       <match_string>mion</match_string>
+      <match_string>milo</match_string>
+      <match_string>miion</match_string>
+      <match_string>hiion</match_string>
     </match_strings>
     <level>32</level>
     <hp>2000</hp>
