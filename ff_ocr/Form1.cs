@@ -30,10 +30,10 @@ namespace ff_ocr {
         Enemy enemy3;
         Item item;
 
-        DataCaptureArgs enemyData;
-        DataCaptureArgs itemData;
+        DataCapture enemyData;
+        DataCapture itemData;
 
-        char[] filters = { ' ', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9' };
+        char[] filters = { '.', ' ', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9' };
 
         #region Load
         public Form1() {
@@ -52,7 +52,7 @@ namespace ff_ocr {
             txtEnemyCaptureY.Text = enemyCaptureY.ToString();
             txtEnemyCaptureWidth.Text = enemyCaptureWidth.ToString();
             txtEnemyCaptureHeight.Text = enemyCaptureHeight.ToString();
-            enemyData = new DataCaptureArgs("enemy", enemyCaptureX, enemyCaptureY, enemyCaptureWidth, enemyCaptureHeight, pbEnemyCapture, lblEnemyCaptureStatus);
+            enemyData = new DataCapture("enemy", enemyCaptureX, enemyCaptureY, enemyCaptureWidth, enemyCaptureHeight, pbEnemyCapture, lblEnemyCaptureStatus);
 
             int itemCaptureX = 450;
             int itemCaptureY = 110;
@@ -62,7 +62,7 @@ namespace ff_ocr {
             txtItemCaptureY.Text = itemCaptureY.ToString();
             txtItemCaptureWidth.Text = itemCaptureWidth.ToString();
             txtItemCaptureHeight.Text = itemCaptureHeight.ToString();
-            itemData = new DataCaptureArgs("item", itemCaptureX, itemCaptureY, itemCaptureWidth, itemCaptureHeight, pbItemCapture, lblItemCaptureStatus);
+            itemData = new DataCapture("item", itemCaptureX, itemCaptureY, itemCaptureWidth, itemCaptureHeight, pbItemCapture, lblItemCaptureStatus);
 
             //LoadExtraData();
 
@@ -95,12 +95,21 @@ namespace ff_ocr {
                 IEnumerable<string> lines = enemyData.LastResult.Lines.Select(x => String.Join("", x.Text.ToLower().Trim().Split(filters, StringSplitOptions.RemoveEmptyEntries)));
                 foreach (string line in lines) {
                     if (line.Length > 0) {
+                        // filter out fast forwards
+                        if (line.Contains("forwar")) { continue; }
+
                         AppendEnemyCaptureString(line);
 
                         // consider processing edge cases (ghost/ghast, milon battle, ghost battle)
 
                         Enemy enemy = Enemies.Find(x => x.MatchStrings.Contains(line));
                         if (enemy != null) {
+
+                            if (enemy.Name == "Milon" && 
+                                ((enemy1 != null && enemy1.Name == "Milon Z.")
+                                 || (enemy2 != null && enemy2.Name == "Milon Z.")
+                                 || (enemy3 != null && enemy3.Name == "Milon Z."))) { continue; }
+
                             if (enemy == enemy1) { continue; }
                             if (enemy == enemy2) { continue; }
                             if (enemy == enemy3) { continue; }

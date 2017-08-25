@@ -13,7 +13,7 @@ using Windows.Storage;
 using Windows.Storage.Streams;
 
 namespace ff_ocr {
-    class DataCaptureArgs {
+    class DataCapture {
         public int X { get; set; }
         public int Y { get; set; }
         public int Width { get; set; }
@@ -35,7 +35,7 @@ namespace ff_ocr {
         private OcrResult _lastResult;
         public OcrResult LastResult { get => _lastResult; }
 
-        public DataCaptureArgs(string id, int x, int y, int width, int height, PictureBox pb, Label lblStatus) {
+        public DataCapture(string id, int x, int y, int width, int height, PictureBox pb, Label lblStatus) {
             Set(x, y, width, height);
             _pb = pb;
             _lblStatus = lblStatus;
