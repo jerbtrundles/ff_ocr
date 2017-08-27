@@ -33,6 +33,9 @@
     <match_strings>
       <match_string>aquaworm</match_string>
       <match_string>aquaworn</match_string>
+      <match_string>aruqworm</match_string>
+      <match_string>uqworn</match_string>
+      <match_string>uaworn</match_string>
     </match_strings>
     <level>18</level>
     <hp>638</hp>
@@ -2502,6 +2505,7 @@
     <verified>false</verified>
     <match_strings>
       <match_string>piranha</match_string>
+      <match_string>piranhq</match_string>
     </match_strings>
     <level>16</level>
     <hp>180</hp>
@@ -4484,6 +4488,7 @@
     <match_strings>
       <match_string>baigan</match_string>
       <match_string>eaigan</match_string>
+      <match_string>eqigan</match_string>
     </match_strings>
     <level>31</level>
     <hp>4444</hp>
@@ -4537,9 +4542,8 @@
     <name>Right Arm</name>
     <verified>false</verified>
     <match_strings>
-      <match_string>right arm</match_string>
       <match_string>rightarm</match_string>
-      <match_string>right arn</match_string>
+      <match_string>rightarn</match_string>
     </match_strings>
     <level>9</level>
     <hp>444</hp>
@@ -4566,6 +4570,7 @@
     <verified>false</verified>
     <match_strings>
       <match_string>kainazzo</match_string>
+      <match_string>kqinazzo</match_string>
     </match_strings>
     <level>22</level>
     <hp>5312</hp>

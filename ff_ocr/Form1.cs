@@ -8,6 +8,7 @@ using System.IO;
 using System.Linq;
 using System.Net;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
@@ -33,7 +34,8 @@ namespace ff_ocr {
         DataCapture enemyData;
         DataCapture itemData;
 
-        char[] filters = { '.', ' ', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9' };
+        Regex regexEnemy = new Regex("[^a-zA-Z]");
+        Regex regexItem = new Regex("[^a-zA-Z0-9]");
 
         #region Load
         public Form1() {
@@ -92,40 +94,37 @@ namespace ff_ocr {
             }
             else {
                 // grab text from OcrLines
-                IEnumerable<string> lines = enemyData.LastResult.Lines.Select(x => String.Join("", x.Text.ToLower().Trim().Split(filters, StringSplitOptions.RemoveEmptyEntries)));
+                IEnumerable<string> lines = enemyData.LastResult.Lines
+                    .Select(x => regexEnemy.Replace(x.Text.ToLower().Trim(), ""))
+                    .Where(x => x.Length > 0 && !x.Contains("forwar")); // filter out fast forwards
+
                 foreach (string line in lines) {
-                    if (line.Length > 0) {
-                        // filter out fast forwards
-                        if (line.Contains("forwar")) { continue; }
+                    AppendEnemyCaptureString(line);
 
-                        AppendEnemyCaptureString(line);
+                    Enemy enemy = Enemies.Find(x => x.MatchStrings.Contains(line));
+                    if (enemy != null) {
 
-                        // consider processing edge cases (ghost/ghast, milon battle, ghost battle)
+                        // edge cases (ghost/ghast, milon battle, ghost battle)
+                        if (enemy.Name == "Milon" &&
+                            ((enemy1 != null && enemy1.Name == "Milon Z.")
+                             || (enemy2 != null && enemy2.Name == "Milon Z.")
+                             || (enemy3 != null && enemy3.Name == "Milon Z."))) { continue; }
 
-                        Enemy enemy = Enemies.Find(x => x.MatchStrings.Contains(line));
-                        if (enemy != null) {
+                        if (enemy == enemy1) { continue; }
+                        if (enemy == enemy2) { continue; }
+                        if (enemy == enemy3) { continue; }
 
-                            if (enemy.Name == "Milon" && 
-                                ((enemy1 != null && enemy1.Name == "Milon Z.")
-                                 || (enemy2 != null && enemy2.Name == "Milon Z.")
-                                 || (enemy3 != null && enemy3.Name == "Milon Z."))) { continue; }
-
-                            if (enemy == enemy1) { continue; }
-                            if (enemy == enemy2) { continue; }
-                            if (enemy == enemy3) { continue; }
-
-                            if (pbEnemy1.Image == null) {
-                                enemy1 = enemy;
-                                SetEnemy(enemy, pbEnemy1, txtEnemy1);
-                            }
-                            else if (pbEnemy2.Image == null) {
-                                enemy2 = enemy;
-                                SetEnemy(enemy, pbEnemy2, txtEnemy2);
-                            }
-                            else if (pbEnemy3.Image == null) {
-                                enemy3 = enemy;
-                                SetEnemy(enemy, pbEnemy3, txtEnemy3);
-                            }
+                        if (pbEnemy1.Image == null) {
+                            enemy1 = enemy;
+                            SetEnemy(enemy, pbEnemy1, txtEnemy1);
+                        }
+                        else if (pbEnemy2.Image == null) {
+                            enemy2 = enemy;
+                            SetEnemy(enemy, pbEnemy2, txtEnemy2);
+                        }
+                        else if (pbEnemy3.Image == null) {
+                            enemy3 = enemy;
+                            SetEnemy(enemy, pbEnemy3, txtEnemy3);
                         }
                     }
                 }
@@ -241,30 +240,29 @@ namespace ff_ocr {
                 }
             }
             else {
-                foreach (OcrLine l in itemData.LastResult.Lines) {
-                    string text = String.Join("", l.Text.ToLower().Trim().Split(filters, StringSplitOptions.RemoveEmptyEntries));
-                    if (text.Length > 0) {
-                        AppendItemCaptureString(text);
-                        //Enemy enemy = Enemies.Find(x => x.MatchStrings.Contains(name));
-                        //if (enemy != null) {
-                        //    if (enemy == enemy1) { continue; }
-                        //    if (enemy == enemy2) { continue; }
-                        //    if (enemy == enemy3) { continue; }
+                IEnumerable<string> lines = itemData.LastResult.Lines.Select(x => regexItem.Replace(x.Text.ToLower().Trim(), "")).Where(x => x.Length > 0);
+                foreach (string line in lines) {
+                    AppendItemCaptureString(line);
 
-                        //    if (pbEnemy1.Image == null) {
-                        //        enemy1 = enemy;
-                        //        SetEnemy(enemy, pbEnemy1, txtEnemy1);
-                        //    }
-                        //    else if (pbEnemy2.Image == null) {
-                        //        enemy2 = enemy;
-                        //        SetEnemy(enemy, pbEnemy2, txtEnemy2);
-                        //    }
-                        //    else if (pbEnemy3.Image == null) {
-                        //        enemy3 = enemy;
-                        //        SetEnemy(enemy, pbEnemy3, txtEnemy3);
-                        //    }
-                        //}
-                    }
+                    //Enemy enemy = Enemies.Find(x => x.MatchStrings.Contains(name));
+                    //if (enemy != null) {
+                    //    if (enemy == enemy1) { continue; }
+                    //    if (enemy == enemy2) { continue; }
+                    //    if (enemy == enemy3) { continue; }
+
+                    //    if (pbEnemy1.Image == null) {
+                    //        enemy1 = enemy;
+                    //        SetEnemy(enemy, pbEnemy1, txtEnemy1);
+                    //    }
+                    //    else if (pbEnemy2.Image == null) {
+                    //        enemy2 = enemy;
+                    //        SetEnemy(enemy, pbEnemy2, txtEnemy2);
+                    //    }
+                    //    else if (pbEnemy3.Image == null) {
+                    //        enemy3 = enemy;
+                    //        SetEnemy(enemy, pbEnemy3, txtEnemy3);
+                    //    }
+                    //}
                 }
             }
 
