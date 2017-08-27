@@ -255,6 +255,7 @@
     <match_strings>
       <match_string>blackliz</match_string>
       <match_string>eackliz</match_string>
+      <match_string>backliz</match_string>
     </match_strings>
     <level>25</level>
     <hp>792</hp>
@@ -392,6 +393,7 @@
     <match_strings>
       <match_string>cannibal</match_string>
       <match_string>canniba</match_string>
+      <match_string>cannibq</match_string>
     </match_strings>
     <level>19</level>
     <hp>440</hp>
@@ -1112,10 +1114,10 @@
     <name>Flame Dog</name>
     <verified>false</verified>
     <match_strings>
-      <match_string>flame dog</match_string>
       <match_string>flamedog</match_string>
-      <match_string>fane dog</match_string>
-      <match_string>fame dog</match_string>
+      <match_string>flanedog</match_string>
+      <match_string>fanedog</match_string>
+      <match_string>famedog</match_string>
     </match_strings>
     <level>29</level>
     <hp>1221</hp>
@@ -3277,7 +3279,7 @@
     <experience2>2100</experience2>
   </enemy>
   <enemy>
-    <name>Sting rat</name>
+    <name>StingRat</name>
     <verified>false</verified>
     <match_strings>
       <match_string>sting rat</match_string>
