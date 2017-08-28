@@ -708,6 +708,7 @@
     <Content Include="test.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="todo.txt" />
   </ItemGroup>
   <ItemGroup>
     <Analyzer Include="..\packages\UwpDesktop.10.0.14393.3\analyzers\dotnet\UwpDesktopAnalyzer.dll" />

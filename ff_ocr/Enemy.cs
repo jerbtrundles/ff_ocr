@@ -64,7 +64,7 @@ namespace ff_ocr {
 
         public Enemy(XElement e) {
             Name = e.Element("name").Value;
-            MatchStrings = e.Element("match_strings").Elements("match_string").Select(x => x.Value.ToLower()).ToList();
+            MatchStrings = e.Element("match_strings").Elements("match_string").Select(x => x.Value.ToLower().Replace(" ", "")).ToList();
             Verified = bool.Parse(e.Element("verified").Value);
             Level = e.Element("level").Value;
             HP = e.Element("hp").Value;
@@ -90,8 +90,8 @@ namespace ff_ocr {
             XElement eExperience2 = e.Element("experience2");
             if (eExperience2 != null) { Experience2 = eExperience2.Value; }
 
-            MatchStrings.Add(Name.Replace("B", "E").Replace("m", "n").Replace("l", "").Replace("-", "").Replace("M", "h").ToLower());
-            MatchStrings.Add(Name.Replace("B", "E").Replace("l", "").Replace("-", "").Replace("M", "h").ToLower());
+            MatchStrings.Add(Name.Replace("B", "E").Replace("m", "n").Replace("l", "").Replace("-", "").Replace("M", "h").Replace(" ", "").ToLower());
+            MatchStrings.Add(Name.Replace("B", "E").Replace("l", "").Replace("-", "").Replace("M", "h").Replace(" ", "").ToLower());
 
             MatchStrings = MatchStrings.Distinct().ToList();
         }

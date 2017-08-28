@@ -283,7 +283,6 @@
     <match_strings>
       <match_string>blademan</match_string>
       <match_string>eademan</match_string>
-      <match_string>eadehan</match_string>
     </match_strings>
     <level>35</level>
     <hp>1050</hp>
@@ -309,8 +308,9 @@
     <name>Blue D.</name>
     <verified>false</verified>
     <match_strings>
+      <match_string>blue d.</match_string>
       <match_string>blued.</match_string>
-      <match_string>eued.</match_string>
+      <match_string>eue d.</match_string>
     </match_strings>
     <level>98</level>
     <hp>15000</hp>
@@ -770,8 +770,9 @@
     <name>Dark Imp</name>
     <verified>false</verified>
     <match_strings>
+      <match_string>dark imp</match_string>
       <match_string>darkimp</match_string>
-      <match_string>darkinp</match_string>
+      <match_string>dark inp</match_string>
     </match_strings>
     <level>16</level>
     <hp>199</hp>
@@ -1013,7 +1014,6 @@
     <match_strings>
       <match_string>evilmask</match_string>
       <match_string>evimask</match_string>
-      <match_string>evihask</match_string>
     </match_strings>
     <level>99</level>
     <hp>37000</hp>
@@ -1152,8 +1152,6 @@
       <match_string>flameman</match_string>
       <match_string>faneman</match_string>
       <match_string>fameman</match_string>
-      <match_string>fanehan</match_string>
-      <match_string>famehan</match_string>
     </match_strings>
     <level>31</level>
     <hp>579</hp>
@@ -1556,8 +1554,8 @@
     <name>Horse Man</name>
     <verified>false</verified>
     <match_strings>
+      <match_string>horse man</match_string>
       <match_string>horseman</match_string>
-      <match_string>horsehan</match_string>
     </match_strings>
     <level>61</level>
     <hp>3500</hp>
@@ -1610,6 +1608,7 @@
     <name>Huge Naga</name>
     <verified>false</verified>
     <match_strings>
+      <match_string>huge naga</match_string>
       <match_string>hugenaga</match_string>
     </match_strings>
     <level>32</level>
@@ -1743,7 +1742,9 @@
     <verified>true</verified>
     <match_strings>
       <match_string>inpcap.</match_string>
+      <match_string>imp cap.</match_string>
       <match_string>impcap.</match_string>
+      <match_string>inp cap.</match_string>
     </match_strings>
     <level>9</level>
     <hp>37</hp>
@@ -1795,8 +1796,8 @@
     <name>Iron Man</name>
     <verified>false</verified>
     <match_strings>
+      <match_string>iron man</match_string>
       <match_string>ironman</match_string>
-      <match_string>ironhan</match_string>
     </match_strings>
     <level>36</level>
     <hp>2900</hp>
@@ -2038,7 +2039,6 @@
     <verified>false</verified>
     <match_strings>
       <match_string>macgiant</match_string>
-      <match_string>hacgiant</match_string>
     </match_strings>
     <level>60</level>
     <hp>10000</hp>
@@ -2065,7 +2065,6 @@
     <verified>false</verified>
     <match_strings>
       <match_string>machine</match_string>
-      <match_string>hachine</match_string>
     </match_strings>
     <level>60</level>
     <hp>4900</hp>
@@ -2091,8 +2090,8 @@
     <name>Mad Ogre</name>
     <verified>false</verified>
     <match_strings>
+      <match_string>mad ogre</match_string>
       <match_string>madogre</match_string>
-      <match_string>hadogre</match_string>
     </match_strings>
     <level>32</level>
     <hp>2000</hp>
@@ -2146,7 +2145,6 @@
     <verified>false</verified>
     <match_strings>
       <match_string>mage</match_string>
-      <match_string>hage</match_string>
     </match_strings>
     <level>15</level>
     <hp>300</hp>
@@ -2174,7 +2172,6 @@
     <match_strings>
       <match_string>malboro</match_string>
       <match_string>maboro</match_string>
-      <match_string>haboro</match_string>
     </match_strings>
     <level>34</level>
     <hp>4200</hp>
@@ -2201,7 +2198,6 @@
     <verified>false</verified>
     <match_strings>
       <match_string>mantcore</match_string>
-      <match_string>hantcore</match_string>
     </match_strings>
     <level>44</level>
     <hp>3400</hp>
@@ -2228,7 +2224,6 @@
     <verified>false</verified>
     <match_strings>
       <match_string>marion</match_string>
-      <match_string>harion</match_string>
     </match_strings>
     <level>22</level>
     <hp>473</hp>
@@ -2255,7 +2250,6 @@
     <verified>false</verified>
     <match_strings>
       <match_string>mechd</match_string>
-      <match_string>hechd</match_string>
     </match_strings>
     <level>67</level>
     <hp>18000</hp>
@@ -2282,7 +2276,6 @@
     <verified>false</verified>
     <match_strings>
       <match_string>medusa</match_string>
-      <match_string>hedusa</match_string>
     </match_strings>
     <level>28</level>
     <hp>490</hp>
@@ -2309,7 +2302,6 @@
     <verified>false</verified>
     <match_strings>
       <match_string>mind</match_string>
-      <match_string>hind</match_string>
     </match_strings>
     <level>99</level>
     <hp>20000</hp>
@@ -2337,7 +2329,6 @@
     <match_strings>
       <match_string>mooncell</match_string>
       <match_string>moonce</match_string>
-      <match_string>hoonce</match_string>
     </match_strings>
     <level>48</level>
     <hp>980</hp>
@@ -2705,6 +2696,7 @@
     <name>Red D.</name>
     <verified>false</verified>
     <match_strings>
+      <match_string>red d.</match_string>
       <match_string>redd.</match_string>
     </match_strings>
     <level>99</level>
@@ -2731,6 +2723,7 @@
     <name>Red Eye</name>
     <verified>false</verified>
     <match_strings>
+      <match_string>red eye</match_string>
       <match_string>redeye</match_string>
     </match_strings>
     <level>45</level>
@@ -2783,8 +2776,9 @@
     <name>Red Worm</name>
     <verified>false</verified>
     <match_strings>
+      <match_string>red worm</match_string>
       <match_string>redworm</match_string>
-      <match_string>redworn</match_string>
+      <match_string>red worn</match_string>
     </match_strings>
     <level>37</level>
     <hp>7000</hp>
@@ -2916,7 +2910,6 @@
     <verified>false</verified>
     <match_strings>
       <match_string>rocmoth</match_string>
-      <match_string>rochoth</match_string>
     </match_strings>
     <level>39</level>
     <hp>900</hp>
@@ -2943,6 +2936,7 @@
     <verified>true</verified>
     <match_strings>
       <match_string>sandhan</match_string>
+      <match_string>sand man</match_string>
       <match_string>sandman</match_string>
     </match_strings>
     <level>5</level>
@@ -3107,7 +3101,6 @@
       <match_string>slime</match_string>
       <match_string>sine</match_string>
       <match_string>sime</match_string>
-      <match_string>sline</match_string>
     </match_strings>
     <level>21</level>
     <hp>105</hp>
@@ -3294,6 +3287,7 @@
     <name>StingRat</name>
     <verified>false</verified>
     <match_strings>
+      <match_string>sting rat</match_string>
       <match_string>stingrat</match_string>
     </match_strings>
     <level>20</level>
@@ -3349,9 +3343,6 @@
     <match_strings>
       <match_string>swordman</match_string>
       <match_string>swordnan</match_string>
-      <match_string>suordman</match_string>
-      <match_string>swordhan</match_string>
-      <match_string>suordhan</match_string>
     </match_strings>
     <level>21</level>
     <hp>360</hp>
@@ -3380,6 +3371,7 @@
       <match_string>suordrqt</match_string>
       <match_string>swordrqt</match_string>
       <match_string>swordrat</match_string>
+      <match_string>sword rat</match_string>
     </match_strings>
     <level>4</level>
     <hp>30</hp>
@@ -3433,6 +3425,7 @@
     <verified>true</verified>
     <match_strings>
       <match_string>tinyhage</match_string>
+      <match_string>tiny mage</match_string>
       <match_string>tinymage</match_string>
     </match_strings>
     <level>6</level>
@@ -3459,6 +3452,7 @@
     <name>Tiny Toad</name>
     <verified>false</verified>
     <match_strings>
+      <match_string>tiny toad</match_string>
       <match_string>tinytoad</match_string>
     </match_strings>
     <level>43</level>
@@ -3485,6 +3479,7 @@
     <name>Toad Lady</name>
     <verified>false</verified>
     <match_strings>
+      <match_string>toad lady</match_string>
       <match_string>toadlady</match_string>
     </match_strings>
     <level>40</level>
@@ -4126,8 +4121,6 @@
       <match_string>mombomb</match_string>
       <match_string>homeomb</match_string>
       <match_string>monbonb</match_string>
-      <match_string>honbonb</match_string>
-      <match_string>hombomb</match_string>
     </match_strings>
     <level>38</level>
     <hp>1150</hp>
@@ -4232,8 +4225,9 @@
     <name>Imp Cap.</name>
     <verified>false</verified>
     <match_strings>
+      <match_string>imp cap.</match_string>
       <match_string>impcap.</match_string>
-      <match_string>inpcap.</match_string>
+      <match_string>inp cap.</match_string>
     </match_strings>
     <level>9</level>
     <hp>37</hp>
@@ -4342,7 +4336,6 @@
       <match_string>mion</match_string>
       <match_string>milo</match_string>
       <match_string>miion</match_string>
-      <match_string>hion</match_string>
     </match_strings>
     <level>32</level>
     <hp>2000</hp>
@@ -4397,7 +4390,6 @@
       <match_string>milon-z</match_string>
       <match_string>mionz</match_string>
       <match_string>miionz</match_string>
-      <match_string>hionz.</match_string>
     </match_strings>
     <level>107</level>
     <hp>3000</hp>
@@ -4424,7 +4416,6 @@
     <verified>false</verified>
     <match_strings>
       <match_string>dknight</match_string>
-      <match_string>d.knight</match_string>
     </match_strings>
     <level>17</level>
     <hp>4520</hp>
@@ -4530,8 +4521,9 @@
     <name>Left Arm</name>
     <verified>false</verified>
     <match_strings>
+      <match_string>left arm</match_string>
       <match_string>leftarm</match_string>
-      <match_string>leftarn</match_string>
+      <match_string>left arn</match_string>
     </match_strings>
     <level>9</level>
     <hp>444</hp>
@@ -4611,8 +4603,9 @@
     <name>Dark Elf</name>
     <verified>false</verified>
     <match_strings>
+      <match_string>dark elf</match_string>
       <match_string>darkelf</match_string>
-      <match_string>darkef</match_string>
+      <match_string>dark ef</match_string>
     </match_strings>
     <level>49</level>
     <hp>40704</hp>
@@ -4638,6 +4631,7 @@
     <name>Dark Dragon</name>
     <verified>false</verified>
     <match_strings>
+      <match_string>dark dragon</match_string>
       <match_string>darkdragon</match_string>
     </match_strings>
     <level>19</level>
@@ -4717,7 +4711,6 @@
     <verified>false</verified>
     <match_strings>
       <match_string>mindy</match_string>
-      <match_string>hindy</match_string>
     </match_strings>
     <level>16</level>
     <hp>2590</hp>
@@ -4745,7 +4738,6 @@
     <match_strings>
       <match_string>valvalis</match_string>
       <match_string>vavais</match_string>
-      <match_string>valis</match_string>
     </match_strings>
     <level>31</level>
     <hp>8636</hp>
@@ -4905,6 +4897,7 @@
     <name>Dr. Lugae</name>
     <verified>false</verified>
     <match_strings>
+      <match_string>dr. lugae</match_string>
       <match_string>dr.lugae</match_string>
     </match_strings>
     <level>32</level>
@@ -5330,9 +5323,10 @@
     <name>Pale Dim</name>
     <verified>false</verified>
     <match_strings>
+      <match_string>pale dim</match_string>
       <match_string>paledim</match_string>
-      <match_string>paedin</match_string>
-      <match_string>paedim</match_string>
+      <match_string>pae din</match_string>
+      <match_string>pae dim</match_string>
     </match_strings>
     <level>98</level>
     <hp>32700</hp>
@@ -5490,8 +5484,9 @@
     <name>Zeromus (Round 1)</name>
     <verified>false</verified>
     <match_strings>
+      <match_string>zeromus (round 1)</match_string>
       <match_string>zeromus(round1)</match_string>
-      <match_string>zeronus(round1)</match_string>
+      <match_string>zeronus (round 1)</match_string>
     </match_strings>
     <level>63</level>
     <hp>65000</hp>
@@ -5517,8 +5512,9 @@
     <name>Zeromus (Round 2)</name>
     <verified>false</verified>
     <match_strings>
+      <match_string>zeromus (round 2)</match_string>
       <match_string>zeromus(round2)</match_string>
-      <match_string>zeronus(round2)</match_string>
+      <match_string>zeronus (round 2)</match_string>
     </match_strings>
     <level>98</level>
     <hp>65498</hp>
@@ -5544,9 +5540,10 @@
     <name>Zeromus (Final)</name>
     <verified>false</verified>
     <match_strings>
+      <match_string>zeromus (final)</match_string>
       <match_string>zeromus(final)</match_string>
-      <match_string>zeronus(fina)</match_string>
-      <match_string>zeromus(fina)</match_string>
+      <match_string>zeronus (fina)</match_string>
+      <match_string>zeromus (fina)</match_string>
     </match_strings>
     <level>47</level>
     <hp>65000</hp>

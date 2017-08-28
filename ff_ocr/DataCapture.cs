@@ -51,8 +51,8 @@ namespace ff_ocr {
         }
 
         public async Task Capture(OcrEngine ocr) {
-            _frameX = ++_frameX % 5;
-            _frameY = ++_frameY % 6;
+            _frameX = ++_frameX % 6;
+            _frameY = ++_frameY % 7;
 
             using (Graphics g = Graphics.FromImage(_bmp)) {
                 g.CopyFromScreen(Screen.PrimaryScreen.Bounds.X + X + _frameX, Screen.PrimaryScreen.Bounds.Y + Y + _frameY, 0, 0, _bmp.Size, CopyPixelOperation.SourceCopy);

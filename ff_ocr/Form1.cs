@@ -156,7 +156,7 @@ namespace ff_ocr {
             if (!int.TryParse(txtEnemyCaptureY.Text, out int newY)) { return false; }
             if (!int.TryParse(txtEnemyCaptureWidth.Text, out int newWidth)) { return false; }
             if (!int.TryParse(txtEnemyCaptureHeight.Text, out int newHeight)) { return false; }
-            if (newX < 10 || newX > 1000) { return false; }
+            if (newX < 10 || newX > 1500) { return false; }
             if (newY < 10 || newY > 1000) { return false; }
             if (newWidth < 10 || newWidth > 1000) { return false; }
             if (newHeight < 10 || newHeight > 1000) { return false; }
@@ -285,7 +285,7 @@ namespace ff_ocr {
             if (!int.TryParse(txtItemCaptureY.Text, out int newY)) { return false; }
             if (!int.TryParse(txtItemCaptureWidth.Text, out int newWidth)) { return false; }
             if (!int.TryParse(txtItemCaptureHeight.Text, out int newHeight)) { return false; }
-            if (newX < 10 || newX > 1000) { return false; }
+            if (newX < 10 || newX > 1500) { return false; }
             if (newY < 10 || newY > 1000) { return false; }
             if (newWidth < 10 || newWidth > 1000) { return false; }
             if (newHeight < 10 || newHeight > 1000) { return false; }
