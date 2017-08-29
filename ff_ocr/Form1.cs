@@ -101,6 +101,9 @@ namespace ff_ocr {
                 foreach (string line in lines) {
                     AppendEnemyCaptureString(line);
 
+                    // if all enemy slots currently full, no need to process
+                    if(enemy1 != null && enemy2 != null && enemy3 != null) { continue; }
+
                     Enemy enemy = Enemies.Find(x => x.MatchStrings.Contains(line));
                     if (enemy != null) {
 
@@ -223,7 +226,15 @@ namespace ff_ocr {
             if (!bEnemyCaptureReady) { return; }
             bEnemyCaptureReady = false;
             await CaptureEnemyData();
+            ProcessEdgeCases();
             bItemCaptureReady = true;
+        }
+        private void ProcessEdgeCases() {
+            if(enemy1 != null && (enemy1.Name == "Cal" || enemy1.Name=="Brena") && enemy2 != null && (enemy2.Name == "Cal" || enemy2.Name == "Brena")) {
+                Enemy e = Enemies.Find(x => x.Name == "Calbrena");
+                enemy3 = e;
+                SetEnemy(e, pbEnemy3, txtEnemy3);
+            }
         }
         #endregion
 

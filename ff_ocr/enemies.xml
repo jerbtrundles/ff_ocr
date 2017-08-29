@@ -90,6 +90,8 @@
       <match_string>armadilo</match_string>
       <match_string>arnadio</match_string>
       <match_string>armadio</match_string>
+      <match_string>armadi</match_string>
+      <match_string>atnadi</match_string>
     </match_strings>
     <level>27</level>
     <hp>325</hp>
@@ -4827,6 +4829,9 @@
     <match_strings>
       <match_string>calbrena</match_string>
       <match_string>cabrena</match_string>
+      <match_string>cqbrenq</match_string>
+      <match_string>cqbrena</match_string>
+      <match_string>cqbrencx</match_string>
     </match_strings>
     <level>31</level>
     <hp>5315</hp>
