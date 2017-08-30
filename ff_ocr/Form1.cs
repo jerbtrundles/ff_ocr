@@ -102,7 +102,7 @@ namespace ff_ocr {
                     AppendEnemyCaptureString(line);
 
                     // if all enemy slots currently full, no need to process
-                    if(enemy1 != null && enemy2 != null && enemy3 != null) { continue; }
+                    if (enemy1 != null && enemy2 != null && enemy3 != null) { continue; }
 
                     Enemy enemy = Enemies.Find(x => x.MatchStrings.Contains(line));
                     if (enemy != null) {
@@ -112,6 +112,7 @@ namespace ff_ocr {
                             ((enemy1 != null && enemy1.Name == "Milon Z.")
                              || (enemy2 != null && enemy2.Name == "Milon Z.")
                              || (enemy3 != null && enemy3.Name == "Milon Z."))) { continue; }
+                        if (enemy.Name == "Dr. Lugae" && enemy1 != null && enemy1.Name == "Lugaeborg") { continue; }
 
                         if (enemy == enemy1) { continue; }
                         if (enemy == enemy2) { continue; }
@@ -230,10 +231,15 @@ namespace ff_ocr {
             bItemCaptureReady = true;
         }
         private void ProcessEdgeCases() {
-            if(enemy1 != null && (enemy1.Name == "Cal" || enemy1.Name=="Brena") && enemy2 != null && (enemy2.Name == "Cal" || enemy2.Name == "Brena")) {
+            if (enemy1 != null && (enemy1.Name == "Cal" || enemy1.Name == "Brena") && enemy2 != null && (enemy2.Name == "Cal" || enemy2.Name == "Brena")) {
                 Enemy e = Enemies.Find(x => x.Name == "Calbrena");
                 enemy3 = e;
                 SetEnemy(e, pbEnemy3, txtEnemy3);
+            }
+            else if (enemy1 != null && (enemy1.Name == "Dr. Lugae") && enemy2 == null) {
+                Enemy e = Enemies.Find(x => x.Name == "Lugaeborg");
+                enemy1 = e;
+                SetEnemy(e, pbEnemy1, txtEnemy1);
             }
         }
         #endregion

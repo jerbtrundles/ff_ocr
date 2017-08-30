@@ -230,6 +230,11 @@
     <match_strings>
       <match_string>blackcat</match_string>
       <match_string>eackcat</match_string>
+      <match_string>eqckcqt</match_string>
+      <match_string>backcqt</match_string>
+      <match_string>elackcqt</match_string>
+      <match_string>eackcqt</match_string>
+      <match_string>eckcqt</match_string>
     </match_strings>
     <level>35</level>
     <hp>593</hp>
@@ -587,6 +592,8 @@
     <match_strings>
       <match_string>chimera</match_string>
       <match_string>chinera</match_string>
+      <match_string>chineta</match_string>
+      <match_string>chimeta</match_string>
     </match_strings>
     <level>28</level>
     <hp>700</hp>
@@ -988,6 +995,7 @@
     <match_strings>
       <match_string>evildoll</match_string>
       <match_string>evido</match_string>
+      <match_string>evi</match_string>
     </match_strings>
     <level>30</level>
     <hp>388</hp>
@@ -1291,6 +1299,10 @@
     <match_strings>
       <match_string>giantbat</match_string>
       <match_string>gianteat</match_string>
+      <match_string>gianteqt</match_string>
+      <match_string>gianteat</match_string>
+      <match_string>gicunteqt</match_string>
+      <match_string>giqnteqt</match_string>
     </match_strings>
     <level>31</level>
     <hp>439</hp>
@@ -1933,6 +1945,13 @@
     <match_strings>
       <match_string>lamia</match_string>
       <match_string>lania</match_string>
+      <match_string>lamiq</match_string>
+      <match_string>lami</match_string>
+      <match_string>larniq</match_string>
+      <match_string>laniq</match_string>
+      <match_string>lani</match_string>
+      <match_string>larniv</match_string>
+      <match_string>iami</match_string>
     </match_strings>
     <level>34</level>
     <hp>1200</hp>
@@ -2366,6 +2385,7 @@
     <verified>false</verified>
     <match_strings>
       <match_string>naga</match_string>
+      <match_string>nagq</match_string>
     </match_strings>
     <level>27</level>
     <hp>320</hp>
@@ -3164,6 +3184,7 @@
     <match_strings>
       <match_string>skull</match_string>
       <match_string>sku</match_string>
+      <match_string>skul</match_string>
     </match_strings>
     <level>31</level>
     <hp>740</hp>
@@ -4910,7 +4931,7 @@
     <name>Dr. Lugae</name>
     <verified>false</verified>
     <match_strings>
-      <match_string>dr.lugae</match_string>
+      <match_string>drlugae</match_string>
     </match_strings>
     <level>32</level>
     <hp>4936</hp>
@@ -4938,6 +4959,10 @@
     <match_strings>
       <match_string>balnab</match_string>
       <match_string>eanab</match_string>
+      <match_string>eqnab</match_string>
+      <match_string>ennab</match_string>
+      <match_string>nab</match_string>
+      <match_string>ectnab</match_string>
     </match_strings>
     <level>25</level>
     <hp>4832</hp>
@@ -4965,6 +4990,7 @@
     <match_strings>
       <match_string>balnabz</match_string>
       <match_string>eanabz</match_string>
+      <match_string>eqnabz</match_string>
     </match_strings>
     <level>47</level>
     <hp>4518</hp>
