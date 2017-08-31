@@ -21,7 +21,9 @@ namespace ff_ocr {
 
         private int _frameX;
         private int _frameY;
-        private static int _dataClearThreshold = 20;
+        private static int _jitterX = 6;
+        private static int _jitterY = 7;
+        private static int _dataClearThreshold = _jitterX * _jitterY;
         public bool IsStale { get => _noDataCount > _dataClearThreshold; }
 
         private SoftwareBitmap _sb;
@@ -51,8 +53,8 @@ namespace ff_ocr {
         }
 
         public async Task Capture(OcrEngine ocr) {
-            _frameX = ++_frameX % 6;
-            _frameY = ++_frameY % 7;
+            _frameX = ++_frameX % _jitterX;
+            _frameY = ++_frameY % _jitterY;
 
             using (Graphics g = Graphics.FromImage(_bmp)) {
                 g.CopyFromScreen(Screen.PrimaryScreen.Bounds.X + X + _frameX, Screen.PrimaryScreen.Bounds.Y + Y + _frameY, 0, 0, _bmp.Size, CopyPixelOperation.SourceCopy);

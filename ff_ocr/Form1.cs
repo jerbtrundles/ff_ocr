@@ -332,7 +332,12 @@ namespace ff_ocr {
         private async void timerCaptureItemData_Tick(object sender, EventArgs e) {
             if (!bItemCaptureReady) { return; }
             bItemCaptureReady = false;
-            await CaptureItemData();
+            try {
+                await CaptureItemData();
+            }
+            catch {
+
+            }
             bEnemyCaptureReady = true;
         }
         private void timerClearItemCaptureStatus_Tick(object sender, EventArgs e) {
