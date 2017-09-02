@@ -1364,6 +1364,9 @@
       <match_string>glomwing</match_string>
       <match_string>gonwing</match_string>
       <match_string>gomwing</match_string>
+      <match_string>giomwing</match_string>
+      <match_string>giornwing</match_string>
+      <match_string>gionwing</match_string>
     </match_strings>
     <level>41</level>
     <hp>1580</hp>
@@ -1440,7 +1443,7 @@
     <experience2>450</experience2>
   </enemy>
   <enemy>
-    <name>GreenD</name>
+    <name>Green D.</name>
     <verified>false</verified>
     <match_strings>
       <match_string>greend</match_string>
@@ -2928,6 +2931,14 @@
     <verified>false</verified>
     <match_strings>
       <match_string>roclarva</match_string>
+      <match_string>roclqr</match_string>
+      <match_string>roclcxrva</match_string>
+      <match_string>roclarva</match_string>
+      <match_string>roclarvcx</match_string>
+      <match_string>roclqtva</match_string>
+      <match_string>roclarvct</match_string>
+      <match_string>roclctrva</match_string>
+      <match_string>roclcrrva</match_string>
     </match_strings>
     <level>36</level>
     <hp>986</hp>
@@ -2950,11 +2961,12 @@
     <experience2>2830</experience2>
   </enemy>
   <enemy>
-    <name>RocMoth</name>
+    <name>RockMoth</name>
     <verified>false</verified>
     <match_strings>
-      <match_string>rocmoth</match_string>
-      <match_string>rochoth</match_string>
+      <match_string>rockhoth</match_string>
+      <match_string>rockmoth</match_string>
+      <match_string>rockhth</match_string>
     </match_strings>
     <level>39</level>
     <hp>900</hp>
@@ -3633,6 +3645,8 @@
     <verified>false</verified>
     <match_strings>
       <match_string>traprose</match_string>
+      <match_string>traprose</match_string>
+      <match_string>tprose</match_string>
     </match_strings>
     <level>23</level>
     <hp>370</hp>
