@@ -18,6 +18,12 @@ using Windows.Storage;
 using Windows.Storage.Streams;
 
 namespace ff_ocr {
+    enum MATCH_STATUS {
+        GOOD,
+        BAD,
+        NOTHING
+    }
+
     public partial class Form1 : Form {
         OcrEngine ocr;
         bool bEnemyCaptureReady = true;
@@ -86,7 +92,7 @@ namespace ff_ocr {
 
             await enemyData.Capture(ocr);
             if (enemyData.LastResult.Lines.Count == 0) {
-                AppendEnemyCaptureString("(nothing)");
+                AppendEnemyCaptureString("(nothing)", MATCH_STATUS.NOTHING);
 
                 if (enemyData.IsStale) {
                     ClearEnemyUI();
@@ -99,14 +105,14 @@ namespace ff_ocr {
                     .Where(x => x.Length > 0 && !x.Contains("forwar")); // filter out fast forwards
 
                 foreach (string line in lines) {
-                    AppendEnemyCaptureString(line);
+                    Enemy enemy = Enemies.Find(x => x.MatchStrings.Contains(line));
+                    MATCH_STATUS matchStatus = enemy != null ? MATCH_STATUS.GOOD : MATCH_STATUS.BAD;
+                    AppendEnemyCaptureString(line, matchStatus);
 
                     // if all enemy slots currently full, no need to process
                     if (enemy1 != null && enemy2 != null && enemy3 != null) { continue; }
 
-                    Enemy enemy = Enemies.Find(x => x.MatchStrings.Contains(line));
                     if (enemy != null) {
-
                         // edge cases (ghost/ghast, milon battle, ghost battle)
                         if (enemy.Name == "Milon" &&
                             ((enemy1 != null && enemy1.Name == "Milon Z.")
@@ -177,7 +183,21 @@ namespace ff_ocr {
 
             timerClearEnemyCaptureStatus.Enabled = true;
         }
-        private void AppendEnemyCaptureString(string str) {
+        private void AppendEnemyCaptureString(string str, MATCH_STATUS matchStatus) {
+            Color popBackColorEnemyUnique = txtEnemyCaptureUnique.BackColor;
+            Color popSelectionColorEnemyUnique= txtEnemyCaptureUnique.SelectionColor;
+            
+            switch (matchStatus) {
+                case MATCH_STATUS.GOOD:
+                    txtEnemyCaptureUnique.BackColor = Color.LightGreen;
+                    txtEnemyCaptureUnique.SelectionColor = Color.Green;
+                    break;
+                case MATCH_STATUS.BAD:
+                    txtEnemyCaptureUnique.BackColor = Color.LightSalmon;
+                    txtEnemyCaptureUnique.SelectionColor = Color.Red;
+                    break;
+            }
+
             if (txtEnemyCaptureLast15.Text.Length > 0 && txtEnemyCaptureLast15.Lines.Length > 15) {
                 txtEnemyCaptureLast15.Text = txtEnemyCaptureLast15.Text.Substring(txtEnemyCaptureLast15.Text.IndexOf('\n') + 1);
             }
@@ -186,11 +206,16 @@ namespace ff_ocr {
             string[] lines = txtEnemyCaptureUnique.Text.Split("\r\n".ToCharArray(), StringSplitOptions.RemoveEmptyEntries);
             foreach (string line in lines) {
                 if (line == str) {
+                    txtEnemyCaptureUnique.BackColor = popBackColorEnemyUnique;
+                    txtEnemyCaptureUnique.SelectionColor = popSelectionColorEnemyUnique;
                     return;
                 }
             }
 
             txtEnemyCaptureUnique.AppendText(str + "\r\n");
+
+            txtEnemyCaptureUnique.BackColor = popBackColorEnemyUnique;
+            txtEnemyCaptureUnique.SelectionColor = popSelectionColorEnemyUnique;
         }
         private void timerClearEnemyCaptureStatus_Tick(object sender, EventArgs e) {
             lblEnemyCaptureStatus.Text = string.Empty;

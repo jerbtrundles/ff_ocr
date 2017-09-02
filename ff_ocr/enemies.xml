@@ -119,6 +119,9 @@
     <match_strings>
       <match_string>balloon</match_string>
       <match_string>eaoon</match_string>
+      <match_string>ealoon</match_string>
+      <match_string>baloon</match_string>
+      <match_string>enoon</match_string>
     </match_strings>
     <level>33</level>
     <hp>697</hp>
@@ -291,6 +294,9 @@
       <match_string>blademan</match_string>
       <match_string>eademan</match_string>
       <match_string>eadehan</match_string>
+      <match_string>eqdehan</match_string>
+      <match_string>badehan</match_string>
+      <match_string>bqdehan</match_string>
     </match_strings>
     <level>35</level>
     <hp>1050</hp>
@@ -1621,7 +1627,7 @@
     <experience2>1510</experience2>
   </enemy>
   <enemy>
-    <name>Huge Naga</name>
+    <name>HugeNaga</name>
     <verified>false</verified>
     <match_strings>
       <match_string>hugenaga</match_string>
@@ -1806,11 +1812,14 @@
     <experience2>1100</experience2>
   </enemy>
   <enemy>
-    <name>Iron Man</name>
+    <name>Ironman</name>
     <verified>false</verified>
     <match_strings>
       <match_string>ironman</match_string>
       <match_string>ironhan</match_string>
+      <match_string>ironnan</match_string>
+      <match_string>ironrnan</match_string>
+      <match_string>inrnan</match_string>
     </match_strings>
     <level>36</level>
     <hp>2900</hp>
@@ -2675,6 +2684,13 @@
     <match_strings>
       <match_string>q.lamia</match_string>
       <match_string>q.lania</match_string>
+      <match_string>qlaniq</match_string>
+      <match_string>qlania</match_string>
+      <match_string>qlani</match_string>
+      <match_string>olania</match_string>
+      <match_string>qlamia</match_string>
+      <match_string>qlamiq</match_string>
+      <match_string>olani</match_string>
     </match_strings>
     <level>34</level>
     <hp>1100</hp>
@@ -3425,11 +3441,15 @@
     <experience2>68</experience2>
   </enemy>
   <enemy>
-    <name>Tarantula</name>
+    <name>Talantla</name>
     <verified>false</verified>
     <match_strings>
       <match_string>tarantula</match_string>
       <match_string>tarantua</match_string>
+      <match_string>tqant</match_string>
+      <match_string>tqantq</match_string>
+      <match_string>taant</match_string>
+      <match_string>tqanta</match_string>
     </match_strings>
     <level>42</level>
     <hp>2315</hp>
@@ -3928,11 +3948,12 @@
     <experience2>1670</experience2>
   </enemy>
   <enemy>
-    <name>YellowD</name>
+    <name>Yellow D</name>
     <verified>false</verified>
     <match_strings>
       <match_string>yellowd</match_string>
       <match_string>yeowd</match_string>
+      <match_string>yelioud</match_string>
     </match_strings>
     <level>40</level>
     <hp>3100</hp>
@@ -5042,8 +5063,8 @@
     <name>K.Eblan</name>
     <verified>false</verified>
     <match_strings>
-      <match_string>k.eblan</match_string>
-      <match_string>k.eban</match_string>
+      <match_string>keblan</match_string>
+      <match_string>keban</match_string>
     </match_strings>
     <level>15</level>
     <hp>60000</hp>
@@ -5069,8 +5090,9 @@
     <name>Q.Eblan</name>
     <verified>false</verified>
     <match_strings>
-      <match_string>q.eblan</match_string>
+      <match_string>qeblan</match_string>
       <match_string>q.eban</match_string>
+      <match_string>oeblan</match_string>
     </match_strings>
     <level>15</level>
     <hp>60000</hp>
